@@ -18,6 +18,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // タブバーの初期化処理
+    UITabBar *tabBar = self.tabBarController.tabBar;
+    
+    // 1つ目のタブ（ホーム）
+    UITabBarItem *item1 = [tabBar.items objectAtIndex:0];
+    
+    UIImage *image1 = [UIImage imageNamed:@"ic_menu_home_66@2x.png"];
+    UIImage *selectedImage1 = [UIImage imageNamed:@"ic_menu_home_on_66@2x.png"];
+    
+    item1.image = [image1 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item1.selectedImage = [selectedImage1 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    // 2つ目のタブ（キャラ選択）
+    UITabBarItem *item2 = [tabBar.items objectAtIndex:1];
+    
+    UIImage *image2 = [UIImage imageNamed:@"ic_menu_chara_66@2x.png"];
+    UIImage *selectedImage2 = [UIImage imageNamed:@"ic_menu_chara_on_66@2x.png"];
+    
+    item2.image = [image2 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item2.selectedImage = [selectedImage2 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    // 3つ目のタブ（設定）
+    UITabBarItem *item3 = [tabBar.items objectAtIndex:2];
+    
+    UIImage *image3 = [UIImage imageNamed:@"ic_menu_setting_66@2x.png"];
+    UIImage *selectedImage3 = [UIImage imageNamed:@"ic_menu_setting_on_66@2x.png"];
+    
+    item3.image = [image3 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item3.selectedImage = [selectedImage3 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
 }
 
 - (void)didReceiveMemoryWarning {
