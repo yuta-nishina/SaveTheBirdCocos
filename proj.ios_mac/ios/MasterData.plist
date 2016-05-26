@@ -8,31 +8,31 @@
 			<key>no</key>
 			<integer>1</integer>
 			<key>name</key>
-			<string>chara1_name</string>
+			<string>chara01_name.png</string>
 			<key>detail</key>
 			<string>キャラクター１の説明です</string>
 			<key>image_stand</key>
-			<string>chara01_front_stand</string>
+			<string>chara01_front_stand.png</string>
 		</dict>
 		<dict>
 			<key>no</key>
 			<integer>2</integer>
 			<key>name</key>
-			<string>chara2_name</string>
+			<string>chara02_name.png</string>
 			<key>detail</key>
 			<string>キャラクター２の説明です</string>
 			<key>image_stand</key>
-			<string>chara02_front_stand</string>
+			<string>chara02_front_stand.png</string>
 		</dict>
 		<dict>
 			<key>no</key>
 			<integer>3</integer>
 			<key>name</key>
-			<string>chara3_name</string>
+			<string>chara03_name.png</string>
 			<key>detail</key>
 			<string>キャラクター３の説明です</string>
 			<key>image_stand</key>
-			<string>chara03_front_stand</string>
+			<string>chara03_front_stand.png</string>
 		</dict>
 	</array>
 </dict>
