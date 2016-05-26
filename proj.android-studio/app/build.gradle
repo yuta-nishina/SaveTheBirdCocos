@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "savethebird.SaveTheBird"
-        minSdkVersion 10
-        targetSdkVersion 22
+        applicationId "org.cocos2dx.SaveTheBird"
+        minSdkVersion 17
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -16,13 +16,13 @@ android {
         java.srcDir "src"
         res.srcDir "res"
         jniLibs.srcDir "libs"
-        manifest.srcFile "AndroidManifest.xml"
+        Manifest.srcFile "AndroidManifest.xml"
         assets.srcDir "assets"
     }
 
     signingConfigs {
 
-       release {
+        release {
             if (project.hasProperty("RELEASE_STORE_FILE")) {
                 storeFile file(RELEASE_STORE_FILE)
                 storePassword RELEASE_STORE_PASSWORD
@@ -46,6 +46,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':libcocos2dx')
+    compile 'com.android.support:appcompat-v7:23.4.0'
 }
 
 task cleanAssets(type: Delete) {
