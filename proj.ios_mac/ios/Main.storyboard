@@ -102,6 +102,9 @@
                                 <state key="normal" title="公式リンク">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="linkButtonTouched:" destination="Gle-ZG-vEY" eventType="touchUpInside" id="kN7-7J-N5x"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Arm-UH-gkv">
                                 <rect key="frame" x="30" y="50" width="520" height="421"/>

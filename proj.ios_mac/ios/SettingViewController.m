@@ -122,6 +122,11 @@
 
 }
 
+// 公式リンクボタンが押された時
+- (IBAction)linkButtonTouched:(UIButton *)sender {
+    NSURL *url = [NSURL URLWithString:@"https://www.google.co.jp/"];
+    [[UIApplication sharedApplication] openURL:url];
+}
 
 - (void)dealloc {
     [_volumeSlider release];
