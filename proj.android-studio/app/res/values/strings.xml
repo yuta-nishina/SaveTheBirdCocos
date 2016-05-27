@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SaveTheBird</string>
+    <string name="title">SaveTheBird</string>
+    <string name="siteurl">https://www.google.co.jp</string>
+    <string name="systemFont">logotypejp_mp_m_1.1.ttf</string>
+    <string name="optionPageTitle">オプション</string>
 </resources>

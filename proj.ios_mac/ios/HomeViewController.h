@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameViewController.h"
+#import "Charactor.h"
+#import "IOSAppDelegate.h"
 
 @interface HomeViewController : UIViewController
+
+@property (retain, nonatomic) IBOutlet UIButton *startButton;
 
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import <AVFoundation/AVFoundation.h>
+#import "Charactor.h"
 
 @interface IOSAppDelegate : UIResponder <UIApplicationDelegate,AVAudioPlayerDelegate>
 
@@ -17,12 +18,16 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
-- (NSMutableArray *)getCharactors;
 
-@property(nonatomic) AVAudioPlayer *bgmPlayer;
+@property(retain, atomic) NSMutableArray *charactors;
+- (NSMutableArray *)getCharactors;
+- (void)initCharactors;
+- (Charactor *)getCharactor:(NSInteger)charaNo;
+
+@property(retain, nonatomic) AVAudioPlayer *bgmPlayer;
+
 
 
 @end
