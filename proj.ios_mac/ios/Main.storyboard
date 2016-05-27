@@ -70,6 +70,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="QuH-as-SfO">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
@@ -177,7 +178,9 @@
                             <constraint firstItem="uaD-Sz-Nux" firstAttribute="top" secondItem="Arm-UH-gkv" secondAttribute="bottom" constant="30" id="spj-2B-gle"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="dnH-th-kz0"/>
+                    <tabBarItem key="tabBarItem" title="" id="dnH-th-kz0">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="bgmSwitch" destination="J9D-7f-yOb" id="fGY-vM-QMW"/>
                         <outlet property="seSwitch" destination="Ev9-1b-BuZ" id="YTh-ok-8fp"/>
@@ -219,6 +222,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="oZd-X3-a7S">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
