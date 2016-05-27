@@ -20,8 +20,4 @@
 
 @property (strong, nonatomic) IBOutlet UITextView *textView;
 
-@property (strong, nonatomic) NSMutableArray * charactors;
-
--(NSMutableArray *) getCharactors;
-
 @end

@@ -24,33 +24,26 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    // キャラクターの情報をCoreDataから取得して辞書の配列を作成
-    _charactors = self.getCharactors;
+    _scrollView.delegate = self;
+
+    // キャラクターの配列を取得
+    IOSAppDelegate *delegate = (IOSAppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSMutableArray * charactors = [delegate getCharactors];
+    NSInteger pageCount = charactors.count; // ページ数（キャラクターの数）
     
     // ユーザが現在選択しているキャラクターの番号を取得する
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
     NSInteger currentNo = [defaults integerForKey:@"current_charactor_no"] - 1; // 後の処理のため取得した番号マイナス１する
     
-    _scrollView.delegate = self;
-    
-    NSInteger pageCount = 3; // ページ数（キャラクターの数）
-    
+    // スクロールの範囲を設定
     CGRect scrollViewFrame = self.scrollView.bounds;
     CGFloat width = scrollViewFrame.size.width;
     CGFloat height = scrollViewFrame.size.height;
-    
-    // スクロールの範囲を設定
     [_scrollView setContentSize:CGSizeMake((pageCount * width), height)];
-    
-    // ユーザが選択しているキャラクターの位置にスクロールする
-    CGRect frame = _scrollView.frame;
-    frame.origin.x = frame.size.width * currentNo;
-    [_scrollView scrollRectToVisible:frame animated:YES];
     
     // スクロールビューに画像を貼り付ける
     NSInteger count = 0;
-    for (Charactor * charactor in _charactors) {
+    for (Charactor * charactor in charactors) {
         UIImage * image = [UIImage imageNamed:charactor.image_stand];
         CGRect rect = CGRectMake(width * count, 0, width, height);
         UIImageView * imageView = [[UIImageView alloc] initWithFrame:rect];
@@ -63,14 +56,11 @@
         
         count++;
     }
-    
-    Charactor * charactor = _charactors[currentNo];
-    // ユーザが選択しているキャラクターの名前を表示する
-    _imageView.image = [UIImage imageNamed:charactor.name];
-    
-    // ユーザが選択しているキャラクターの説明文を表示する
-    _textView.text = charactor.detail;
-    
+
+    // ユーザが選択しているキャラクターの位置にスクロールする
+    CGRect frame = _scrollView.frame;
+    frame.origin.x = frame.size.width * currentNo;
+    [_scrollView scrollRectToVisible:frame animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,13 +80,8 @@
         // ページコントロールに現在のページを設定
         _pageControl.currentPage = currentPage;
         
-        // 選択されたキャラクターのオブジェクトを取得
-        _charactors = self.getCharactors;
-        Charactor * charactor = _charactors[currentPage];
-        // キャラクターの名前を更新
-        _imageView.image = [UIImage imageNamed:charactor.name];
-        // キャラクターの説明文を更新
-        _textView.text = charactor.detail;
+        // キャラクターを変更
+        [self changeCharactor:currentPage];
         
     }
 }
@@ -112,36 +97,23 @@
     frame.origin.x = frame.size.width * currentPage;
     [_scrollView scrollRectToVisible:frame animated:YES];
     
+    // キャラクターを変更
+    [self changeCharactor:currentPage];
+}
+
+- (void)changeCharactor:(NSInteger)charaNo {
     // 選択されたキャラクターのオブジェクトを取得
-    _charactors = self.getCharactors;
-    Charactor * charactor = _charactors[currentPage];
+    IOSAppDelegate *delegate = (IOSAppDelegate *)[[UIApplication sharedApplication] delegate];
+    NSMutableArray * charactors = [delegate getCharactors];
+    Charactor * charactor = charactors[charaNo];
     // キャラクターの名前を更新
     _imageView.image = [UIImage imageNamed:charactor.name];
     // キャラクターの説明文を更新
     _textView.text = charactor.detail;
-    
-}
-
-- (NSMutableArray *)getCharactors{
-    
-    // データ取得用のオブジェクトであるFetchオブジェクトを作成
-    NSFetchRequest * fetchRequest = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass([Charactor class])];
-    
-    // Sort条件を設定（No順で昇順）
-    NSSortDescriptor * sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"no" ascending:YES];
-    NSArray * sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
-    [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    // manageObjectContextからデータを取得
-    NSManagedObjectContext * context = [[IOSAppDelegate alloc]init].managedObjectContext;
-    NSArray * results = [context executeFetchRequest:fetchRequest error:nil];
-    
-    _charactors = [NSMutableArray array];
-    for (Charactor * charactor in results) {
-        [_charactors addObject:charactor];
-    }
-    
-    return _charactors;
+    // 選択されたキャラクターの番号を保存
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:charactor.no forKey:@"current_charactor_no"];
+    [defaults synchronize];
 }
 
 /*

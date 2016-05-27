@@ -314,8 +314,6 @@
 				503AE0FF17EB989F00D1A890 /* RootViewController.mm */,
 				8AC9C2F11CF535880067A617 /* IOSAppDelegate.h */,
 				8AC9C2F21CF535880067A617 /* IOSAppDelegate.m */,
-				8AC9C2F31CF535880067A617 /* CharactorViewController.h */,
-				8AC9C2F41CF535880067A617 /* CharactorViewController.m */,
 				8AC9C2F51CF535880067A617 /* CocosController.h */,
 				8AC9C2F61CF535880067A617 /* CocosController.mm */,
 				8AC9C2FA1CF535990067A617 /* GameStoryboard.storyboard */,
@@ -323,6 +321,10 @@
 				8AC9C2FC1CF535990067A617 /* GameViewController.mm */,
 				8AC9C2FD1CF535990067A617 /* HomeViewController.h */,
 				8AC9C2FE1CF535990067A617 /* HomeViewController.m */,
+				8AC9C2F31CF535880067A617 /* CharactorViewController.h */,
+				8AC9C2F41CF535880067A617 /* CharactorViewController.m */,
+				8AC9C30D1CF535AE0067A617 /* SettingViewController.h */,
+				8AC9C30E1CF535AE0067A617 /* SettingViewController.m */,
 				8AC9C31D1CF537C80067A617 /* Charactor.h */,
 				8AC9C31E1CF537C80067A617 /* Charactor.m */,
 				8AC9C31F1CF537C80067A617 /* Charactor+CoreDataProperties.h */,
@@ -334,8 +336,6 @@
 				8AC9C3051CF535AE0067A617 /* main.m */,
 				8AC9C3061CF535AE0067A617 /* Main.storyboard */,
 				8AC9C3071CF535AE0067A617 /* MasterData.plist */,
-				8AC9C30D1CF535AE0067A617 /* SettingViewController.h */,
-				8AC9C30E1CF535AE0067A617 /* SettingViewController.m */,
 			);
 			name = ios;
 			path = Classes;

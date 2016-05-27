@@ -200,8 +200,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3f-wh-6qN">
-                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3f-wh-6qN">
+                                <rect key="frame" x="125" y="125" width="350" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="Lgo-XB-d75"/>
                                     <constraint firstAttribute="width" constant="250" id="cKr-tA-vXY"/>
@@ -221,6 +221,9 @@
                     <tabBarItem key="tabBarItem" title="" id="oZd-X3-a7S">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="startButton" destination="A3f-wh-6qN" id="qi2-DC-r6k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CT2-Jd-vYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

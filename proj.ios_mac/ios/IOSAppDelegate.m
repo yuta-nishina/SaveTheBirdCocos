@@ -7,7 +7,6 @@
 //
 
 #import "IOSAppDelegate.h"
-#import "Charactor.h"
 
 @interface IOSAppDelegate ()
 
@@ -73,6 +72,13 @@
 
 - (NSMutableArray *)getCharactors{
     
+    if (self.charactors.count == 0) {
+        [self initCharactors];
+    }
+    return self.charactors;
+}
+
+-(void)initCharactors{
     // データ取得用のオブジェクトであるFetchオブジェクトを作成
     NSFetchRequest * fetchRequest = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass([Charactor class])];
     
@@ -82,16 +88,18 @@
     [fetchRequest setSortDescriptors:sortDescriptors];
     
     // manageObjectContextからデータを取得
-    NSManagedObjectContext * context = [[IOSAppDelegate alloc]init].managedObjectContext;
-    NSArray * results = [context executeFetchRequest:fetchRequest error:nil];
+    NSArray * results = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     
-    
-    NSMutableArray * charactors = [NSMutableArray array];
+    self.charactors = [NSMutableArray array];
     for (Charactor * charactor in results) {
-        [charactors addObject:charactor];
+        [self.charactors addObject:charactor];
     }
-    
-    return charactors;
+}
+- (Charactor *)getCharactor:(NSInteger)charaNo{
+    if (self.charactors.count == 0) {
+        [self initCharactors];
+    }
+    return self.charactors[charaNo];
 }
 
 - (NSUInteger)initMasterData {

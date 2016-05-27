@@ -7,7 +7,7 @@
 //
 
 #import "HomeViewController.h"
-#import "GameViewController.h"
+
 
 @interface HomeViewController ()
 
@@ -18,8 +18,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
     // タブバーの初期化処理
+    [self initTabBar];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    // スタートボタン（キャラクターの画像）の初期化
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    IOSAppDelegate *delegate = (IOSAppDelegate *)[[UIApplication sharedApplication] delegate];
+    Charactor *charactor = [delegate getCharactor:[defaults integerForKey:@"current_charactor_no"] - 1]; // -1する
+    [_startButton setBackgroundImage:[UIImage imageNamed:charactor.image_stand] forState:UIControlStateNormal];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)initTabBar{
     UITabBar *tabBar = self.tabBarController.tabBar;
     
     // 1つ目のタブ（ホーム）
@@ -48,12 +65,6 @@
     
     item3.image = [image3 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     item3.selectedImage = [selectedImage3 imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -81,4 +92,8 @@
 }
 */
 
+- (void)dealloc {
+    [_startButton release];
+    [super dealloc];
+}
 @end
