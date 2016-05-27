@@ -67,7 +67,7 @@
 		8AC9C3121CF535AE0067A617 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C3051CF535AE0067A617 /* main.m */; };
 		8AC9C3131CF535AE0067A617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9C3061CF535AE0067A617 /* Main.storyboard */; };
 		8AC9C3141CF535AE0067A617 /* MasterData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9C3071CF535AE0067A617 /* MasterData.plist */; };
-		8AC9C3181CF535AE0067A617 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C30E1CF535AE0067A617 /* ViewController.m */; };
+		8AC9C3181CF535AE0067A617 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C30E1CF535AE0067A617 /* SettingViewController.m */; };
 		8AC9C3221CF537C80067A617 /* Charactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C31E1CF537C80067A617 /* Charactor.m */; };
 		8AC9C3231CF537C80067A617 /* Charactor+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C3201CF537C80067A617 /* Charactor+CoreDataProperties.m */; };
 		8AC9C3241CF537C80067A617 /* SaveTheBird.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C3211CF537C80067A617 /* SaveTheBird.xcdatamodeld */; };
@@ -214,8 +214,8 @@
 		8AC9C3051CF535AE0067A617 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ios/main.m; sourceTree = SOURCE_ROOT; };
 		8AC9C3061CF535AE0067A617 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ios/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		8AC9C3071CF535AE0067A617 /* MasterData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MasterData.plist; path = ios/MasterData.plist; sourceTree = SOURCE_ROOT; };
-		8AC9C30D1CF535AE0067A617 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ios/ViewController.h; sourceTree = SOURCE_ROOT; };
-		8AC9C30E1CF535AE0067A617 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ios/ViewController.m; sourceTree = SOURCE_ROOT; };
+		8AC9C30D1CF535AE0067A617 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = ios/SettingViewController.h; sourceTree = SOURCE_ROOT; };
+		8AC9C30E1CF535AE0067A617 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = ios/SettingViewController.m; sourceTree = SOURCE_ROOT; };
 		8AC9C31D1CF537C80067A617 /* Charactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Charactor.h; path = ios/Charactor.h; sourceTree = SOURCE_ROOT; };
 		8AC9C31E1CF537C80067A617 /* Charactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Charactor.m; path = ios/Charactor.m; sourceTree = SOURCE_ROOT; };
 		8AC9C31F1CF537C80067A617 /* Charactor+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Charactor+CoreDataProperties.h"; path = "ios/Charactor+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
@@ -334,8 +334,8 @@
 				8AC9C3051CF535AE0067A617 /* main.m */,
 				8AC9C3061CF535AE0067A617 /* Main.storyboard */,
 				8AC9C3071CF535AE0067A617 /* MasterData.plist */,
-				8AC9C30D1CF535AE0067A617 /* ViewController.h */,
-				8AC9C30E1CF535AE0067A617 /* ViewController.m */,
+				8AC9C30D1CF535AE0067A617 /* SettingViewController.h */,
+				8AC9C30E1CF535AE0067A617 /* SettingViewController.m */,
 			);
 			name = ios;
 			path = Classes;
@@ -771,7 +771,7 @@
 				8AC9C3001CF535990067A617 /* GameViewController.mm in Sources */,
 				8AC9C3241CF537C80067A617 /* SaveTheBird.xcdatamodeld in Sources */,
 				8AC9C3221CF537C80067A617 /* Charactor.m in Sources */,
-				8AC9C3181CF535AE0067A617 /* ViewController.m in Sources */,
+				8AC9C3181CF535AE0067A617 /* SettingViewController.m in Sources */,
 				8AC9C3231CF537C80067A617 /* Charactor+CoreDataProperties.m in Sources */,
 				8AC9C32C1CF53EF10067A617 /* AppDelegate.cpp in Sources */,
 				8AC9C2F81CF535880067A617 /* CharactorViewController.m in Sources */,

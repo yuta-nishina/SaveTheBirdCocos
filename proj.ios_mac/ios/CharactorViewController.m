@@ -15,8 +15,6 @@
 
 @implementation CharactorViewController
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,15 +24,17 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    //TODO キャラクターの情報をCoreDataから取得して辞書の配列を作成
+    // キャラクターの情報をCoreDataから取得して辞書の配列を作成
     _charactors = self.getCharactors;
     
-    //TODO ユーザが現在選択しているキャラクターの番号を取得する
-    NSInteger currentNo = 0; //TODO 後の処理のため取得した番号マイナス１する
+    // ユーザが現在選択しているキャラクターの番号を取得する
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSInteger currentNo = [defaults integerForKey:@"current_charactor_no"] - 1; // 後の処理のため取得した番号マイナス１する
     
     _scrollView.delegate = self;
     
-    NSInteger pageCount = 3; // ページ数
+    NSInteger pageCount = 3; // ページ数（キャラクターの数）
     
     CGRect scrollViewFrame = self.scrollView.bounds;
     CGFloat width = scrollViewFrame.size.width;
@@ -64,7 +64,7 @@
         count++;
     }
     
-    Charactor * charactor = [self getCharactor:currentNo];
+    Charactor * charactor = _charactors[currentNo];
     // ユーザが選択しているキャラクターの名前を表示する
     _imageView.image = [UIImage imageNamed:charactor.name];
     
@@ -90,14 +90,11 @@
         // ページコントロールに現在のページを設定
         _pageControl.currentPage = currentPage;
         
-        
+        // 選択されたキャラクターのオブジェクトを取得
         _charactors = self.getCharactors;
-        Charactor * charactor = [self getCharactor:currentPage];
-//        charactor = _charactors[currentPage];
-//        charactor = [self getCharactor:currentPage];
+        Charactor * charactor = _charactors[currentPage];
         // キャラクターの名前を更新
         _imageView.image = [UIImage imageNamed:charactor.name];
-        
         // キャラクターの説明文を更新
         _textView.text = charactor.detail;
         
@@ -115,25 +112,14 @@
     frame.origin.x = frame.size.width * currentPage;
     [_scrollView scrollRectToVisible:frame animated:YES];
     
+    // 選択されたキャラクターのオブジェクトを取得
     _charactors = self.getCharactors;
-    Charactor * charactor = [self getCharactor:currentPage];
-    //        charactor = _charactors[currentPage];
-    //        charactor = [self getCharactor:currentPage];
+    Charactor * charactor = _charactors[currentPage];
     // キャラクターの名前を更新
     _imageView.image = [UIImage imageNamed:charactor.name];
-    
     // キャラクターの説明文を更新
     _textView.text = charactor.detail;
     
-}
-
--(void)addCharactor:(Charactor *)charactor{
-    [_charactors addObject:charactor];
-}
-
--(Charactor *)getCharactor:(NSInteger)i{
-    
-    return _charactors[i];
 }
 
 - (NSMutableArray *)getCharactors{
@@ -152,7 +138,7 @@
     
     _charactors = [NSMutableArray array];
     for (Charactor * charactor in results) {
-        [self addCharactor:charactor];
+        [_charactors addObject:charactor];
     }
     
     return _charactors;

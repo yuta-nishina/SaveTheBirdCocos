@@ -20,11 +20,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextView *textView;
 
-@property NSMutableArray * charactors;
-
--(void) addCharactor:(Charactor*)charactor;
-
--(Charactor *) getCharactor:(NSInteger)i;
+@property (strong, nonatomic) NSMutableArray * charactors;
 
 -(NSMutableArray *) getCharactors;
 

@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="-3755" y="524"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="JnD-Yb-EFc">
             <objects>
-                <viewController id="Gle-ZG-vEY" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Gle-ZG-vEY" customClass="SettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y5Z-cf-l7v"/>
                         <viewControllerLayoutGuide type="bottom" id="4wc-CR-vuT"/>
@@ -105,17 +105,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Arm-UH-gkv">
                                 <rect key="frame" x="30" y="50" width="520" height="421"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="オプション" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrM-qJ-4AT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="オプション" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrM-qJ-4AT">
                                         <rect key="frame" x="0.0" y="0.0" width="520" height="40"/>
                                         <color key="backgroundColor" red="0.58258461952209473" green="0.71936541795730591" blue="0.91908246278762817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4MO-iO-ZYY">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4MO-iO-ZYY">
                                         <rect key="frame" x="0.0" y="90" width="520" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BGM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbg-Jd-3tA">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BGM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbg-Jd-3tA">
                                                 <rect key="frame" x="0.0" y="0.0" width="471" height="40"/>
                                                 <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="40"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -123,13 +123,16 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9D-7f-yOb">
                                                 <rect key="frame" x="471" y="0.0" width="51" height="40"/>
+                                                <connections>
+                                                    <action selector="bgmSwitchDidChanged:" destination="Gle-ZG-vEY" eventType="valueChanged" id="ZGJ-QE-7eF"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dn8-Fh-oAN">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dn8-Fh-oAN">
                                         <rect key="frame" x="0.0" y="180" width="520" height="40"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b1-RX-Md6">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b1-RX-Md6">
                                                 <rect key="frame" x="0.0" y="0.0" width="471" height="40"/>
                                                 <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="40"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -143,17 +146,20 @@
                                             </switch>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PcO-Qe-ZBI">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PcO-Qe-ZBI">
                                         <rect key="frame" x="0.0" y="270" width="520" height="151"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lui-4g-l2E">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lui-4g-l2E">
                                                 <rect key="frame" x="0.0" y="0.0" width="520" height="40"/>
                                                 <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="40"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Rr-wD-Vgs">
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Rr-wD-Vgs">
                                                 <rect key="frame" x="-2" y="40" width="524" height="112"/>
+                                                <connections>
+                                                    <action selector="volumeSliderValueChanged:" destination="Gle-ZG-vEY" eventType="valueChanged" id="S39-y9-wRB"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -172,6 +178,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="dnH-th-kz0"/>
+                    <connections>
+                        <outlet property="bgmSwitch" destination="J9D-7f-yOb" id="fGY-vM-QMW"/>
+                        <outlet property="seSwitch" destination="Ev9-1b-BuZ" id="YTh-ok-8fp"/>
+                        <outlet property="volumeSlider" destination="6Rr-wD-Vgs" id="xkx-qL-3gW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipT-uu-kcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
