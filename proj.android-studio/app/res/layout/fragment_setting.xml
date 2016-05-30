@@ -148,7 +148,6 @@
         android:layout_marginBottom="32dp"
         android:layout_alignEnd="@+id/volumeBar"
         android:layout_gravity="center_horizontal|bottom"
-        android:onClick="onClick"
         android:linksClickable="false" />
     </FrameLayout>
 </LinearLayout>

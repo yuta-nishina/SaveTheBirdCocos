@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.SeekBar;
@@ -106,20 +107,16 @@ public class SettingFragment extends Fragment {
                 }
             });
         }
-    }
 
-    // ボタン操作
-    public void onClick(View view){
-        switch (view.getId()){
-
-            case R.id.sitelink:
+        // 公式リンクボタンが押された時の処理
+        Button siteLinkButton = (Button)activity.findViewById(R.id.sitelink);
+        siteLinkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Uri uri = Uri.parse("https://www.google.co.jp");
                 Intent i = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(i);
-                break;
-
-        }
+            }
+        });
     }
-
-
 }
