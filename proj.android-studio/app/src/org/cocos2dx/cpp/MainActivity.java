@@ -37,8 +37,6 @@ public class MainActivity extends Activity{
         super.onStart();
 
         // フラグメントの初期化
-        FragmentManager manager = getFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
         if (homeFragment == null){
             homeFragment = new HomeFragment();
         }
@@ -50,8 +48,9 @@ public class MainActivity extends Activity{
         }
 
         // フラグメントをViewに追加
+        FragmentManager manager = getFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
         Fragment currentFragment = manager.findFragmentById(R.id.fragment_container);
-
         if (currentFragment == null){
             transaction.add(R.id.fragment_container,homeFragment);
             transaction.add(R.id.fragment_container,characterSelectFragment);
@@ -73,21 +72,27 @@ public class MainActivity extends Activity{
         switch (view.getId()){
 
             case R.id.homeBtn:
-                transaction.hide(characterSelectFragment);
-                transaction.hide(settingFragment);
-                transaction.show(homeFragment);
+                if (!homeFragment.isVisible()){
+                    transaction.hide(characterSelectFragment);
+                    transaction.hide(settingFragment);
+                    transaction.show(homeFragment);
+                }
                 break;
 
             case R.id.characterBtn:
-                transaction.hide(homeFragment);
-                transaction.hide(settingFragment);
-                transaction.show(characterSelectFragment);
+                if (!characterSelectFragment.isVisible()){
+                    transaction.hide(homeFragment);
+                    transaction.hide(settingFragment);
+                    transaction.show(characterSelectFragment);
+                }
                 break;
 
             case R.id.settingBtn:
-                transaction.hide(homeFragment);
-                transaction.hide(characterSelectFragment);
-                transaction.show(settingFragment);
+                if (!settingFragment.isVisible()){
+                    transaction.hide(homeFragment);
+                    transaction.hide(characterSelectFragment);
+                    transaction.show(settingFragment);
+                }
                 break;
 
             default:
