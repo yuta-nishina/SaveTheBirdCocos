@@ -5,9 +5,9 @@ package org.cocos2dx.cpp;
  */
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +17,10 @@ import android.widget.TextView;
 
 
 public class MainActivity extends Activity{
+
+    private HomeFragment homeFragment;
+    private CharacterSelectFragment characterSelectFragment;
+    private SettingFragment settingFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,38 @@ public class MainActivity extends Activity{
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        // フラグメントの初期化
+        FragmentManager manager = getFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        if (homeFragment == null){
+            homeFragment = new HomeFragment();
+        }
+        if (characterSelectFragment == null){
+            characterSelectFragment = new CharacterSelectFragment();
+        }
+        if (settingFragment == null){
+            settingFragment = new SettingFragment();
+        }
+
+        // フラグメントをViewに追加
+        Fragment currentFragment = manager.findFragmentById(R.id.fragment_container);
+
+        if (currentFragment == null){
+            transaction.add(R.id.fragment_container,homeFragment);
+            transaction.add(R.id.fragment_container,characterSelectFragment);
+            transaction.add(R.id.fragment_container,settingFragment);
+
+            transaction.hide(characterSelectFragment);
+            transaction.hide(settingFragment);
+            transaction.show(homeFragment);
+        }
+        transaction.commit();
+    }
+
     // タブメニュー操作
     public void tabClick(View view){
 
@@ -37,29 +73,28 @@ public class MainActivity extends Activity{
         switch (view.getId()){
 
             case R.id.homeBtn:
-                HomeFragment homeFragment = new HomeFragment();
-                transaction.replace(R.id.fragment_container,homeFragment);
-                transaction.commit();
-
+                transaction.hide(characterSelectFragment);
+                transaction.hide(settingFragment);
+                transaction.show(homeFragment);
                 break;
 
             case R.id.characterBtn:
-                CharacterSelectFragment characterSelectFragment = new CharacterSelectFragment();
-                transaction.replace(R.id.fragment_container,characterSelectFragment);
-                transaction.commit();
-
+                transaction.hide(homeFragment);
+                transaction.hide(settingFragment);
+                transaction.show(characterSelectFragment);
                 break;
 
             case R.id.settingBtn:
-                SettingFragment settingFragment = new SettingFragment();
-                transaction.replace(R.id.fragment_container,settingFragment);
-                transaction.commit();
+                transaction.hide(homeFragment);
+                transaction.hide(characterSelectFragment);
+                transaction.show(settingFragment);
                 break;
 
             default:
                 break;
 
         }
+        transaction.commit();
     }
 
     /*
