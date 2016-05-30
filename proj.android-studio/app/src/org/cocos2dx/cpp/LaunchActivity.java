@@ -11,8 +11,6 @@ import android.widget.TextView;
 
 public class LaunchActivity extends Activity {
 
-    private Intent intentBgm = null;
-
     @Override
     // 初期表示
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +23,6 @@ public class LaunchActivity extends Activity {
         // フォント変更
         TextView txt = (TextView) findViewById(R.id.splashLogo);
         txt.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/logotypejp_mp_m_1.1.ttf"));
-
-        // サービスクラスを指定
-        intentBgm = new Intent(this, BgmService.class);
-        startService(intentBgm);
 
         // スプラッシュ
         Handler handler = new Handler();

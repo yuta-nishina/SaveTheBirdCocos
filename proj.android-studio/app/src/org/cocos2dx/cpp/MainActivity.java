@@ -8,6 +8,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,10 +34,19 @@ public class MainActivity extends Activity{
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
+    protected void onResume() {
+        super.onResume();
+
+        // サービスを起動してBGMの再生を開始
+        startService(new Intent(this, BgmService.class));
 
         // フラグメントの初期化
+        initFragment();
+
+    }
+
+    private void initFragment(){
+        // フラグメントのインスタンスを生成
         if (homeFragment == null){
             homeFragment = new HomeFragment();
         }
@@ -111,15 +121,10 @@ public class MainActivity extends Activity{
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
-        // TODO 閉じる時に音を消す処理
-        Log.i("tabactivity", "閉じたよー");
-    }
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        // TODO 閉じる時に音を消す処理
-        Log.i("tabactivity", "閉じたよーdestory");
+    protected void onPause() {
+        super.onPause();
+
+        // BGMを再生しているサービスを停止する
+        stopService(new Intent(this, BgmService.class));
     }
 }
