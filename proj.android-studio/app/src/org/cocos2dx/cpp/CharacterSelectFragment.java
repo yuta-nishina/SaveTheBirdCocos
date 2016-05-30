@@ -3,8 +3,10 @@ package org.cocos2dx.cpp;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -61,6 +63,12 @@ public class CharacterSelectFragment extends Fragment {
                         mViewPagerIndicator.setCurrentPosition(position);
                     }
                 });
+
+        // ユーザが前回選択したキャラクターを取得する
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        int currentCharaNo = preferences.getInt("current_charactor_no", 1);
+        // 取得したキャラクターの位置にスクロールする
+        mViewPager.setCurrentItem(currentCharaNo - 1);
     }
 
     /**
@@ -85,8 +93,11 @@ public class CharacterSelectFragment extends Fragment {
             txtCName.setBackgroundColor(Color.BLUE);
             txtCDetail.setText("説明 "+pos);
             txtCDetail.setBackgroundColor(Color.BLUE);
-
         }
+
+        // 設定値を保存
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        preferences.edit().putInt("current_charactor_no", pos).apply();
 
     }
 

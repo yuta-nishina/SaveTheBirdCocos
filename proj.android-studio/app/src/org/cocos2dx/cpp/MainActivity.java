@@ -10,14 +10,18 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.preference.Preference;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
+
+import java.io.BufferedInputStream;
+import java.io.IOException;
 
 
 public class MainActivity extends Activity{
@@ -124,6 +128,31 @@ public class MainActivity extends Activity{
     */
     public void setFontType(TextView txt) {
         txt.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/logotypejp_mp_m_1.1.ttf"));
+    }
+
+    /*
+    * Assetフォルダから画像をBitmap形式で取得する
+    * loadBitmapFromAsset(String fileName)
+     */
+    public Bitmap loadBitmapFromAsset(String fileName)throws IOException{
+        final AssetManager assetManager = getAssets();
+        BufferedInputStream bis = null;
+
+        try {
+            bis = new BufferedInputStream(assetManager.open(fileName));
+            return BitmapFactory.decodeStream(bis);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (bis != null) {
+                    bis.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
     }
 
     @Override
