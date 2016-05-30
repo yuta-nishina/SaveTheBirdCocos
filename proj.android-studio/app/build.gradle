@@ -16,7 +16,7 @@ android {
         java.srcDir "src"
         res.srcDir "res"
         jniLibs.srcDir "libs"
-        Manifest.srcFile "AndroidManifest.xml"
+        manifest.srcFile "AndroidManifest.xml"
         assets.srcDir "assets"
     }
 

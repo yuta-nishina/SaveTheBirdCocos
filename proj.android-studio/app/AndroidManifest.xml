@@ -7,6 +7,7 @@
     android:installLocation="auto">
 
     <uses-feature android:glEsVersion="0x00020000" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -30,22 +31,18 @@
             <!--</intent-filter>-->
         </activity>
 
-        <activity android:name="org.cocos2dx.cpp.MainActivity">
+        <activity android:name=".LaunchActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="org.cocos2dx.cpp.HomeActivity">
-            >
-        </activity>
-        <activity android:name="org.cocos2dx.cpp.SettingActivity">
-        </activity>
-        <activity android:name="org.cocos2dx.cpp.CharacterSelectActivity"></activity>
+        <activity android:name="org.cocos2dx.cpp.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
         <service android:name="org.cocos2dx.cpp.BgmService" />
 
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

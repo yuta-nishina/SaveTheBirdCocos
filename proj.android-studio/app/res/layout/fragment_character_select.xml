@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="org.cocos2dx.cpp.CharacterSelectFragment"
+    android:weightSum="12">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="11">
+
+        <!-- action bar menu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            android:orientation="vertical"
+            android:weightSum="4"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:textSize="28dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:id="@+id/charctorName"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#ffefef"
+                android:layout_weight="2"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="10dp"
+                />
+
+            <android.support.v4.view.ViewPager
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="280dp"
+                android:id="@+id/viewpager"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- ページの下に来るようにインディケータを配置 -->
+            <org.cocos2dx.cpp.ViewPagerIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_alignBottom="@+id/viewpager"
+                android:layout_marginBottom="@dimen/indicator_height" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:textSize="18dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/charactorDetail"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#ffefef"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
