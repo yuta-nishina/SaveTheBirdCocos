@@ -3,9 +3,11 @@ package org.cocos2dx.cpp;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -52,13 +54,15 @@ public class SettingFragment extends Fragment {
         activity.setFontType(seTxt);
 
 
-        // ボリューム取得
+        // ボリュームのシークバーをインスタンス化
         final SeekBar vol = (SeekBar)activity.findViewById(R.id.volumeBar);
 
+        // AudioManagerを取得
         AudioManager am = (AudioManager)activity.getSystemService(Context.AUDIO_SERVICE);
 
         // 初期値
-        vol.setProgress(am.getStreamVolume(AudioManager.STREAM_MUSIC));
+        final SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        vol.setProgress(preferences.getInt("volume",8)); // 設定されていない場合（初期値）= 8
         // 最大値
         vol.setMax(15);
 
@@ -78,35 +82,56 @@ public class SettingFragment extends Fragment {
                         Log.i("debug","out" + seekBar.getProgress());
                         AudioManager am = (AudioManager)getActivity().getSystemService(Context.AUDIO_SERVICE);
                         am.setStreamVolume(AudioManager.STREAM_MUSIC, seekBar.getProgress(), 0);
+
+                        // 設定値を更新
+                        preferences.edit().putInt("volume",seekBar.getProgress()).apply();
                     }
                 }
         );
 
-        ToggleButton s = (ToggleButton)activity.findViewById(R.id.bgmSwitch);
+        // BGMのスイッチをインスタンス化
+        ToggleButton bgmToggleButton = (ToggleButton)activity.findViewById(R.id.bgmSwitch);
+        // 初期状態（ONかOFFか）を設定
+        bgmToggleButton.setChecked(preferences.getBoolean("bgm_flg", true)); // 設定されていない場合はtrue(ON)
 
-        if (s != null) {
-            s.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView,
-                                             boolean isChecked) {
-                    // サービスクラスを指定
-                    intentBgm = new Intent(getActivity(), BgmService.class);
+        // BGMのスイッチが変更された時の処理
+        bgmToggleButton.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                // サービスクラスを指定
+                intentBgm = new Intent(getActivity(), BgmService.class);
 
-                    if(isChecked) {
-                        //do stuff when Switch is ON
-                        Log.i("debug","開始");
-                        getActivity().startService(intentBgm);
-
-
-                    } else {
-                        //do stuff when Switch if OFF
-                        Log.i("debug","停止");
-                        getActivity().stopService(intentBgm);
-
-                    }
+                if(isChecked) {
+                    //do stuff when Switch is ON
+                    Log.i("debug","開始");
+                    getActivity().startService(intentBgm);
+                } else {
+                    //do stuff when Switch if OFF
+                    Log.i("debug","停止");
+                    getActivity().stopService(intentBgm);
                 }
-            });
-        }
+
+                // 設定値を更新
+                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+                preferences.edit().putBoolean("bgm_flg",isChecked).apply();
+            }
+        });
+
+        // SEのスイッチをインスタンス化
+        ToggleButton seToggleButton = (ToggleButton)activity.findViewById(R.id.seSwitch);
+        // 初期状態（ONかOFFか）を設定
+        seToggleButton.setChecked(preferences.getBoolean("se_flg", true)); // 設定されていない場合はtrue(ON)
+        // SEのスイッチが変更された時の処理
+        seToggleButton.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                // 設定値を更新
+                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+                preferences.edit().putBoolean("se_flg",isChecked).apply();
+            }
+        });
 
         // 公式リンクボタンが押された時の処理
         Button siteLinkButton = (Button)activity.findViewById(R.id.sitelink);

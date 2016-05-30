@@ -9,8 +9,11 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.preference.Preference;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -37,12 +40,15 @@ public class MainActivity extends Activity{
     protected void onResume() {
         super.onResume();
 
-        // サービスを起動してBGMの再生を開始
-        startService(new Intent(this, BgmService.class));
-
+        // BGMを再生するかどうかのフラグを読み取る
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        boolean bgmFlg = preferences.getBoolean("bgm_flg", true);
+        if (bgmFlg){
+            // サービスを起動してBGMの再生を開始
+            startService(new Intent(this, BgmService.class));
+        }
         // フラグメントの初期化
         initFragment();
-
     }
 
     private void initFragment(){
