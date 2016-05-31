@@ -61,7 +61,7 @@ public class HomeFragment extends Fragment {
     public void changeCharacter(){
         // ユーザが選択していたキャラクターを取得
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
-        int currentCharaNo =preferences.getInt("current_charactor_no", 1);
+        int currentCharaNo =preferences.getInt("current_character_no", 1);
         CharacterData currentCharacter = activity.characterDataList.get(currentCharaNo - 1);
 
         // playボタンの画像を変更

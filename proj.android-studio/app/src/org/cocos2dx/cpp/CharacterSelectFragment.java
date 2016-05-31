@@ -1,11 +1,8 @@
 package org.cocos2dx.cpp;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
@@ -18,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.IOException;
-import java.util.List;
 
 public class CharacterSelectFragment extends Fragment {
 
@@ -47,10 +43,10 @@ public class CharacterSelectFragment extends Fragment {
         mViewPager.setAdapter(mPagerAdapter);
 
         // キャラクター名表示部（ImageView）のインスタンス化
-        imageCName = (ImageView) activity.findViewById(R.id.charctorName);
+        imageCName = (ImageView) activity.findViewById(R.id.characterName);
 
         // フォント変更
-        txtCDetail = (TextView)activity.findViewById(R.id.charactorDetail);
+        txtCDetail = (TextView)activity.findViewById(R.id.characterDetail);
         activity.setFontType(txtCDetail);
 
         mViewPagerIndicator = (ViewPagerIndicator)activity.findViewById(R.id.indicator);
@@ -59,7 +55,7 @@ public class CharacterSelectFragment extends Fragment {
                 .setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
                     @Override
                     public void onPageSelected(int position) {
-                        selectCharactor(position);
+                        selectCharacter(position);
                         super.onPageSelected(position);
                         mViewPagerIndicator.setCurrentPosition(position);
                     }
@@ -67,17 +63,17 @@ public class CharacterSelectFragment extends Fragment {
 
         // ユーザが前回選択したキャラクターを取得する
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
-        int currentCharaPosition = preferences.getInt("current_charactor_no", 1) - 1; // キャラクター番号 - 1
+        int currentCharaPosition = preferences.getInt("current_character_no", 1) - 1; // キャラクター番号 - 1
         // 取得したキャラクターの位置にスクロールする
         mViewPager.setCurrentItem(currentCharaPosition);
         // 名前と説明文を変更する
-        selectCharactor(currentCharaPosition);
+        selectCharacter(currentCharaPosition);
     }
 
     /**
      *  キャラ変更アクション
      */
-    public void selectCharactor(int position) {
+    public void selectCharacter(int position) {
 
         // キャラクターの名前を更新
         try {
@@ -90,7 +86,7 @@ public class CharacterSelectFragment extends Fragment {
 
         // 設定値を保存
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        preferences.edit().putInt("current_charactor_no", position + 1).apply();
+        preferences.edit().putInt("current_character_no", position + 1).apply();
 
     }
 
@@ -136,7 +132,4 @@ public class CharacterSelectFragment extends Fragment {
             ((ViewPager)container).removeView((View)object);
         }
     }
-
-
-
 }
