@@ -22,7 +22,6 @@
             android:layout_gravity="center_horizontal|top"
             android:background="@mipmap/chara01_front_stand"
             android:layout_marginTop="150dp"
-            android:onClick="onClick"
             android:layout_weight="0.51"
             android:layout_marginBottom="0dp" />
     </LinearLayout>

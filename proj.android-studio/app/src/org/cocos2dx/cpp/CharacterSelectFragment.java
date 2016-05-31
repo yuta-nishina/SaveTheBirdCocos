@@ -25,7 +25,8 @@ public class CharacterSelectFragment extends Fragment {
     private ViewPagerIndicator mViewPagerIndicator;
     private ImageView imageCName;
     private TextView txtCDetail;
-    private List<CharacterData> characterDataList;
+
+    private MainActivity activity;
 
     @Nullable
     @Override
@@ -37,14 +38,8 @@ public class CharacterSelectFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        // DBからキャラクターのデータを取得
-        SaveTheBirdDBOpenHelper dbHelper = new SaveTheBirdDBOpenHelper(getActivity());
-        SQLiteDatabase db = dbHelper.getReadableDatabase();
-        CharacterDao characterDao = new CharacterDao(db);
-        characterDataList = characterDao.findAll();
-
         // アクティビティのメソッドを使うためにインスタンス化
-        MainActivity activity = (MainActivity) getActivity();
+        activity = (MainActivity) getActivity();
 
         // スワイプボックス
         ViewPager mViewPager = (ViewPager)activity.findViewById(R.id.viewpager);
@@ -71,7 +66,7 @@ public class CharacterSelectFragment extends Fragment {
                 });
 
         // ユーザが前回選択したキャラクターを取得する
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
         int currentCharaPosition = preferences.getInt("current_charactor_no", 1) - 1; // キャラクター番号 - 1
         // 取得したキャラクターの位置にスクロールする
         mViewPager.setCurrentItem(currentCharaPosition);
@@ -86,19 +81,18 @@ public class CharacterSelectFragment extends Fragment {
 
         // キャラクターの名前を更新
         try {
-            imageCName.setImageBitmap(((MainActivity)getActivity()).loadBitmapFromAsset(characterDataList.get(position).getName()));
+            imageCName.setImageBitmap(activity.loadBitmapFromAsset(activity.characterDataList.get(position).getName()));
         } catch (IOException e) {
             e.printStackTrace();
         }
         // キャラクターの説明文を更新
-        txtCDetail.setText(characterDataList.get(position).getDetail());
+        txtCDetail.setText(activity.characterDataList.get(position).getDetail());
 
         // 設定値を保存
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         preferences.edit().putInt("current_charactor_no", position + 1).apply();
 
     }
-
 
     /**
      *  カスタムアダプター
@@ -127,7 +121,7 @@ public class CharacterSelectFragment extends Fragment {
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
 
-            LayoutInflater inflater = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            LayoutInflater inflater = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             View layout ;
             layout = inflater.inflate(pages[position], null);
