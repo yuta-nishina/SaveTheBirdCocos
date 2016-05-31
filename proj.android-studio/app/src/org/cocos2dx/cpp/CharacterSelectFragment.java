@@ -1,10 +1,8 @@
 package org.cocos2dx.cpp;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
@@ -13,13 +11,18 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import java.io.IOException;
 
 public class CharacterSelectFragment extends Fragment {
 
-    ViewPagerIndicator mViewPagerIndicator;
-    TextView txtCName;
-    TextView txtCDetail;
+    private ViewPagerIndicator mViewPagerIndicator;
+    private ImageView imageCName;
+    private TextView txtCDetail;
+
+    private MainActivity activity;
 
     @Nullable
     @Override
@@ -32,25 +35,19 @@ public class CharacterSelectFragment extends Fragment {
         super.onStart();
 
         // アクティビティのメソッドを使うためにインスタンス化
-        MainActivity activity = (MainActivity) getActivity();
+        activity = (MainActivity) getActivity();
 
         // スワイプボックス
         ViewPager mViewPager = (ViewPager)activity.findViewById(R.id.viewpager);
         CustomPagerAdapter mPagerAdapter = new CustomPagerAdapter(activity);
         mViewPager.setAdapter(mPagerAdapter);
 
-        // フォント変更
-        txtCName = (TextView)activity.findViewById(R.id.charctorName);
-        activity.setFontType(txtCName);
+        // キャラクター名表示部（ImageView）のインスタンス化
+        imageCName = (ImageView) activity.findViewById(R.id.characterName);
 
         // フォント変更
-        txtCDetail = (TextView)activity.findViewById(R.id.charactorDetail);
+        txtCDetail = (TextView)activity.findViewById(R.id.characterDetail);
         activity.setFontType(txtCDetail);
-
-        txtCName.setText("キャラクター 1");
-        txtCName.setBackgroundColor(Color.YELLOW);
-        txtCDetail.setText("説明 1");
-        txtCDetail.setBackgroundColor(Color.YELLOW);
 
         mViewPagerIndicator = (ViewPagerIndicator)activity.findViewById(R.id.indicator);
         mViewPagerIndicator.setCount(mPagerAdapter.getCount());
@@ -58,49 +55,40 @@ public class CharacterSelectFragment extends Fragment {
                 .setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
                     @Override
                     public void onPageSelected(int position) {
-                        selectCharactor(position);
+                        selectCharacter(position);
                         super.onPageSelected(position);
                         mViewPagerIndicator.setCurrentPosition(position);
                     }
                 });
 
         // ユーザが前回選択したキャラクターを取得する
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        int currentCharaNo = preferences.getInt("current_charactor_no", 1);
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
+        int currentCharaPosition = preferences.getInt("current_character_no", 1) - 1; // キャラクター番号 - 1
         // 取得したキャラクターの位置にスクロールする
-        mViewPager.setCurrentItem(currentCharaNo - 1);
+        mViewPager.setCurrentItem(currentCharaPosition);
+        // 名前と説明文を変更する
+        selectCharacter(currentCharaPosition);
     }
 
     /**
      *  キャラ変更アクション
      */
-    public void selectCharactor(int position) {
-        int pos = position + 1;
-        if(pos == 1){
-            txtCName.setText("キャラクター "+pos);
-            txtCName.setBackgroundColor(Color.YELLOW);
-            txtCDetail.setText("説明 "+pos);
-            txtCDetail.setBackgroundColor(Color.YELLOW);
+    public void selectCharacter(int position) {
 
-        }else if(pos == 2){
-            txtCName.setText("キャラクター "+pos);
-            txtCName.setBackgroundColor(Color.RED);
-            txtCDetail.setText("説明 "+pos);
-            txtCDetail.setBackgroundColor(Color.RED);
-
-        }else{
-            txtCName.setText("キャラクター "+pos);
-            txtCName.setBackgroundColor(Color.BLUE);
-            txtCDetail.setText("説明 "+pos);
-            txtCDetail.setBackgroundColor(Color.BLUE);
+        // キャラクターの名前を更新
+        try {
+            imageCName.setImageBitmap(activity.loadBitmapFromAsset(activity.characterDataList.get(position).getName()));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        // キャラクターの説明文を更新
+        txtCDetail.setText(activity.characterDataList.get(position).getDetail());
 
         // 設定値を保存
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        preferences.edit().putInt("current_charactor_no", pos).apply();
+        preferences.edit().putInt("current_character_no", position + 1).apply();
 
     }
-
 
     /**
      *  カスタムアダプター
@@ -129,7 +117,7 @@ public class CharacterSelectFragment extends Fragment {
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
 
-            LayoutInflater inflater = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            LayoutInflater inflater = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             View layout ;
             layout = inflater.inflate(pages[position], null);
@@ -144,7 +132,4 @@ public class CharacterSelectFragment extends Fragment {
             ((ViewPager)container).removeView((View)object);
         }
     }
-
-
-
 }

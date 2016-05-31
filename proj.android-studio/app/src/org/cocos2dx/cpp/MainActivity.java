@@ -11,6 +11,7 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.AssetManager;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
@@ -22,6 +23,7 @@ import android.widget.TextView;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
+import java.util.List;
 
 
 public class MainActivity extends Activity{
@@ -29,6 +31,7 @@ public class MainActivity extends Activity{
     private HomeFragment homeFragment;
     private CharacterSelectFragment characterSelectFragment;
     private SettingFragment settingFragment;
+    public List<CharacterData> characterDataList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,12 @@ public class MainActivity extends Activity{
     @Override
     protected void onResume() {
         super.onResume();
+
+        // DBからキャラクターのデータを取得
+        SaveTheBirdDBOpenHelper dbHelper = new SaveTheBirdDBOpenHelper(this);
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        CharacterDao characterDao = new CharacterDao(db);
+        characterDataList = characterDao.findAll();
 
         // BGMを再生するかどうかのフラグを読み取る
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -96,6 +105,8 @@ public class MainActivity extends Activity{
                     transaction.hide(characterSelectFragment);
                     transaction.hide(settingFragment);
                     transaction.show(homeFragment);
+                    // キャラクターの画像を更新
+                    homeFragment.changeCharacter();
                 }
                 break;
 

@@ -24,6 +24,8 @@ public class SettingFragment extends Fragment {
 
     private Intent intentBgm = null;
 
+    private MainActivity activity;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -35,7 +37,7 @@ public class SettingFragment extends Fragment {
         super.onStart();
 
         // アクティビティのメソッドを使うためにインスタンス化
-        MainActivity activity = (MainActivity) getActivity();
+        activity = (MainActivity) getActivity();
 
         // フォント変更
         TextView txt = (TextView)activity.findViewById(R.id.volumeLbl);
@@ -61,7 +63,7 @@ public class SettingFragment extends Fragment {
         AudioManager am = (AudioManager)activity.getSystemService(Context.AUDIO_SERVICE);
 
         // 初期値
-        final SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        final SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
         vol.setProgress(preferences.getInt("volume",8)); // 設定されていない場合（初期値）= 8
         // 最大値
         vol.setMax(15);
@@ -80,7 +82,7 @@ public class SettingFragment extends Fragment {
                     public void onStopTrackingTouch(SeekBar seekBar) {
                         // ツマミを離したときに呼ばれる
                         Log.i("debug","out" + seekBar.getProgress());
-                        AudioManager am = (AudioManager)getActivity().getSystemService(Context.AUDIO_SERVICE);
+                        AudioManager am = (AudioManager)activity.getSystemService(Context.AUDIO_SERVICE);
                         am.setStreamVolume(AudioManager.STREAM_MUSIC, seekBar.getProgress(), 0);
 
                         // 設定値を更新
@@ -100,20 +102,20 @@ public class SettingFragment extends Fragment {
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
                 // サービスクラスを指定
-                intentBgm = new Intent(getActivity(), BgmService.class);
+                intentBgm = new Intent(activity, BgmService.class);
 
                 if(isChecked) {
                     //do stuff when Switch is ON
                     Log.i("debug","開始");
-                    getActivity().startService(intentBgm);
+                    activity.startService(intentBgm);
                 } else {
                     //do stuff when Switch if OFF
                     Log.i("debug","停止");
-                    getActivity().stopService(intentBgm);
+                    activity.stopService(intentBgm);
                 }
 
                 // 設定値を更新
-                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
                 preferences.edit().putBoolean("bgm_flg",isChecked).apply();
             }
         });
@@ -128,7 +130,7 @@ public class SettingFragment extends Fragment {
             public void onCheckedChanged(CompoundButton buttonView,
                                          boolean isChecked) {
                 // 設定値を更新
-                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
+                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(activity);
                 preferences.edit().putBoolean("se_flg",isChecked).apply();
             }
         });

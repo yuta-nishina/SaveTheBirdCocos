@@ -3,28 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_weight="1"
     android:orientation="vertical"
     android:background="@color/colorWhite"
     tools:context="org.cocos2dx.cpp.HomeFragment">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:weightSum="1">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="281dp"
-            android:id="@+id/playBtn"
-            android:layout_gravity="center_horizontal|top"
-            android:background="@mipmap/chara01_front_stand"
-            android:layout_marginTop="150dp"
-            android:onClick="onClick"
-            android:layout_weight="0.51"
-            android:layout_marginBottom="0dp" />
-    </LinearLayout>
+        android:id="@+id/playBtn"
+        android:layout_gravity="center"
+        android:background="@mipmap/chara01_front_stand"
+        android:contentDescription="@string/no_image"/>
 
 </LinearLayout>
