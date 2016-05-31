@@ -33,7 +33,8 @@
             android:src="@mipmap/ic_menu_home"
             android:onClick="tabClick"
             android:padding="@dimen/menu_ic_padding"
-            android:background="@color/colorActionBar" />
+            android:background="@color/colorActionBar"
+            android:contentDescription="@string/no_image"/>
 
         <ImageButton
             android:adjustViewBounds="true"
@@ -45,7 +46,8 @@
             android:src="@mipmap/ic_menu_chara"
             android:onClick="tabClick"
             android:padding="@dimen/menu_ic_padding"
-            android:background="@color/colorActionBar" />
+            android:background="@color/colorActionBar"
+            android:contentDescription="@string/no_image"/>
 
         <ImageButton
             android:adjustViewBounds="true"
@@ -57,7 +59,8 @@
             android:src="@mipmap/ic_menu_setting"
             android:onClick="tabClick"
             android:padding="@dimen/menu_ic_padding"
-            android:background="@color/colorActionBar" />
+            android:background="@color/colorActionBar"
+            android:contentDescription="@string/no_image"/>
     </LinearLayout>
 
 </LinearLayout>
