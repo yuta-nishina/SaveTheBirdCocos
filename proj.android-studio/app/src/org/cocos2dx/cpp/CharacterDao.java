@@ -55,21 +55,22 @@ public class CharacterDao {
             data.setImage_stand(cursor.getString(3));
             characterDataList.add(data);
         }
+        cursor.close();
         return characterDataList;
     }
 
     public CharacterData findByNo(int no){
         String selection = "no = " + no;
         Cursor cursor = db.query(TABLE_NAME, COLUMNS, selection, null, null, null, null);
+        CharacterData data = new CharacterData();
         while (cursor.moveToNext()){
-            CharacterData data = new CharacterData();
             data.setNo(cursor.getInt(0));
             data.setName(cursor.getString(1));
             data.setDetail(cursor.getString(2));
             data.setImage_stand(cursor.getString(3));
-            return data;
         }
-        return null;
+        cursor.close();
+        return data;
     }
 
     public int delete(int no){
