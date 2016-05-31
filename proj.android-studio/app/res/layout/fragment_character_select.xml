@@ -21,23 +21,19 @@
             android:weightSum="4"
             >
 
-            <TextView
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
-                android:textSize="28dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Name"
                 android:id="@+id/charctorName"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="30dp"
-                android:background="#ffefef"
                 android:layout_weight="2"
-                android:textColor="@android:color/black"
                 android:layout_marginTop="30dp"
                 android:paddingLeft="10dp"
+                android:contentDescription="@string/no_image"
                 />
 
             <android.support.v4.view.ViewPager
