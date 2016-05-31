@@ -19,6 +19,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Window;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.io.BufferedInputStream;
@@ -32,6 +33,9 @@ public class MainActivity extends Activity{
     private CharacterSelectFragment characterSelectFragment;
     private SettingFragment settingFragment;
     public List<CharacterData> characterDataList;
+    private ImageButton homeButton;
+    private ImageButton characterButton;
+    private ImageButton settingButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +45,13 @@ public class MainActivity extends Activity{
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
+        // タブバーのインスタンス化
+        homeButton = (ImageButton)findViewById(R.id.homeBtn);
+        characterButton = (ImageButton)findViewById(R.id.characterBtn);
+        settingButton = (ImageButton)findViewById(R.id.settingBtn);
+
+        // 初期タブ（ホーム）の画像を変更
+        homeButton.setImageResource(R.mipmap.ic_menu_home_on_66);
     }
 
     @Override
@@ -60,6 +71,7 @@ public class MainActivity extends Activity{
             // サービスを起動してBGMの再生を開始
             startService(new Intent(this, BgmService.class));
         }
+
         // フラグメントの初期化
         initFragment();
     }
@@ -102,27 +114,44 @@ public class MainActivity extends Activity{
 
             case R.id.homeBtn:
                 if (!homeFragment.isVisible()){
+                    // フラグメントの切り替え
                     transaction.hide(characterSelectFragment);
                     transaction.hide(settingFragment);
                     transaction.show(homeFragment);
+                    // タブバーの画像を切り替え
+                    characterButton.setImageResource(R.mipmap.ic_menu_chara_66);
+                    settingButton.setImageResource(R.mipmap.ic_menu_setting_66);
+                    homeButton.setImageResource(R.mipmap.ic_menu_home_on_66);
+
                     // キャラクターの画像を更新
                     homeFragment.changeCharacter();
+                    //
                 }
                 break;
 
             case R.id.characterBtn:
                 if (!characterSelectFragment.isVisible()){
+                    // フラグメントの切り替え
                     transaction.hide(homeFragment);
                     transaction.hide(settingFragment);
                     transaction.show(characterSelectFragment);
+                    // タブバーの画像を切り替え
+                    homeButton.setImageResource(R.mipmap.ic_menu_home_66);
+                    settingButton.setImageResource(R.mipmap.ic_menu_setting_66);
+                    characterButton.setImageResource(R.mipmap.ic_menu_chara_on_66);
                 }
                 break;
 
             case R.id.settingBtn:
                 if (!settingFragment.isVisible()){
+                    // フラグメントの切り替え
                     transaction.hide(homeFragment);
                     transaction.hide(characterSelectFragment);
                     transaction.show(settingFragment);
+                    // タブバーの画像を切り替え
+                    homeButton.setImageResource(R.mipmap.ic_menu_home_66);
+                    characterButton.setImageResource(R.mipmap.ic_menu_chara_66);
+                    settingButton.setImageResource(R.mipmap.ic_menu_setting_on_66);
                 }
                 break;
 
