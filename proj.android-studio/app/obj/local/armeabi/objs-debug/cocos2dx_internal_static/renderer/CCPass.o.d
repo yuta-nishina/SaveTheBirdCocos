@@ -1,272 +1,281 @@
 obj/local/armeabi/objs-debug/cocos2dx_internal_static/renderer/CCPass.o: \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCPass.cpp \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCPass.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdio.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/api-level.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdint.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/posix_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/stddef.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/compiler.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/posix_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/kernel.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCRenderState.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/string \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/functional \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCRef.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccTypes.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCGeometry.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccMacros.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/thread \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/vector \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/mutex \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCStdC.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCStdC-android.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdlib.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/alloca.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/strings.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/memory.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cassert \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccRandom.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/random \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCMath.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec2.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/algorithm \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCMathBase.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec2.inl \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec3.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec3.inl \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Mat4.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec4.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec4.inl \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Mat4.inl \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Quaternion.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Quaternion.inl \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCGL.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCGL-android.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCVector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCGLProgramState.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/unordered_map \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCGLProgram.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCTexture2D.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/ccGLStateCache.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCTechnique.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCMaterial.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCVertexAttribBinding.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCNode.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCProtocols.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCScriptSupport.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCCommon.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCTouch.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEventTouch.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEvent.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEventKeyboard.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/list \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCAffineTransform.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCComponentContainer.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCMap.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCComponent.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsBody.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsShape.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../external/xxhash/xxhash.h
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCPass.cpp \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCPass.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdio.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdint.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/machine/wchar_limits.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/int-ll64.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/bitsperlong.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/bitsperlong.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/posix_types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/stddef.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/compiler.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/posix_types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/posix_types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysmacros.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCRenderState.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/functional \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCRef.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccTypes.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCGeometry.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccMacros.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCStdC.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCStdC-android.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccRandom.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCMath.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec2.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCMathBase.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec2.inl \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec3.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec3.inl \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Mat4.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec4.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec4.inl \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Mat4.inl \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Quaternion.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Quaternion.inl \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCGL.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCGL-android.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2platform.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/KHR/khrplatform.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2ext.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCVector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCGLProgramState.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCGLProgram.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCTexture2D.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/ccGLStateCache.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCTechnique.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCMaterial.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCVertexAttribBinding.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCNode.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCProtocols.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCScriptSupport.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCCommon.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCTouch.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEventTouch.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEvent.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEventKeyboard.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCAffineTransform.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCComponentContainer.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCMap.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCComponent.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsBody.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsShape.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../external/xxhash/xxhash.h
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCPass.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCPass.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdio.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdio.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/api-level.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/types.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdint.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdint.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/machine/wchar_limits.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/_types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/types.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/posix_types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/types.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/stddef.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/types.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/compiler.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/int-ll64.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/posix_types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/bitsperlong.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/bitsperlong.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/posix_types.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/kernel.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/stddef.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/compiler.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/posix_types.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/posix_types.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysmacros.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCRenderState.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/string:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/functional:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCRef.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCRenderState.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccTypes.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCGeometry.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/functional:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCRef.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccMacros.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccTypes.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCGeometry.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/thread:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccMacros.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/vector:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/mutex:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCStdC.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCStdC-android.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdlib.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/alloca.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCStdC.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/strings.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCStdC-android.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/memory.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cassert:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccRandom.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/random:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCMath.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec2.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccRandom.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/algorithm:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCMathBase.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCMath.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec2.inl:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec2.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec3.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec3.inl:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCMathBase.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Mat4.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec2.inl:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec4.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec3.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec4.inl:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec3.inl:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Mat4.inl:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Mat4.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Quaternion.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec4.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Quaternion.inl:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec4.inl:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCGL.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Mat4.inl:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCGL-android.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Quaternion.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Quaternion.inl:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCGL.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCGL-android.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2platform.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCVector.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/KHR/khrplatform.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCGLProgramState.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/unordered_map:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2ext.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCGLProgram.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCVector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCTexture2D.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCGLProgramState.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/ccGLStateCache.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCTechnique.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCGLProgram.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCMaterial.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCTexture2D.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCVertexAttribBinding.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/ccGLStateCache.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCNode.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCTechnique.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCProtocols.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCMaterial.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCScriptSupport.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCVertexAttribBinding.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCCommon.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCNode.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCTouch.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCProtocols.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEventTouch.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCScriptSupport.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEvent.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCCommon.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEventKeyboard.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCTouch.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/list:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEventTouch.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCAffineTransform.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEvent.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCComponentContainer.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEventKeyboard.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCMap.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCComponent.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCAffineTransform.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsBody.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCComponentContainer.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsShape.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCMap.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../external/xxhash/xxhash.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCComponent.h:
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsBody.h:
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsShape.h:
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../external/xxhash/xxhash.h:

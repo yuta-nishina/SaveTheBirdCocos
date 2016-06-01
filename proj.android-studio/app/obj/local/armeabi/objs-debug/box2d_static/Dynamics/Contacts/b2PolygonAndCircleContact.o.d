@@ -1,104 +1,59 @@
 obj/local/armeabi/objs-debug/box2d_static/Dynamics/Contacts/b2PolygonAndCircleContact.o: \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/Contacts/b2Contact.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2Math.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2Settings.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/api-level.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdint.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/posix_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/stddef.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/compiler.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/posix_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/kernel.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/limits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/limits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/limits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/internal_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/limits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/syslimits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/page.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Collision/b2Collision.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Collision/Shapes/b2Shape.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2BlockAllocator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/b2Fixture.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/b2Body.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/memory
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/Contacts/b2Contact.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2Math.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2Settings.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/assert.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/limits.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/limits.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/limits.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/syslimits.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Collision/b2Collision.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Collision/Shapes/b2Shape.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2BlockAllocator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/b2Fixture.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/b2Body.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/memory
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/Contacts/b2Contact.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/Contacts/b2Contact.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2Math.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2Math.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2Settings.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2Settings.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/assert.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/assert.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/api-level.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/limits.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdint.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/limits.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/limits.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/_types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/syslimits.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/posix_types.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Collision/b2Collision.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/stddef.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Collision/Shapes/b2Shape.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/compiler.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2BlockAllocator.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/posix_types.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/b2Fixture.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/types.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/b2Body.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/types.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/kernel.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/limits.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/limits.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/limits.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/internal_types.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/limits.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/syslimits.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/page.h:
-
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Collision/b2Collision.h:
-
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Collision/Shapes/b2Shape.h:
-
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Common/b2BlockAllocator.h:
-
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/b2Fixture.h:
-
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/external/Box2D/../Box2D/Dynamics/b2Body.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/memory:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/memory:

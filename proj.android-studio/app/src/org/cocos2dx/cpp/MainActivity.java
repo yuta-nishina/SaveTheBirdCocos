@@ -167,7 +167,7 @@ public class MainActivity extends Activity{
     * setFontType()
     */
     public void setFontType(TextView txt) {
-        txt.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/logotypejp_mp_m_1.1.ttf"));
+        txt.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/logotypejp_mp_m_1_1.ttf"));
     }
 
     /*

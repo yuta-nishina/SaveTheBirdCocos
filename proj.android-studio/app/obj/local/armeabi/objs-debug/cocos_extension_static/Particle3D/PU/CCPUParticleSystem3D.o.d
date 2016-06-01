@@ -1,707 +1,731 @@
 obj/local/armeabi/objs-debug/cocos_extension_static/Particle3D/PU/CCPUParticleSystem3D.o: \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/extensions/Particle3D/PU/CCPUParticleSystem3D.cpp \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleSystem3D.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCNode.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccMacros.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/api-level.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/time.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdint.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_wchar_limits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/posix_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/stddef.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/compiler.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/posix_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/kernel.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/time.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/signal.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/limits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/limits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/limits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/internal_types.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/limits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/syslimits.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/page.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/string.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/malloc.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/signal.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm-generic/signal.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/sigcontext.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/siginfo.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm-generic/siginfo.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/thread \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/vector \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/mutex \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCRef.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCStdC.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCStdC-android.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdlib.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/alloca.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/strings.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/memory.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cassert \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccRandom.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/random \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCVector.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/algorithm \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCProtocols.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccTypes.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCGeometry.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCMath.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec2.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCMathBase.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec2.inl \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec3.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec3.inl \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Mat4.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec4.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec4.inl \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Mat4.inl \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Quaternion.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Quaternion.inl \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCGL.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCGL-android.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCTexture2D.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/unordered_map \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCScriptSupport.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCCommon.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCTouch.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEventTouch.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEvent.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEventKeyboard.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/list \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCAffineTransform.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCComponentContainer.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCMap.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCComponent.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsBody.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsShape.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticleSystem3D.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitter.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DEmitter.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUDynamicAttribute.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitterManager.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptTranslator.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iostream \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptCompiler.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptParser.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptLexer.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxEmitterTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxEmitter.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCircleEmitterTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCircleEmitter.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineEmitterTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineEmitter.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMeshSurfaceEmitterTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMeshSurfaceEmitter.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPointEmitterTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPointEmitter.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPositionEmitterTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPositionEmitter.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSlaveEmitterTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSlaveEmitter.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUListener.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereSurfaceEmitterTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereSurfaceEmitter.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffectorManager.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseColliderTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./3d/CCAABB.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxColliderTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxCollider.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceField.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUNoise.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleCollider.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollowerTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollower.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollowerTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollower.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneColliderTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneCollider.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlane.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiserTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiser.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereColliderTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereCollider.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphere.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotatorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffector.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DRender.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCRenderState.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMaterialManager.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTranslateManager.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleSystem3DTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTechniqueTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURendererTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURender.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBeamRender.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBillboardChain.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURibbonTrailRender.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURibbonTrail.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMaterialTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitterTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffectorTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEventHandlerTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEventHandler.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBehaviourTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBehaviour.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserverManager.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnClearObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnClearObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCollisionObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCollisionObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCountObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCountObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEmissionObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEmissionObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEventFlagObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEventFlagObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnExpireObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnPositionObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnPositionObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnQuotaObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnQuotaObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnRandomObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnRandomObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnTimeObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnTimeObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnVelocityObserverTranslator.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnVelocityObserver.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCFileUtils.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCValue.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCData.h
-
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleSystem3D.h:
-
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCNode.h:
-
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccMacros.h:
-
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/select.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/cdefs_elf.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/api-level.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/time.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/types.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdint.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_types.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/_types.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/_wchar_limits.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/posix_types.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/stddef.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/compiler.h:
-
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/posix_types.h:
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/extensions/Particle3D/PU/CCPUParticleSystem3D.cpp \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleSystem3D.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCNode.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccMacros.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/time.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdint.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/machine/wchar_limits.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/int-ll64.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/bitsperlong.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/bitsperlong.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/posix_types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/stddef.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/compiler.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/posix_types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/posix_types.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysmacros.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/time.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/signal.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/errno.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/errno.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/errno.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/errno.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/errno-base.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/limits.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/limits.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/limits.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/syslimits.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/string.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/malloc.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/xlocale.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/sigcontext.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/signal.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/signal.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/signal-defs.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/siginfo.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/siginfo.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/ucontext.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/user.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCRef.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCStdC.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCStdC-android.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccRandom.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCVector.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCProtocols.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccTypes.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCGeometry.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCMath.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec2.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCMathBase.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec2.inl \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec3.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec3.inl \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Mat4.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec4.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec4.inl \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Mat4.inl \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Quaternion.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Quaternion.inl \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCGL.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCGL-android.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2platform.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/KHR/khrplatform.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2ext.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCTexture2D.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCScriptSupport.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCCommon.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCTouch.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEventTouch.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEvent.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEventKeyboard.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCAffineTransform.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCComponentContainer.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCMap.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCComponent.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsBody.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsShape.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticleSystem3D.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitter.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DEmitter.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUDynamicAttribute.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitterManager.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptTranslator.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptCompiler.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptParser.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptLexer.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxEmitterTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxEmitter.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCircleEmitterTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCircleEmitter.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineEmitterTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineEmitter.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMeshSurfaceEmitterTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMeshSurfaceEmitter.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPointEmitterTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPointEmitter.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPositionEmitterTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPositionEmitter.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSlaveEmitterTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSlaveEmitter.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUListener.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereSurfaceEmitterTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereSurfaceEmitter.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffectorManager.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseColliderTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./3d/CCAABB.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxColliderTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxCollider.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceField.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUNoise.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleCollider.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollowerTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollower.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollowerTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollower.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneColliderTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneCollider.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlane.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiserTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiser.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereColliderTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereCollider.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphere.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotatorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffector.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DRender.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCRenderState.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMaterialManager.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTranslateManager.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleSystem3DTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTechniqueTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURendererTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURender.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBeamRender.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBillboardChain.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURibbonTrailRender.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURibbonTrail.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMaterialTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitterTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffectorTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEventHandlerTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEventHandler.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBehaviourTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBehaviour.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserverManager.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnClearObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnClearObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCollisionObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCollisionObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCountObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCountObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEmissionObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEmissionObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEventFlagObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEventFlagObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnExpireObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnPositionObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnPositionObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnQuotaObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnQuotaObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnRandomObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnRandomObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnTimeObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnTimeObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnVelocityObserverTranslator.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnVelocityObserver.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCFileUtils.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCValue.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCData.h
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleSystem3D.h:
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCNode.h:
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccMacros.h:
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/time.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/types.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdint.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/machine/wchar_limits.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/types.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/types.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/types.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/int-ll64.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/bitsperlong.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/bitsperlong.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/posix_types.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/stddef.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/compiler.h:
+
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/posix_types.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/posix_types.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/sysmacros.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/kernel.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/time.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/sysmacros.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/signal.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/time.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/errno.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/signal.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/errno.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/limits.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/errno.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/limits.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/errno.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/linux/limits.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/errno-base.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/internal_types.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/limits.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/machine/limits.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/limits.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/sys/syslimits.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/limits.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/page.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/syslimits.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/string.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/string.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/malloc.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/malloc.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/signal.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/xlocale.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm-generic/signal.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/sigcontext.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/sigcontext.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/linux/signal.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm/siginfo.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/signal.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/asm-generic/siginfo.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/signal-defs.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/thread:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm/siginfo.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/vector:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/asm-generic/siginfo.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/map:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/ucontext.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/mutex:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/user.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCRef.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCRef.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCStdC.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCStdC-android.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/math.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/stdlib.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/alloca.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCStdC.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/strings.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCStdC-android.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/memory.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/math.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/cassert:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/stdlib.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccRandom.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/alloca.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/random:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/strings.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCVector.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/memory.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/algorithm:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/cassert:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCProtocols.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccRandom.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccTypes.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/random:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCGeometry.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCVector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCMath.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec2.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCProtocols.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCMathBase.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccTypes.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec2.inl:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCGeometry.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec3.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCMath.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec3.inl:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec2.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Mat4.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCMathBase.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec4.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec2.inl:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Vec4.inl:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec3.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Mat4.inl:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec3.inl:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Quaternion.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Mat4.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/Quaternion.inl:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec4.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCGL.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec4.inl:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCGL-android.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Mat4.inl:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2platform.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Quaternion.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/KHR/khrplatform.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Quaternion.inl:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCGL.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/GLES2/gl2ext.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCGL-android.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCTexture2D.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2platform.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/unordered_map:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/KHR/khrplatform.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCScriptSupport.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCCommon.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2ext.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCTouch.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCTexture2D.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEventTouch.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEvent.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCScriptSupport.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCEventKeyboard.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCCommon.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/list:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCTouch.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./math/CCAffineTransform.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEventTouch.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCComponentContainer.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEvent.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCMap.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCEventKeyboard.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./2d/CCComponent.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/list:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsBody.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCAffineTransform.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsShape.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCComponentContainer.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticleSystem3D.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCMap.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitter.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./2d/CCComponent.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DEmitter.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsBody.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUDynamicAttribute.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./physics/CCPhysicsShape.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticleSystem3D.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitterManager.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitter.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DEmitter.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/iostream:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUDynamicAttribute.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptCompiler.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptParser.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitterManager.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptLexer.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxEmitterTranslator.h:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/iostream:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxEmitter.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptCompiler.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCircleEmitterTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptParser.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCircleEmitter.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScriptLexer.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineEmitterTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxEmitterTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineEmitter.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxEmitter.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMeshSurfaceEmitterTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCircleEmitterTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMeshSurfaceEmitter.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCircleEmitter.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPointEmitterTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineEmitterTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPointEmitter.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineEmitter.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPositionEmitterTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMeshSurfaceEmitterTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPositionEmitter.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMeshSurfaceEmitter.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSlaveEmitterTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPointEmitterTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSlaveEmitter.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPointEmitter.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUListener.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPositionEmitterTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereSurfaceEmitterTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPositionEmitter.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereSurfaceEmitter.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSlaveEmitterTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSlaveEmitter.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUListener.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffectorManager.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereSurfaceEmitterTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereSurfaceEmitter.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseColliderTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffectorManager.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./3d/CCAABB.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAlignAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseColliderTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxColliderTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxCollider.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./3d/CCAABB.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxColliderTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBoxCollider.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseCollider.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUCollisionAvoidanceAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUColorAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceField.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUNoise.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUFlockCenteringAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceFieldAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUForceField.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUNoise.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotatorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleCollider.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGeometryRotator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUGravityAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleColliderTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUInterParticleCollider.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUJetAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollowerTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULineAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollower.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollowerTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPULinearForceAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollower.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBaseForceAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollowerTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneColliderTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleFollower.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneCollider.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollowerTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlane.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPathFollower.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiserTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSimpleSpline.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiser.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneColliderTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlaneCollider.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUPlane.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiserTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURandomiser.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereColliderTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereCollider.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUScaleVelocityAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphere.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSineForceAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereColliderTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotatorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphereCollider.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUSphere.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimatorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureAnimator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotatorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffector.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTextureRotator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DRender.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./renderer/CCRenderState.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVelocityMatchingAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMaterialManager.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTranslateManager.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUVortexAffector.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleSystem3DTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/CCParticle3DRender.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTechniqueTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCRenderState.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURendererTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMaterialManager.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURender.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTranslateManager.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBeamRender.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUParticleSystem3DTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBillboardChain.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUTechniqueTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURibbonTrailRender.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURendererTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURibbonTrail.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURender.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMaterialTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBeamRender.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitterTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBillboardChain.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffectorTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURibbonTrailRender.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEventHandlerTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPURibbonTrail.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEventHandler.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUMaterialTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEmitterTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUAffectorTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBehaviourTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEventHandlerTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBehaviour.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUEventHandler.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserverManager.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnClearObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnClearObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBehaviourTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCollisionObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUBehaviour.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCollisionObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUObserverManager.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCountObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnClearObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCountObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnClearObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEmissionObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCollisionObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEmissionObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCollisionObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEventFlagObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCountObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEventFlagObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnCountObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEmissionObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnExpireObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEmissionObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnPositionObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEventFlagObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnPositionObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnEventFlagObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnQuotaObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnExpireObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnQuotaObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnExpireObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnRandomObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnPositionObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnRandomObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnPositionObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnTimeObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnQuotaObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnTimeObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnQuotaObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnVelocityObserverTranslator.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnRandomObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnVelocityObserver.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnRandomObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCFileUtils.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnTimeObserverTranslator.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCValue.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnTimeObserver.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCData.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnVelocityObserverTranslator.h:
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./../extensions/Particle3D/PU/CCPUOnVelocityObserver.h:
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCFileUtils.h:
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCValue.h:
+
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCData.h:

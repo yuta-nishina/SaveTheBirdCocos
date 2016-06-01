@@ -61,9 +61,7 @@
 		8AC9C2FF1CF535990067A617 /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9C2FA1CF535990067A617 /* GameStoryboard.storyboard */; };
 		8AC9C3001CF535990067A617 /* GameViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C2FC1CF535990067A617 /* GameViewController.mm */; };
 		8AC9C3011CF535990067A617 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C2FE1CF535990067A617 /* HomeViewController.m */; };
-		8AC9C30F1CF535AE0067A617 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9C3021CF535AE0067A617 /* Info.plist */; };
 		8AC9C3101CF535AE0067A617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9C3031CF535AE0067A617 /* LaunchScreen.storyboard */; };
-		8AC9C3111CF535AE0067A617 /* logotypejp_mp_m_1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9C3041CF535AE0067A617 /* logotypejp_mp_m_1.1.ttf */; };
 		8AC9C3121CF535AE0067A617 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C3051CF535AE0067A617 /* main.m */; };
 		8AC9C3131CF535AE0067A617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9C3061CF535AE0067A617 /* Main.storyboard */; };
 		8AC9C3141CF535AE0067A617 /* MasterData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9C3071CF535AE0067A617 /* MasterData.plist */; };
@@ -74,7 +72,6 @@
 		8AC9C32C1CF53EF10067A617 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C3281CF53EF10067A617 /* AppDelegate.cpp */; };
 		8AC9C32D1CF53EF10067A617 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C32A1CF53EF10067A617 /* HelloWorldScene.cpp */; };
 		8AC9D13C1CF6C742002D1CC5 /* arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D1181CF6C742002D1CC5 /* arial.ttf */; };
-		8AC9D13D1CF6C742002D1CC5 /* logotypejp_mp_m_1.1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D1191CF6C742002D1CC5 /* logotypejp_mp_m_1.1.ttf */; };
 		8AC9D13E1CF6C742002D1CC5 /* logotypejp_mp_m_1_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D11A1CF6C742002D1CC5 /* logotypejp_mp_m_1_1.ttf */; };
 		8AC9D13F1CF6C742002D1CC5 /* Marker Felt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D11B1CF6C742002D1CC5 /* Marker Felt.ttf */; };
 		8AC9D1401CF6C742002D1CC5 /* chara01_back_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D11F1CF6C742002D1CC5 /* chara01_back_left.png */; };
@@ -210,7 +207,6 @@
 		8AC9C2FE1CF535990067A617 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ios/HomeViewController.m; sourceTree = SOURCE_ROOT; };
 		8AC9C3021CF535AE0067A617 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ios/Info.plist; sourceTree = SOURCE_ROOT; };
 		8AC9C3031CF535AE0067A617 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ios/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		8AC9C3041CF535AE0067A617 /* logotypejp_mp_m_1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = logotypejp_mp_m_1.1.ttf; path = ios/logotypejp_mp_m_1.1.ttf; sourceTree = SOURCE_ROOT; };
 		8AC9C3051CF535AE0067A617 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ios/main.m; sourceTree = SOURCE_ROOT; };
 		8AC9C3061CF535AE0067A617 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ios/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		8AC9C3071CF535AE0067A617 /* MasterData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MasterData.plist; path = ios/MasterData.plist; sourceTree = SOURCE_ROOT; };
@@ -225,7 +221,6 @@
 		8AC9C32A1CF53EF10067A617 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
 		8AC9C32B1CF53EF10067A617 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		8AC9D1181CF6C742002D1CC5 /* arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = arial.ttf; sourceTree = "<group>"; };
-		8AC9D1191CF6C742002D1CC5 /* logotypejp_mp_m_1.1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = logotypejp_mp_m_1.1.ttf; sourceTree = "<group>"; };
 		8AC9D11A1CF6C742002D1CC5 /* logotypejp_mp_m_1_1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = logotypejp_mp_m_1_1.ttf; sourceTree = "<group>"; };
 		8AC9D11B1CF6C742002D1CC5 /* Marker Felt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marker Felt.ttf"; sourceTree = "<group>"; };
 		8AC9D11F1CF6C742002D1CC5 /* chara01_back_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chara01_back_left.png; sourceTree = "<group>"; };
@@ -332,7 +327,6 @@
 				8AC9C3211CF537C80067A617 /* SaveTheBird.xcdatamodeld */,
 				8AC9C3021CF535AE0067A617 /* Info.plist */,
 				8AC9C3031CF535AE0067A617 /* LaunchScreen.storyboard */,
-				8AC9C3041CF535AE0067A617 /* logotypejp_mp_m_1.1.ttf */,
 				8AC9C3051CF535AE0067A617 /* main.m */,
 				8AC9C3061CF535AE0067A617 /* Main.storyboard */,
 				8AC9C3071CF535AE0067A617 /* MasterData.plist */,
@@ -491,7 +485,6 @@
 			isa = PBXGroup;
 			children = (
 				8AC9D1181CF6C742002D1CC5 /* arial.ttf */,
-				8AC9D1191CF6C742002D1CC5 /* logotypejp_mp_m_1.1.ttf */,
 				8AC9D11A1CF6C742002D1CC5 /* logotypejp_mp_m_1_1.ttf */,
 				8AC9D11B1CF6C742002D1CC5 /* Marker Felt.ttf */,
 			);
@@ -626,7 +619,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0730;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 5X66VHRJ7C;
@@ -718,7 +711,6 @@
 				8AC9D14F1CF6C742002D1CC5 /* chara03_front_stand.png in Resources */,
 				8AC9D1501CF6C742002D1CC5 /* chara03_name.png in Resources */,
 				8AC9D1431CF6C742002D1CC5 /* chara01_front_left.png in Resources */,
-				8AC9D13D1CF6C742002D1CC5 /* logotypejp_mp_m_1.1.ttf in Resources */,
 				8A630CF91CFD6F8A00D7595F /* CloseSelected.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
@@ -731,7 +723,6 @@
 				8A1B0FA71CF6D2BA00546014 /* ic_menu_setting_on_66@2x.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
-				8AC9C3111CF535AE0067A617 /* logotypejp_mp_m_1.1.ttf in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				8A630CFA1CFD6F8A00D7595F /* HelloWorld.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
@@ -745,7 +736,6 @@
 				8AC9D14C1CF6C742002D1CC5 /* chara03_back_left.png in Resources */,
 				8AC9D14D1CF6C742002D1CC5 /* chara03_back_right.png in Resources */,
 				8A7246C31CF6C1B800D856E3 /* Assets.xcassets in Resources */,
-				8AC9C30F1CF535AE0067A617 /* Info.plist in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -879,9 +869,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -902,6 +892,7 @@
 					"$(_COCOS_LIB_MAC_BEGIN)",
 					"$(_COCOS_LIB_MAC_END)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = savethebird.SaveTheBird;
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
 			};
 			name = Debug;
@@ -910,9 +901,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = mac/Prefix.pch;
@@ -931,6 +922,7 @@
 					"$(_COCOS_LIB_MAC_BEGIN)",
 					"$(_COCOS_LIB_MAC_END)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = savethebird.SaveTheBird;
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
 			};
 			name = Release;
@@ -941,6 +933,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -952,7 +945,7 @@
 					"$(SRCROOT)/../cocos2d/external",
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -975,7 +968,7 @@
 					"$(SRCROOT)/../cocos2d/external",
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
