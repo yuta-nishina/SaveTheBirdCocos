@@ -22,7 +22,7 @@ public class LaunchActivity extends Activity {
 
         // フォント変更
         TextView txt = (TextView) findViewById(R.id.splashLogo);
-        txt.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/logotypejp_mp_m_1.1.ttf"));
+        txt.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/logotypejp_mp_m_1_1.ttf"));
 
         // スプラッシュ
         Handler handler = new Handler();

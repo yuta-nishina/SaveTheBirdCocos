@@ -15,7 +15,10 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/AppDelegate.cpp \
                    ../../Classes/HelloWorldScene.cpp
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes\
+                /Develop/cocos2dx/cocos2d-x-3.11/cocos/platform \
+                /Develop/cocos2dx/cocos2d-x-3.11/external \
+                /Develop/cocos2dx/cocos2d-x-3.11/external/Box2D
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END

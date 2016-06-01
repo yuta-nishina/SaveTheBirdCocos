@@ -1,41 +1,41 @@
 obj/local/armeabi/objs-debug/cocos2dx_internal_static/base/allocator/CCAllocatorDiagnostics.o: \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorDiagnostics.cpp \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorDiagnostics.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/unordered_set \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorMacros.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorMutex.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorBase.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorGlobal.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorStrategyDefault.h
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorDiagnostics.cpp \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorDiagnostics.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_set \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorMacros.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorMutex.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorBase.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorGlobal.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorStrategyDefault.h
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorDiagnostics.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorDiagnostics.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/unordered_set:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_set:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorMacros.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorMacros.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorMutex.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorMutex.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorBase.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorBase.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorGlobal.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorGlobal.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorStrategyDefault.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/allocator/CCAllocatorStrategyDefault.h:

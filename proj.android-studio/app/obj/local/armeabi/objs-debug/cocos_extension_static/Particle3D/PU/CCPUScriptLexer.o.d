@@ -1,32 +1,32 @@
 obj/local/armeabi/objs-debug/cocos_extension_static/Particle3D/PU/CCPUScriptLexer.o: \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/extensions/Particle3D/PU/CCPUScriptLexer.cpp \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/extensions/Particle3D/PU/CCPUScriptLexer.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCRef.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h \
- /Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/vector \
- /Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/string
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/extensions/Particle3D/PU/CCPUScriptLexer.cpp \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/extensions/Particle3D/PU/CCPUScriptLexer.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCRef.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h \
+ /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
+ /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector \
+ /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/extensions/Particle3D/PU/CCPUScriptLexer.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/extensions/Particle3D/PU/CCPUScriptLexer.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/CCRef.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCRef.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformMacros.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccConfig.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h:
 
-/Users/atgs_mac/GitHub/SaveTheBird/ios/SaveTheBird/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
+/Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/platforms/android-19/arch-arm/usr/include/android/log.h:
+/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/vector:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/vector:
 
-/Users/atgs_mac/cocos/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.8/include/string:
+/Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/string:
