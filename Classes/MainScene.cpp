@@ -10,6 +10,9 @@
 #include "MainScene.h"
 #include "AudioUtils.h"
 #include "EventListenerGesture.h"
+#include "SimpleAudioEngine.h"
+
+using namespace CocosDenshion;
 
 USING_NS_CC;
 
@@ -411,7 +414,7 @@ void MainScene::onClear()
     this->getEventDispatcher()->removeAllEventListeners();
     
     
-    _stage->getPlayer()->getPhysicsBody()->setEnable(false);
+    _stage->getPlayer()->getPhysicsBody()->setEnabled(false);
     //auto clear = Sprite::create("clear.png");
     //clear->setPosition(Vec2(winSize.width / 2.0, winSize.height / 1.5));
     //this->addChild(clear);
@@ -452,7 +455,7 @@ void MainScene::onMenu()
     
     this->setState(State::READY);
     
-    _stage->getPlayer()->getPhysicsBody()->setEnable(false);
+    _stage->getPlayer()->getPhysicsBody()->setEnabled(false);
     
     auto menuBack = Sprite::create("menu_back.png");
     menuBack->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
@@ -468,7 +471,7 @@ void MainScene::onMenu()
     auto closeMenu = MenuItemImage::create("button.png", "button.png", [this](Ref *sender) {
         // 閉じるアクション
         this->removeChildByTag(101);
-        _stage->getPlayer()->getPhysicsBody()->setEnable(true);
+        _stage->getPlayer()->getPhysicsBody()->setEnabled(true);
         this->setState(State::MAIN);
         return;
     });
