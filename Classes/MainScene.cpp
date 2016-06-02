@@ -67,7 +67,7 @@ bool MainScene::initWithLevel(int level)
     
     auto winSize = Director::getInstance()->getWinSize();
     
-    this->scheduleUpdate();
+//    this->scheduleUpdate();
     
     auto background = Sprite::create("background.png");
     background->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
@@ -310,6 +310,9 @@ void MainScene::onEnterTransitionDidFinish()
     //                               DelayTime::create(0.5),
     //                               ScaleTo::create(0.1, 0),
     //                               NULL));
+    
+    
+    this->scheduleUpdate();
 }
 
 void MainScene::update(float dt)
