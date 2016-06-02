@@ -93,6 +93,7 @@ cocos2d.cpp \
 3d/CCPlane.cpp \
 platform/CCFileUtils.cpp \
 platform/CCGLView.cpp \
+platform/CCGLViewProtocol.cpp \
 platform/CCImage.cpp \
 platform/CCSAXParser.cpp \
 platform/CCThread.cpp \
