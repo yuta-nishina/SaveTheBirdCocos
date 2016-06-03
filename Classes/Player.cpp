@@ -14,9 +14,7 @@ USING_NS_CC;
 /// アニメーションが何フレームあるか
 const int FRAME_COUNT = 2;
 /// 横方向の加速度の最大値
-const int ACCELERATION_LIMIT = 10;
-/// 初期ジェット加速度
-const Vec2 INITIAL_ACCELERATION = Vec2(200, 0);
+const int ACCELERATION_LIMIT = 5;
 
 bool Player::init()
 {
@@ -47,11 +45,10 @@ bool Player::init()
     auto material = PhysicsMaterial();
     auto body = PhysicsBody::createCircle(this->getContentSize().width / 2);
     // 摩擦
-    material.friction = 0.1;
+    material.friction = 0.5;
     
     // 剛体の回転を無効にする
     body->setRotationEnable(false);
-    //body->setRotationEnable(true);
     
     // カテゴリをPLAYERにセットする
     body->setCategoryBitmask(static_cast<int>(Stage::TileType::PLAYER));

@@ -49,7 +49,7 @@ bool Stage::initWithLevel(int level)
     auto map = TMXTiledMap::create(StringUtils::format("map/stage%d.tmx", level));
     
     if (Director::getInstance()->getContentScaleFactor() == 1.0) {
-        map->setScale(0.5);
+        map->setScale(0.9);
     }
     
     this->addChild(map);
@@ -75,15 +75,16 @@ bool Stage::initWithLevel(int level)
     
     // Playerの生成 (開始位置)
     auto player = Player::create();
-    player->setPosition(Vec2(winSize.width/2 , (winSize.height / 2.0) - 150));
+    player->setPosition(Vec2(_tiledMap->getContentSize().width/2 , _tiledMap->getContentSize().height / 2));
     this->addChild(player);
     this->setPlayer(player);
     
     // Playerの移動に画面を追従させる
-    this->runAction(Follow::create(player, Rect(0,
-                                                0,
-                                                _tiledMap->getContentSize().width * _tiledMap->getScale(),
-                                                winSize.height)));
+    this->runAction(Follow::create(player, Rect(-(_tiledMap->getContentSize().height /2 - 200),
+                                                -(_tiledMap->getContentSize().width /2),
+                                                _tiledMap->getContentSize().height * 2,
+                                                _tiledMap->getContentSize().width * 2
+                                                )));
 
     this->scheduleUpdate();
     
