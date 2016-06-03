@@ -40,7 +40,7 @@ Scene* MainScene::createSceneWithStage(int level)
     //#endif
     // スピードを設定する
     //world->setSpeed(2.5f);
-    world->setSpeed(1.0f);
+    world->setSpeed(1.5f);
     
     auto layer = new MainScene();
     if (layer && layer->initWithLevel(level)) {
@@ -77,14 +77,14 @@ bool MainScene::initWithLevel(int level)
     
     auto stage = Stage::createWithLevel(level);
     this->setStage(stage);
+    _stage->ignoreAnchorPointForPosition(false);
     //センタースタート
-    _stage->setScale(0.3f);
+    //_stage->setScale(0.7f);
     
     auto mapWidth = stage->getTiledMap()->getContentSize().width;
     auto backgroundWidth = background->getContentSize().width;
     
     //480.000000,320.000000,600.000000
-    // 160 /600
     CCLOG("%f,%f,%f",backgroundWidth,winSize.width,mapWidth);
     parallaxNode->addChild(background, 0, Vec2((backgroundWidth - winSize.width) / mapWidth, 0), Vec2::ZERO);
     //parallaxNode->addChild(background, 0, Vec2(0.5, 0.5), Vec2::ZERO);
@@ -125,23 +125,6 @@ bool MainScene::initWithLevel(int level)
     
     this->addChild(stage);
     
-    // タッチしたときにタッチされているフラグをオンにする
-    /*auto listener = EventListenerTouchOneByOne::create();
-    listener->onTouchBegan = [this](Touch *touch, Event *event) {
-        this->setIsPress(true);
-        return true;
-    };
-    listener->onTouchEnded = [this](Touch *touch, Event *event) {
-        this->setIsPress(false);
-    };
-    listener->onTouchCancelled = [this](Touch *touch, Event *event) {
-        this->setIsPress(false);
-    };
-    this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
-    */
-
-    //auto listener = EventListenerGesture::create();
-    //this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
     
     // Swipe UP DOWN RIGHT LEFT
     auto listener = EventListenerGesture::create();
@@ -151,29 +134,29 @@ bool MainScene::initWithLevel(int level)
     //if dont set this value is 100.0f.
     listener->setSwipeThreshouldDistance(80.0f);
     //listener->onTap = [](Vec2 vec2){log("onTap called.");};
-    listener->onLongTapBegan = [](Vec2 vec2){log("onLongTapBegan called.");};
-    listener->onLongTapEnded = [](Vec2 vec2){log("onLongTapEnded called.");};
+    //listener->onLongTapBegan = [](Vec2 vec2){log("onLongTapBegan called.");};
+    //listener->onLongTapEnded = [](Vec2 vec2){log("onLongTapEnded called.");};
     listener->onSwipe = [this](EventListenerGesture::SwipeDirection direction)
     {
         
          float PlayerRotation = 0.00f - _stage->getRotation();
         auto player = _stage->getPlayer();
         Vec2 playerPt = player->getPosition();
-        float pos = 2.00f;
+        float pos = 5.00f;
         //CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("onepoint26.mp3");
         
         auto winSize = Director::getInstance()->getWinSize();
-        //auto playerPt = _stage->getPlayer()->getPosition();
+        
         //_stage->setPosition(playerPt.x * -1 + (winSize.width / 2), playerPt.y * -1 + 150);
         //_stage->setPosition(0,0);
         //_stage->setAnchorPoint(Point(playerPt.x * -1 + (winSize.width / 2), playerPt.y * -1 + 150));
         CCLOG("anc %f, %f",_stage->getAnchorPoint().x,_stage->getAnchorPoint().x);
         
         
-        _stage->ignoreAnchorPointForPosition(true);
         //_stage->setPosition(0,0);
         _stage->setPosition(playerPt * -1);
-        _stage->setAnchorPoint(Vec2(0,0));
+        //_stage->setAnchorPoint(Vec2(0,0));
+        //_stage->setAnchorPoint(playerPt);
         
         if (direction == EventListenerGesture::SwipeDirection::RIGHT) {
             log("Swipe 右 RIGHT.");
@@ -220,7 +203,6 @@ bool MainScene::initWithLevel(int level)
     // 制限時間を表示
     auto secondLabel = Label::createWithCharMap("numbers.png", 16, 18, '0');
     secondLabel->setPosition(Vec2(160, winSize.height - 14));
-    //secondLabel->enableShadow();
     this->addChild(secondLabel);
     this->setSecondLabel(secondLabel);
     
@@ -287,7 +269,7 @@ void MainScene::onEnterTransitionDidFinish()
 {
     Layer::onEnterTransitionDidFinish();
     // BGM 再生
-    //CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic(AudioUtils::getFileName("main").c_str(), true);
+    // CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic(AudioUtils::getFileName("main").c_str(), true);
     // GO演出
     
     auto winSize = Director::getInstance()->getWinSize();
@@ -318,11 +300,17 @@ void MainScene::onEnterTransitionDidFinish()
 void MainScene::update(float dt)
 {
     // クリア判定
-    /*if (_stage->getPlayer()->getPosition().x >= _stage->getTiledMap()->getContentSize().width * _stage->getTiledMap()->getScale()) {
+    if (_stage->getPlayer()->getPosition().x >= _stage->getTiledMap()->getContentSize().width * _stage->getTiledMap()->getScale()) {
         if (_state == State::MAIN) {
             this->onClear();
         }
-    }*/
+    }
+    if (_stage->getPlayer()->getPosition().y >= _stage->getTiledMap()->getContentSize().height * _stage->getTiledMap()->getScale()) {
+        if (_state == State::MAIN) {
+            this->onClear();
+        }
+    }
+
     
     /*
     // 画面外からはみ出したとき、ゲームオーバー判定
@@ -339,16 +327,18 @@ void MainScene::update(float dt)
     
     //画面追跡
     auto winSize = Director::getInstance()->getWinSize();
-    auto playerPt = _stage->getPlayer()->getPosition();
+    auto playerPt = _stage->getPlayer()->getAnchorPoint();
+    auto playerPs = _stage->getPlayer()->getPosition();
+    auto stagePt = _stage->getAnchorPoint();
+    auto stagePs = _stage->getPosition();
     
-    //parentSpr->convertToNodeSpace(playerPt);
-    //Director::getInstance()->getOpenGLView();
     
-    auto posX = (playerPt.x * -1 + (winSize.width / 2)) * _stage->getScale();
-    auto posY = (playerPt.y * -1 + 100) * _stage->getScale();
+    //auto viewPt = (playerPt + stagePt) * -1;
+    //auto viewPt = (Vec2(stagePs) + stagePt + (stagePt - Vec2(playerPs)) * -1);
+    auto viewPt = (stagePt + (stagePt + Vec2(playerPs)));
     
-    _stage->setPosition(posX, posY);
-    CCLOG("%f,%f", _stage->getPosition().x, _stage->getPosition().y);
+    _stage->setPosition(viewPt * -1);
+    //CCLOG("%f,%f", posX, posY);
     
     // コインの枚数の更新
     //this->getCoinLabel()->setString(StringUtils::toString(_coin));
