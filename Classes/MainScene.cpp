@@ -18,9 +18,7 @@ USING_NS_CC;
 
 /// ステージ数
 const int STAGE_COUNT = 5;
-//const Vec2 GRAVITY_ACCELERATION = Vec2(0, -10);
-const Vec2 GRAVITY_ACCELERATION = Vec2(0, 60);
-//const Vec2 IMPULSE_ACCELERATION = Vec2(0, 500);
+const Vec2 GRAVITY_ACCELERATION = Vec2(0, 0);
 const Vec2 IMPULSE_ACCELERATION = Vec2(0, 0);
 const int MAX_ITEM_COUNT = 2;
 
@@ -36,11 +34,10 @@ Scene* MainScene::createSceneWithStage(int level)
     world->setGravity(GRAVITY_ACCELERATION);
     
     //#if COCOS2D_DEBUG > 1
-    //world->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+    world->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
     //#endif
     // スピードを設定する
-    //world->setSpeed(2.5f);
-    world->setSpeed(1.5f);
+    world->setSpeed(2.0f);
     
     auto layer = new MainScene();
     if (layer && layer->initWithLevel(level)) {
@@ -77,15 +74,12 @@ bool MainScene::initWithLevel(int level)
     
     auto stage = Stage::createWithLevel(level);
     this->setStage(stage);
-    _stage->ignoreAnchorPointForPosition(false);
-    //センタースタート
-    //_stage->setScale(0.7f);
+    _stage->setScale(1.2f);
     
     auto mapWidth = stage->getTiledMap()->getContentSize().width;
     auto backgroundWidth = background->getContentSize().width;
     
     //480.000000,320.000000,600.000000
-    CCLOG("%f,%f,%f",backgroundWidth,winSize.width,mapWidth);
     parallaxNode->addChild(background, 0, Vec2((backgroundWidth - winSize.width) / mapWidth, 0), Vec2::ZERO);
     //parallaxNode->addChild(background, 0, Vec2(0.5, 0.5), Vec2::ZERO);
     this->setParallaxNode(parallaxNode);
@@ -139,10 +133,10 @@ bool MainScene::initWithLevel(int level)
     listener->onSwipe = [this](EventListenerGesture::SwipeDirection direction)
     {
         
-         float PlayerRotation = 0.00f - _stage->getRotation();
+        //float PlayerRotation = 0.00f - _stage->getRotation();
         auto player = _stage->getPlayer();
         Vec2 playerPt = player->getPosition();
-        float pos = 5.00f;
+        float pos = 45.00f;
         //CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("onepoint26.mp3");
         
         auto winSize = Director::getInstance()->getWinSize();
@@ -150,40 +144,26 @@ bool MainScene::initWithLevel(int level)
         //_stage->setPosition(playerPt.x * -1 + (winSize.width / 2), playerPt.y * -1 + 150);
         //_stage->setPosition(0,0);
         //_stage->setAnchorPoint(Point(playerPt.x * -1 + (winSize.width / 2), playerPt.y * -1 + 150));
-        CCLOG("anc %f, %f",_stage->getAnchorPoint().x,_stage->getAnchorPoint().x);
-        
-        
-        //_stage->setPosition(0,0);
         _stage->setPosition(playerPt * -1);
-        //_stage->setAnchorPoint(Vec2(0,0));
-        //_stage->setAnchorPoint(playerPt);
         
         if (direction == EventListenerGesture::SwipeDirection::RIGHT) {
             log("Swipe 右 RIGHT.");
-            float StageRotation = _stage->getRotation() + pos;
-            
+            float PlayerRotation = player->getRotation() + pos;
+
             //_stage->setAnchorPoint(Vec2(playerPt.x, playerPt.y));
-            //_stage->setPosition(playerPt.x, playerPt.y);
-            _stage->setRotation(StageRotation);
             player->setRotation(PlayerRotation);
+            this->getIsPress();
         }
         
         if (direction == EventListenerGesture::SwipeDirection::LEFT) {    
             log("Swipe 左 LEFT.");
-            float StageRotation = _stage->getRotation() - pos;
+            float PlayerRotation = player->getRotation() - pos;
             
             //_stage->setAnchorPoint(Vec2(playerPt.x, playerPt.y));
-            //_stage->setPosition(playerPt.x, playerPt.y);
-            _stage->setRotation(StageRotation);
             player->setRotation(PlayerRotation);
+            this->getIsPress();
         }
-
-        
-        // 画像の基準座標に半径15ピクセルの赤い円を描画
-        DrawNode* sprite_anchor_point = DrawNode::create();
-        sprite_anchor_point->drawDot(_stage->getAnchorPoint(), 6, Color4F::RED);
-        _stage->addChild(sprite_anchor_point);
-         
+  
     };
     
     getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
@@ -192,17 +172,17 @@ bool MainScene::initWithLevel(int level)
     // ステージ番号の表示
     auto stageBackground = Sprite::create("stage_ui.png");
     stageBackground->setPosition(Vec2(55,
-                                      winSize.height - 24));
+                                      winSize.height - 26));
     this->addChild(stageBackground);
     
-    auto stageLabel = Label::createWithCharMap("numbers.png", 16, 18, '0');
+    auto stageLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
     stageLabel->setString(StringUtils::format("%d", _stage->getLevel() + 1));
-    stageLabel->setPosition(Vec2(55, winSize.height - 14));
+    stageLabel->setPosition(Vec2(55, winSize.height - 16));
     this->addChild(stageLabel);
     
     // 制限時間を表示
-    auto secondLabel = Label::createWithCharMap("numbers.png", 16, 18, '0');
-    secondLabel->setPosition(Vec2(160, winSize.height - 14));
+    auto secondLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
+    secondLabel->setPosition(Vec2(160, winSize.height - 16));
     this->addChild(secondLabel);
     this->setSecondLabel(secondLabel);
     
@@ -211,10 +191,10 @@ bool MainScene::initWithLevel(int level)
         // menu
         onMenu();
     });
-    mItem->setContentSize(Size(155, 120));
+    mItem->setContentSize(Size(100, 80));
     auto _menu = Menu::create(mItem,NULL);
     //_menu->setPosition(Point::ZERO);
-    _menu->setPosition(Point(winSize.width/2 + 180, winSize.height - 14));
+    _menu->setPosition(Point(winSize.width/2 + 150, winSize.height - 16));
     this->addChild(_menu);
     
     
@@ -233,7 +213,7 @@ bool MainScene::initWithLevel(int level)
     // 取得したアイテムの数を表示
     for (int i = 0; i < MAX_ITEM_COUNT; ++i) {
         auto sprite = Sprite::create("item.png");
-        sprite->setPosition(Vec2(winSize.width - 70 + i * 20, winSize.height - 22));
+        sprite->setPosition(Vec2(winSize.width - 70 + i * 20, winSize.height - 20));
         this->addChild(sprite);
         _items.pushBack(sprite);
         sprite->setColor(Color3B::BLACK);
@@ -310,7 +290,10 @@ void MainScene::update(float dt)
             this->onClear();
         }
     }
+    
 
+    // プレイヤーに上方向の推進力を与える
+    _stage->getPlayer()->getPhysicsBody()->applyImpulse(Vec2(10, 100));
     
     /*
     // 画面外からはみ出したとき、ゲームオーバー判定
@@ -325,20 +308,6 @@ void MainScene::update(float dt)
     }
      */
     
-    //画面追跡
-    auto winSize = Director::getInstance()->getWinSize();
-    auto playerPt = _stage->getPlayer()->getAnchorPoint();
-    auto playerPs = _stage->getPlayer()->getPosition();
-    auto stagePt = _stage->getAnchorPoint();
-    auto stagePs = _stage->getPosition();
-    
-    
-    //auto viewPt = (playerPt + stagePt) * -1;
-    //auto viewPt = (Vec2(stagePs) + stagePt + (stagePt - Vec2(playerPs)) * -1);
-    auto viewPt = (stagePt + (stagePt + Vec2(playerPs)));
-    
-    _stage->setPosition(viewPt * -1);
-    //CCLOG("%f,%f", posX, posY);
     
     // コインの枚数の更新
     //this->getCoinLabel()->setString(StringUtils::toString(_coin));
