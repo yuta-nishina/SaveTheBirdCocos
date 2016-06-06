@@ -41,7 +41,7 @@ bool Player::init()
     this->runAction(RepeatForever::create(Animate::create(animation)));
     
     auto material = PhysicsMaterial();
-    auto body = PhysicsBody::createCircle(this->getContentSize().width / 2);
+    auto body = PhysicsBody::createCircle((this->getContentSize().width / 2) - 5);
     // 摩擦
     material.friction = 0.2;
     
