@@ -67,8 +67,12 @@ bool Stage::initWithLevel(int level)
         for (int y = 0; y < mapSize.height; ++y) {
             auto coordinate = Vec2(x, y);
             
-            this->addPhysicsBody(terrainLayer, coordinate);
-            this->addPhysicsBody(objectLayer, coordinate);
+            if (terrainLayer != NULL) {
+                this->addPhysicsBody(terrainLayer, coordinate);
+            }
+            if (objectLayer != NULL) {
+                this->addPhysicsBody(objectLayer, coordinate);
+            }
             
         }
     }
