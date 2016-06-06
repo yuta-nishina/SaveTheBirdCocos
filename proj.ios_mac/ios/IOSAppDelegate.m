@@ -17,6 +17,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
+    // フォントのプリロード
+    [UIFont fontWithName:@"logotypejp_mp_m_1_1" size:10.0];
+
     // CoreDataに初期データが入っていない場合、初期データを挿入する
     NSMutableArray * charactors = [self getCharactors];
 
