@@ -72,6 +72,7 @@ private:
     void onClear();
     void onMenu();
     void onGetItem(cocos2d::Node * item);
+    float getAngle(cocos2d::Vec2 from, cocos2d::Vec2 to);
 };
 
 #endif /* defined(__SaveTheBird__MainScene__) */

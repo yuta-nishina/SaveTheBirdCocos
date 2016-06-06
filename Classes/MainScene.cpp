@@ -9,7 +9,6 @@
 #include "TitleScene.h"
 #include "MainScene.h"
 #include "AudioUtils.h"
-#include "EventListenerGesture.h"
 #include "SimpleAudioEngine.h"
 
 using namespace CocosDenshion;
@@ -118,55 +117,38 @@ bool MainScene::initWithLevel(int level)
     this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
     
     this->addChild(stage);
-    
-    
-    // Swipe UP DOWN RIGHT LEFT
-    auto listener = EventListenerGesture::create();
-    
-    //if dont set this value is 0.5f.
-    listener->setLongTapThreshouldSeconds(0.4f);
-    //if dont set this value is 100.0f.
-    listener->setSwipeThreshouldDistance(80.0f);
-    //listener->onTap = [](Vec2 vec2){log("onTap called.");};
-    //listener->onLongTapBegan = [](Vec2 vec2){log("onLongTapBegan called.");};
-    //listener->onLongTapEnded = [](Vec2 vec2){log("onLongTapEnded called.");};
-    listener->onSwipe = [this](EventListenerGesture::SwipeDirection direction)
-    {
-        
-        //float PlayerRotation = 0.00f - _stage->getRotation();
-        auto player = _stage->getPlayer();
-        Vec2 playerPt = player->getPosition();
-        float pos = 45.00f;
-        //CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("onepoint26.mp3");
-        
-        auto winSize = Director::getInstance()->getWinSize();
-        
-        //_stage->setPosition(playerPt.x * -1 + (winSize.width / 2), playerPt.y * -1 + 150);
-        //_stage->setPosition(0,0);
-        //_stage->setAnchorPoint(Point(playerPt.x * -1 + (winSize.width / 2), playerPt.y * -1 + 150));
-        _stage->setPosition(playerPt * -1);
-        
-        if (direction == EventListenerGesture::SwipeDirection::RIGHT) {
-            log("Swipe 右 RIGHT.");
-            float PlayerRotation = player->getRotation() + pos;
 
-            //_stage->setAnchorPoint(Vec2(playerPt.x, playerPt.y));
-            player->setRotation(PlayerRotation);
-            this->getIsPress();
-        }
-        
-        if (direction == EventListenerGesture::SwipeDirection::LEFT) {    
-            log("Swipe 左 LEFT.");
-            float PlayerRotation = player->getRotation() - pos;
-            
-            //_stage->setAnchorPoint(Vec2(playerPt.x, playerPt.y));
-            player->setRotation(PlayerRotation);
-            this->getIsPress();
-        }
-  
+    auto touchListener = EventListenerTouchOneByOne::create();
+    touchListener->onTouchBegan = [](Touch* touch, Event* event) {
+        // タッチされたとき
+        return true;
     };
-    
-    getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
+    touchListener->onTouchMoved = [this](Touch* touch, Event* event){
+        // タッチ位置が動いた時
+        
+        // プレイヤーを取得
+        auto player = _stage->getPlayer();
+        // プレイヤーの位置を絶対座標で取得
+        Vec2 playerLocation = player->convertToWorldSpace(Point(player->getScaleX()/2, player->getScaleY()/2));
+        // 前回のタッチ位置
+        Vec2 previousLocation = touch->getPreviousLocation();
+        // 現在のタッチ位置
+        Vec2 currentLocation = touch->getLocation();
+        
+        // プレイヤーとの角度の差分を計算する
+        float previousAngle = getAngle(playerLocation, previousLocation);
+        float currentAngle = getAngle(playerLocation, currentLocation);
+        float diffAngle = previousAngle - currentAngle;
+
+        // プレイヤーの現在の角度を取得する
+        float playerRotation = player->getRotation();
+        
+        // プレイヤーの新しい角度をセットする
+        float newRotation = playerRotation + diffAngle;
+        player->setRotation(newRotation);
+        
+    };
+    this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
 
 
     // ステージ番号の表示
@@ -471,4 +453,23 @@ void MainScene::updateSecond()
     int milisec = floor((_second - sec) * 100);
     auto string = StringUtils::format("%03d:%02d", sec, milisec);
     _secondLabel->setString(string);
+}
+
+// 2点の成す角(0~360度)を返す
+float MainScene::getAngle(cocos2d::Vec2 from, cocos2d::Vec2 to)
+{
+    float dX = to.x - from.x;
+    float dY = to.y - from.y;
+    
+    float radian = atan2f(dY, dX);
+    // ラジアンから度へ変換
+    float angle = CC_RADIANS_TO_DEGREES(radian);
+    
+    // 0 ~ 360度に限定
+    angle += 360;
+    while (angle >= 360) {
+        angle -= 360;
+    }
+    
+    return angle;
 }
