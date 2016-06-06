@@ -273,10 +273,6 @@ void MainScene::update(float dt)
         }
     }
     
-
-    // プレイヤーに上方向の推進力を与える
-    _stage->getPlayer()->getPhysicsBody()->applyImpulse(Vec2(10, 100));
-    
     /*
     // 画面外からはみ出したとき、ゲームオーバー判定
     auto winSize = Director::getInstance()->getWinSize();

@@ -13,8 +13,6 @@ USING_NS_CC;
 
 /// アニメーションが何フレームあるか
 const int FRAME_COUNT = 2;
-/// 横方向の加速度の最大値
-const int ACCELERATION_LIMIT = 5;
 
 bool Player::init()
 {
@@ -45,7 +43,7 @@ bool Player::init()
     auto material = PhysicsMaterial();
     auto body = PhysicsBody::createCircle(this->getContentSize().width / 2);
     // 摩擦
-    material.friction = 0.5;
+    material.friction = 0.2;
     
     // 剛体の回転を無効にする
     body->setRotationEnable(false);
@@ -58,9 +56,6 @@ bool Player::init()
     body->setContactTestBitmask(INT_MAX);
     this->setPhysicsBody(body);
     
-    // 初期加速度を設定する
-    //_acceleration = INITIAL_ACCELERATION;
-    
     this->scheduleUpdate();
     
     return true;
@@ -68,15 +63,9 @@ bool Player::init()
 
 void Player::update(float dt)
 {
-    // 毎フレームプレイヤーに推進力を与える
-    this->getPhysicsBody()->applyImpulse(_acceleration);
-    // 横方向の加速度がACCELERATION_LIMIT以上になったら越えないようにする
-    auto v = this->getPhysicsBody()->getVelocity();
-    if (v.x > ACCELERATION_LIMIT) {
-        v.x = ACCELERATION_LIMIT;
-    }
-    if (v.y > ACCELERATION_LIMIT) {
-        v.y = ACCELERATION_LIMIT;
-    }
-    this->getPhysicsBody()->setVelocity(v);
+    // プレイヤーの推進力を0にする
+    this->getPhysicsBody()->setVelocity(Vec2(0,0));
+    
+    // プレイヤーに推進力を与える
+    this->getPhysicsBody()->applyImpulse(Vec2(0,5000));
 }
