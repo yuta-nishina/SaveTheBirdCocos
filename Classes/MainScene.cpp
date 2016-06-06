@@ -16,7 +16,7 @@ using namespace CocosDenshion;
 USING_NS_CC;
 
 /// ステージ数
-const int STAGE_COUNT = 5;
+const int STAGE_COUNT = 11;
 const Vec2 GRAVITY_ACCELERATION = Vec2(0, 0);
 const Vec2 IMPULSE_ACCELERATION = Vec2(0, 0);
 const int MAX_ITEM_COUNT = 2;
@@ -158,7 +158,7 @@ bool MainScene::initWithLevel(int level)
     this->addChild(stageBackground);
     
     auto stageLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
-    stageLabel->setString(StringUtils::format("%d", _stage->getLevel() + 1));
+    stageLabel->setString(StringUtils::format("%d", _stage->getLevel()));
     stageLabel->setPosition(Vec2(55, winSize.height - 16));
     this->addChild(stageLabel);
     
@@ -261,13 +261,30 @@ void MainScene::onEnterTransitionDidFinish()
 
 void MainScene::update(float dt)
 {
+    Vec2 playerPosition = _stage->getPlayer()->getPosition();
+    TMXTiledMap *map = _stage->getTiledMap();
+    
     // クリア判定
-    if (_stage->getPlayer()->getPosition().x >= _stage->getTiledMap()->getContentSize().width * _stage->getTiledMap()->getScale()) {
+    // 右
+    if (playerPosition.x >= map->getContentSize().width * map->getScale()) {
         if (_state == State::MAIN) {
             this->onClear();
         }
     }
-    if (_stage->getPlayer()->getPosition().y >= _stage->getTiledMap()->getContentSize().height * _stage->getTiledMap()->getScale()) {
+    // 上
+    if (playerPosition.y >= map->getContentSize().height * map->getScale()) {
+        if (_state == State::MAIN) {
+            this->onClear();
+        }
+    }
+    // 左
+    if (playerPosition.x < 0) {
+        if (_state == State::MAIN) {
+            this->onClear();
+        }
+    }
+    // 下
+    if (playerPosition.y < 0) {
         if (_state == State::MAIN) {
             this->onClear();
         }
