@@ -58,9 +58,15 @@
     }
 
     // ユーザが選択しているキャラクターの位置にスクロールする
-    CGRect frame = _scrollView.frame;
-    frame.origin.x = frame.size.width * currentNo;
-    [_scrollView scrollRectToVisible:frame animated:YES];
+    if(currentNo > 0){
+        // キャラクターを変更
+        CGRect frame = _scrollView.frame;
+        frame.origin.x = frame.size.width * currentNo;
+        [_scrollView scrollRectToVisible:frame animated:NO];
+    }else{
+        // キャラクター情報のみ変更
+        [self changeCharactor:currentNo];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
