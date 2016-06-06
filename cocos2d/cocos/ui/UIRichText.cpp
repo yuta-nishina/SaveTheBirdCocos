@@ -297,7 +297,7 @@ class MyXMLVisitor: public tinyxml2::XMLVisitor
             if (i->face.size() != 0)
                 return i->face;
         }
-        return "fonts/Marker Felt.ttf";
+        return "fonts/logotypejp_mp_m_1_1.ttf";
     }
 
     std::string getURL() const

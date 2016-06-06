@@ -36,7 +36,7 @@ THE SOFTWARE.
 NS_CC_BEGIN
     
 static int _globalFontSize = kItemSize;
-static std::string _globalFontName = "Marker Felt";
+static std::string _globalFontName = "logotypejp_mp_m_1_1";
 static bool _globalFontNameRelease = false;
 
 const unsigned int    kZoomActionTag = 0xc0c05002;
