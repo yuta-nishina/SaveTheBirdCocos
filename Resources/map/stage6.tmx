@@ -4,7 +4,7 @@
  <tileset firstgid="6" source="terrain.tsx"/>
  <layer name="Terrain" width="25" height="25">
   <data encoding="base64" compression="zlib">
-   eJxjY2BgYKMDpiUYtYN8O9DtI9Z+fPqGsx3kpGt8+oZruiKkFh9/1A5MteSmOVqCgbKDGnmQGDsoASPNDlrHBy0AveygNQYA2IQDfw==
+   eJy9VFsOwCAI84v7H3m/hkBfiSMxU8G2TKTOOfXDmIz5mdX17Ri1zF38LQ9XO4pT82B7ih4nRskXaZn2tzXCR/tKbIK/cXTdzKe+AWSMj+msNncxFJ/y5p3/NvlYHo6594HiEY5aV0l9Kue6xrQXs56g9kKFZ4qffNsZhWfjQH63pl0taU2jO0gw0xpQsZKemL6zzdTaULAYx4txc3yVEgU7
   </data>
  </layer>
  <layer name="Object" width="25" height="25">
