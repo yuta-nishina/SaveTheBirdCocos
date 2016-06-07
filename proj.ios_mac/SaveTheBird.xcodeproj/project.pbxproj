@@ -64,7 +64,6 @@
 		8AC9C3231CF537C80067A617 /* Charactor+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C3201CF537C80067A617 /* Charactor+CoreDataProperties.m */; };
 		8AC9C3241CF537C80067A617 /* SaveTheBird.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C3211CF537C80067A617 /* SaveTheBird.xcdatamodeld */; };
 		8AC9C32C1CF53EF10067A617 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C3281CF53EF10067A617 /* AppDelegate.cpp */; };
-		8AC9D13C1CF6C742002D1CC5 /* arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D1181CF6C742002D1CC5 /* arial.ttf */; };
 		8AC9D13E1CF6C742002D1CC5 /* logotypejp_mp_m_1_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D11A1CF6C742002D1CC5 /* logotypejp_mp_m_1_1.ttf */; };
 		8AC9D1401CF6C742002D1CC5 /* chara01_back_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D11F1CF6C742002D1CC5 /* chara01_back_left.png */; };
 		8AC9D1411CF6C742002D1CC5 /* chara01_back_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D1201CF6C742002D1CC5 /* chara01_back_right.png */; };
@@ -208,7 +207,6 @@
 		8AC9C3201CF537C80067A617 /* Charactor+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Charactor+CoreDataProperties.m"; path = "ios/Charactor+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
 		8AC9C3281CF53EF10067A617 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		8AC9C3291CF53EF10067A617 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8AC9D1181CF6C742002D1CC5 /* arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = arial.ttf; sourceTree = "<group>"; };
 		8AC9D11A1CF6C742002D1CC5 /* logotypejp_mp_m_1_1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = logotypejp_mp_m_1_1.ttf; sourceTree = "<group>"; };
 		8AC9D11F1CF6C742002D1CC5 /* chara01_back_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chara01_back_left.png; sourceTree = "<group>"; };
 		8AC9D1201CF6C742002D1CC5 /* chara01_back_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chara01_back_right.png; sourceTree = "<group>"; };
@@ -467,7 +465,6 @@
 		8AC9D1171CF6C742002D1CC5 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				8AC9D1181CF6C742002D1CC5 /* arial.ttf */,
 				8AC9D11A1CF6C742002D1CC5 /* logotypejp_mp_m_1_1.ttf */,
 			);
 			path = fonts;
@@ -662,7 +659,6 @@
 				8A43E88F1CFFFD5100A2654F /* images in Resources */,
 				8AC9D1571CF6C742002D1CC5 /* se_sample.mp3 in Resources */,
 				8AC9D1491CF6C742002D1CC5 /* chara02_back_stand.png in Resources */,
-				8AC9D13C1CF6C742002D1CC5 /* arial.ttf in Resources */,
 				8A1B0FA61CF6D2BA00546014 /* ic_menu_setting_66@2x.png in Resources */,
 				8AC9D14E1CF6C742002D1CC5 /* chara03_back_stand.png in Resources */,
 				8AC9C3131CF535AE0067A617 /* Main.storyboard in Resources */,

@@ -33,7 +33,7 @@ Scene* MainScene::createSceneWithStage(int level)
     world->setGravity(GRAVITY_ACCELERATION);
     
     //#if COCOS2D_DEBUG > 1
-    world->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+    //world->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
     //#endif
     // スピードを設定する
     world->setSpeed(2.0f);
@@ -173,10 +173,10 @@ bool MainScene::initWithLevel(int level)
         // menu
         onMenu();
     });
-    mItem->setContentSize(Size(100, 80));
+    mItem->setContentSize(Size(141, 64));
     auto _menu = Menu::create(mItem,NULL);
     //_menu->setPosition(Point::ZERO);
-    _menu->setPosition(Point(winSize.width/2 + 150, winSize.height - 16));
+    _menu->setPosition(Point(winSize.width/2 + 140, winSize.height - 40));
     this->addChild(_menu);
     
     
@@ -241,7 +241,7 @@ void MainScene::onEnterTransitionDidFinish()
     this->addChild(text);
     text->setScale(0);
     text->runAction(Sequence::create(ScaleTo::create(0.1, 1.0),
-                                   DelayTime::create(0.5),
+                                   DelayTime::create(0.8),
                                    ScaleTo::create(0.1, 0),
                                    NULL));
 
@@ -372,18 +372,15 @@ void MainScene::onClear()
     
     
     _stage->getPlayer()->getPhysicsBody()->setEnabled(false);
-    //auto clear = Sprite::create("clear.png");
-    //clear->setPosition(Vec2(winSize.width / 2.0, winSize.height / 1.5));
-    //this->addChild(clear);
-
-    auto text = Label::createWithSystemFont("Clear!", "logotypejp_mp_m_1_1", 48);
-    text->setPosition(Vec2(winSize.width / 2.0, winSize.height -120));
-    text->enableShadow();
-    this->addChild(text);
+    
+    auto txtClear = Sprite::create("clear.png");
+       txtClear->setPosition(Vec2(winSize.width / 2.0, winSize.height -125));
+    txtClear->setScale(0.9);
+    this->addChild(txtClear);
 
     
     auto clear = Sprite::create("chara01_front_stand.png");
-    clear->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2));
+    clear->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
     this->addChild(clear);
     _stage->getPlayer()->removeFromParent();
     
@@ -418,25 +415,21 @@ void MainScene::onMenu()
     menuBack->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
     this->addChild(menuBack,2,101);
     
-    auto text = Label::createWithSystemFont("Menu!", "logotypejp_mp_m_1_1", 28);
-    text->setPosition(Vec2(winSize.width / 2.0, winSize.height -92));
-    menuBack->addChild(text);
+    auto text = Label::createWithSystemFont("メニュー", "logotypejp_mp_m_1_1", 26);
+    text->setColor(Color3B(60, 60, 60));
+    text->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0 + 105));
+    menuBack->addChild(text, 2);
     
     //int nextStage = (_stage->getLevel() + 1) % STAGE_COUNT;
     
     //閉じる
-    auto closeMenu = MenuItemImage::create("button.png", "button.png", [this](Ref *sender) {
+    auto closeMenu = MenuItemImage::create("close.png", "close.png", [this](Ref *sender) {
         // 閉じるアクション
         this->removeChildByTag(101);
         _stage->getPlayer()->getPhysicsBody()->setEnabled(true);
         this->setState(State::MAIN);
         return;
     });
-    
-    auto tojiru = Label::createWithSystemFont("閉じる", "logotypejp_mp_m_1_1", 16);
-    tojiru->setPosition(Vec2(100, 20));
-    tojiru->enableShadow();
-    closeMenu->addChild(tojiru);
     
     auto returnTitle = MenuItemImage::create("return.png", "return_pressed.png", [](Ref *sender) {
      CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
@@ -445,9 +438,10 @@ void MainScene::onMenu()
      Director::getInstance()->replaceScene(transition);
      });
     auto menu = Menu::create(returnTitle, closeMenu, nullptr);
-    menu->alignItemsVerticallyWithPadding(10);
+    menu->alignItemsVerticallyWithPadding(20);
+    menu->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
+    menu->setPosition(winSize.width / 2.0, winSize.height / 3.0 - 50);
     menuBack->addChild(menu);
-    menu->setPosition(winSize.width / 2.0, winSize.height / 3.0 - 30);
     
 }
 
