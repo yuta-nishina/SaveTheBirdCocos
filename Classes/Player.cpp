@@ -37,7 +37,7 @@ bool Player::init()
     }
     auto animation = Animation::createWithSpriteFrames(frames);
     // アニメの動く時間
-    animation->setDelayPerUnit(0.4);
+    animation->setDelayPerUnit(0.3);
     this->runAction(RepeatForever::create(Animate::create(animation)));
     
     auto material = PhysicsMaterial();
