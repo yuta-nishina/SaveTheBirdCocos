@@ -15,7 +15,7 @@
 		2CF5847D1CFECDA600AD2978 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584731CFECDA600AD2978 /* MainScene.cpp */; };
 		2CF5847E1CFECDA600AD2978 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584751CFECDA600AD2978 /* Player.cpp */; };
 		2CF5847F1CFECDA600AD2978 /* Stage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584761CFECDA600AD2978 /* Stage.cpp */; };
-		2CF584811CFECDA600AD2978 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584781CFECDA600AD2978 /* TitleScene.cpp */; };
+		2CF584811CFECDA600AD2978 /* TitleScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584781CFECDA600AD2978 /* TitleScene.mm */; };
 		2CF5848D1CFEDA7300AD2978 /* AudioUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF5848B1CFEDA7300AD2978 /* AudioUtils.cpp */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FF17EB989F00D1A890 /* RootViewController.mm */; };
@@ -145,7 +145,7 @@
 		2CF584741CFECDA600AD2978 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
 		2CF584751CFECDA600AD2978 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		2CF584761CFECDA600AD2978 /* Stage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stage.cpp; sourceTree = "<group>"; };
-		2CF584781CFECDA600AD2978 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleScene.cpp; sourceTree = "<group>"; };
+		2CF584781CFECDA600AD2978 /* TitleScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TitleScene.mm; sourceTree = "<group>"; };
 		2CF5847A1CFECDA600AD2978 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		2CF5847B1CFECDA600AD2978 /* Stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stage.h; sourceTree = "<group>"; };
 		2CF5847C1CFECDA600AD2978 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
@@ -407,7 +407,7 @@
 				2CF5847A1CFECDA600AD2978 /* Player.h */,
 				2CF584761CFECDA600AD2978 /* Stage.cpp */,
 				2CF5847B1CFECDA600AD2978 /* Stage.h */,
-				2CF584781CFECDA600AD2978 /* TitleScene.cpp */,
+				2CF584781CFECDA600AD2978 /* TitleScene.mm */,
 				2CF5847C1CFECDA600AD2978 /* TitleScene.h */,
 				8AC9C3281CF53EF10067A617 /* AppDelegate.cpp */,
 				8AC9C3291CF53EF10067A617 /* AppDelegate.h */,
@@ -713,7 +713,7 @@
 			files = (
 				8AC9C2F71CF535880067A617 /* IOSAppDelegate.m in Sources */,
 				2CF5848D1CFEDA7300AD2978 /* AudioUtils.cpp in Sources */,
-				2CF584811CFECDA600AD2978 /* TitleScene.cpp in Sources */,
+				2CF584811CFECDA600AD2978 /* TitleScene.mm in Sources */,
 				8AC9C2F91CF535880067A617 /* CocosController.mm in Sources */,
 				2CF5847F1CFECDA600AD2978 /* Stage.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
