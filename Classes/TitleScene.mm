@@ -74,6 +74,29 @@ bool TitleScene::init()
 //    this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
 //
     
+    Vector<MenuItem*> menuItems;
+    
+    for (int i = 1; i < 13; i++) {
+        auto stageMenu = MenuItemImage::create("coin.png", "coin.png", [this,i](Ref *sender){
+            this->toStage(i);
+        });
+        auto label = Label::createWithSystemFont(StringUtils::format("ステージ%d",i), "logotypejp_mp_m_1_1", 16);
+        label->enableShadow();
+        stageMenu->addChild(label);
+        menuItems.pushBack(stageMenu);
+    }
+    
+
+    auto menu = Menu::createWithArray(menuItems);
+    
+    menu->alignItemsHorizontallyWithPadding(50);
+    menu->alignItemsVerticallyWithPadding(50);
+    
+    menu->alignItemsInColumns(3, 3, 3, 3, nullptr);
+    
+    background->addChild(menu);
+    
+    
     auto returnHome = MenuItemImage::create("return.png", "return_pressed.png", [this](Ref *sender){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
         UIViewController *initialViewController = [storyboard instantiateInitialViewController];
@@ -83,24 +106,10 @@ bool TitleScene::init()
         Director::getInstance()->end();
     });
     
-    auto startGame = MenuItemImage::create("start.png", "start_pressed.png", [this](Ref *sender){
-                CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("start").c_str());
-                this->getEventDispatcher()->removeAllEventListeners();
-        
-                this->runAction(Sequence::create(DelayTime::create(1.0),
-                                                 CallFunc::create([] {
-                    auto main = MainScene::createSceneWithStage(0);
-                    auto transition = TransitionCrossFade::create(0.5, main);
-        
-                    Director::getInstance()->replaceScene(transition);
-                }), NULL));
-    });
+    auto returnMenu = Menu::createWithItem(returnHome);
+    returnMenu->setPosition(winSize.width / 2.0, winSize.height / 5.0);
     
-    auto menu = Menu::create(startGame, returnHome, nullptr);
-    menu->alignItemsVerticallyWithPadding(10);
-    
-    background->addChild(menu);
-    
+    background->addChild(returnMenu);
     
     return true;
 }
@@ -109,4 +118,18 @@ void TitleScene::onEnterTransitionDidFinish()
 {
     // BGMの再生
     //CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic(AudioUtils::getFileName("title").c_str(), true);
+}
+
+void TitleScene::toStage(int stageNum){
+    
+    CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("start").c_str());
+    this->getEventDispatcher()->removeAllEventListeners();
+    
+    this->runAction(Sequence::create(DelayTime::create(1.0),
+                                     CallFunc::create([stageNum] {
+        auto main = MainScene::createSceneWithStage(stageNum);
+        auto transition = TransitionCrossFade::create(0.5, main);
+        
+        Director::getInstance()->replaceScene(transition);
+    }), NULL));
 }

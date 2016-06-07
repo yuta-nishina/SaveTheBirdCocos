@@ -16,7 +16,7 @@ using namespace CocosDenshion;
 USING_NS_CC;
 
 /// ステージ数
-const int STAGE_COUNT = 11;
+const int STAGE_COUNT = 13;
 const Vec2 GRAVITY_ACCELERATION = Vec2(0, 0);
 const Vec2 IMPULSE_ACCELERATION = Vec2(0, 0);
 const int MAX_ITEM_COUNT = 2;

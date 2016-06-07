@@ -21,6 +21,7 @@ public:
     
     bool init() override;
     void onEnterTransitionDidFinish() override;
+    void toStage(int stageNum);
     CREATE_FUNC(TitleScene);
 };
 
