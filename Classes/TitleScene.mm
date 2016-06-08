@@ -77,12 +77,15 @@ bool TitleScene::init()
     Vector<MenuItem*> menuItems;
     
     for (int i = 1; i < 13; i++) {
-        auto stageMenu = MenuItemImage::create("coin.png", "coin.png", [this,i](Ref *sender){
+        auto stageMenu = MenuItemImage::create("btn_stage_off.png", "btn_stage.png", [this,i](Ref *sender){
             this->toStage(i);
         });
-        auto label = Label::createWithSystemFont(StringUtils::format("ステージ%d",i), "logotypejp_mp_m_1_1", 16);
-        label->enableShadow();
+        auto label = Label::createWithSystemFont(StringUtils::format("%d",i), "logotypejp_mp_m_1_1", 18);
+        //label->enableShadow();
+        label->setPosition(Vec2(30, 36));
+        label->setColor(Color3B::BLACK);
         stageMenu->addChild(label);
+        
         menuItems.pushBack(stageMenu);
     }
     
@@ -93,11 +96,11 @@ bool TitleScene::init()
     menu->alignItemsVerticallyWithPadding(50);
     
     menu->alignItemsInColumns(3, 3, 3, 3, nullptr);
-    
+    menu->setPosition(winSize.width / 2.0, winSize.height * 0.6);
     background->addChild(menu);
     
     
-    auto returnHome = MenuItemImage::create("return.png", "return_pressed.png", [this](Ref *sender){
+    auto returnHome = MenuItemImage::create("home.png", "home_pressed.png", [this](Ref *sender){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
         UIViewController *initialViewController = [storyboard instantiateInitialViewController];
         
