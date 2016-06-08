@@ -79,9 +79,11 @@ bool MainScene::initWithLevel(int level)
     auto backgroundWidth = background->getContentSize().width;
     
     //480.000000,320.000000,600.000000
-    parallaxNode->addChild(background, 0, Vec2((backgroundWidth - winSize.width) / mapWidth, 0), Vec2::ZERO);
-    //parallaxNode->addChild(background, 0, Vec2(0.5, 0.5), Vec2::ZERO);
-    this->setParallaxNode(parallaxNode);
+    //parallaxNode->addChild(background, 0, Vec2((backgroundWidth - winSize.width) / mapWidth, 0), Vec2::ZERO);
+    //parallaxNode->addChild(background, 0, Vec2::ZERO, Vec2::ZERO);
+    //this->setParallaxNode(parallaxNode);
+    this->addChild(background);
+    
     
     // 物体が衝突したことを検知するEventListener
     auto contactListener = EventListenerPhysicsContact::create();
