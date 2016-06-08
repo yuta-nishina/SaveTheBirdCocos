@@ -98,12 +98,12 @@ bool TitleScene::init()
     
     
     auto returnHome = MenuItemImage::create("return.png", "return_pressed.png", [this](Ref *sender){
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-        UIViewController *initialViewController = [storyboard instantiateInitialViewController];
-        
-        UIViewController *controller = [UIApplication sharedApplication].keyWindow.rootViewController;
-        [controller presentViewController:initialViewController animated:YES completion:nil];
-        Director::getInstance()->end();
+//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//        UIViewController *initialViewController = [storyboard instantiateInitialViewController];
+//        
+//        UIViewController *controller = [UIApplication sharedApplication].keyWindow.rootViewController;
+//        [controller presentViewController:initialViewController animated:YES completion:nil];
+//        Director::getInstance()->end();
     });
     
     auto returnMenu = Menu::createWithItem(returnHome);
