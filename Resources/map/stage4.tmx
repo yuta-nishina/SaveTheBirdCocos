@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="48" tileheight="48" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="48" tileheight="48" nextobjectid="1">
  <tileset firstgid="1" source="object.tsx"/>
  <tileset firstgid="6" source="terrain.tsx"/>
- <layer name="Terrain" width="25" height="25">
+ <layer name="Terrain" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJxjY2BgYKMDpiUYtYN8O9DtI9Z+fPqGsx3kpGt8+oZruiKkFh9/1A5MteSmOVqCgbKDGnmQGDsoASPNDlrHBy0AveygNQYA2IQDfw==
+   eJxjY2BgYKMyphYg1TxCailxHzZ9uMxjw8Emxg42JDYp+giZR45+cs0j1j56pBdKzB+q6ZmYMMCWRgfav9Qwj9z8Ro5bCJlHqd9pHX7UKOsB6NICIw==
   </data>
  </layer>
- <layer name="Object" width="25" height="25">
+ <layer name="Object" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20ON6AAAHgzCcQAAQ==
+   eJxjYBgFpAAWCvQyU80VgwtQEiajYHiBwZQWBpNbSAG4yonB6B8ASpAAGw==
   </data>
  </layer>
 </map>

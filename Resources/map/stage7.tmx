@@ -4,12 +4,12 @@
  <tileset firstgid="6" source="terrain.tsx"/>
  <layer name="Terrain" width="25" height="25">
   <data encoding="base64" compression="zlib">
-   eJxjY2BgYCMSwwCx6rHppQUYtWPUjlE7Ru0YtWPUjlE7Ru0YbHbQGgMAmFICNQ==
+   eJy9lTEOACEIBKn8/5OvMrkCYZFBEhsRhpWgy8yWuLap573YimXxBGPn6dRBMP6cTmxWp+fv9Fxl2GEvsqqOG0bGpxmnu6cYUe8ohhdLMNQ5fM2ozv+0jts5zziebqWO0z7xHxA6Mn/3bffyqzNI5ScZUZ9oHRF/0l4yptcHGJgD8Q==
   </data>
  </layer>
  <layer name="Object" width="25" height="25">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20ON6AAAHgzCcQAAQ==
+   eJxjYBhegIVE9cwU6h/ugIVhNExGwSgYBUMXDKXyayi5FQQGk3sJuQW9rh8uAADIiAAn
   </data>
  </layer>
 </map>

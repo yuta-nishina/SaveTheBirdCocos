@@ -88,10 +88,10 @@ bool Stage::initWithLevel(int level)
     Point center = *new Point(size.width/2 + origin.x, size.height/2 + origin.y);
     
     // Playerの移動に画面を追従させる
-    this->runAction(Follow::create(player, Rect((center.x + 80 - _tiledMap->getContentSize().width / 2),
-                                                (center.y - _tiledMap->getContentSize().height / 2),
-                                                _tiledMap->getContentSize().width * 2 - center.x * 2 - 80,
-                                                _tiledMap->getContentSize().height * 2 - center.y * 2
+    this->runAction(Follow::create(player, Rect((center.x - _tiledMap->getContentSize().width / 2),
+                                                (center.y - _tiledMap->getContentSize().height / 2 -80),
+                                                _tiledMap->getContentSize().width * 2 - center.x * 2,
+                                                _tiledMap->getContentSize().height * 2 - center.y * 2 + 160
                                                 )));
 
     CCLOG("%f,%f,%f,%f", -(_tiledMap->getContentSize().height / 2),
