@@ -73,7 +73,15 @@ bool MainScene::initWithLevel(int level)
     
     auto stage = Stage::createWithLevel(level);
     this->setStage(stage);
-    _stage->setScale(1.2f);
+    
+    // プラットフォームによってスケールを切り替える
+    if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) {
+        // for ios
+        _stage->setScale(1.2f);
+    }else{
+        // for android
+        _stage->setScale(0.9f);
+    }
     
     auto mapWidth = stage->getTiledMap()->getContentSize().width;
     auto backgroundWidth = background->getContentSize().width;

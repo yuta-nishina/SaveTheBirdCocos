@@ -46,7 +46,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
 
     // set FPS. the default value is 1.0/60 if you don't call this
-    director->setAnimationInterval(1.0 / 30);
+    director->setAnimationInterval(1.0 / 60);
     
     auto fu = FileUtils::getInstance();
     
@@ -91,8 +91,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     //        searchResolutionOrder.push_back("images/nonretina");
     //    }
     //    glview->setDesignResolutionSize(568, 320, ResolutionPolicy::SHOW_ALL);
-    } else if (platform == Platform::OS_ANDROID) {
-        // Android端末のとき
+    } else if (platform == Platform::OS_ANDROID) { // Android端末のとき
         //glview->setDesignResolutionSize(480, 320, ResolutionPolicy::SHOW_ALL);
         glview->setDesignResolutionSize(320, 480, ResolutionPolicy::SHOW_ALL);
         fu->addSearchPath("music/ogg");
