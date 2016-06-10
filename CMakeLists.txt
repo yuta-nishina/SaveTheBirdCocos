@@ -124,7 +124,6 @@ endif( WIN32 )
 
 set(GAME_SRC
   Classes/AppDelegate.cpp
-  Classes/HelloWorldScene.cpp
   Classes/AudioUtils.cpp
   Classes/MainScene.cpp
   Classes/Player.cpp
@@ -135,7 +134,6 @@ set(GAME_SRC
 
 set(GAME_HEADERS
   Classes/AppDelegate.h
-  Classes/HelloWorldScene.h
   Classes/AudioUtils.h
   Classes/MainScene.h
   Classes/Player.h
