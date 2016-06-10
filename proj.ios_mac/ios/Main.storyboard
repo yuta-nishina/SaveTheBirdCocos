@@ -96,18 +96,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaD-Sz-Nux">
-                                <rect key="frame" x="100" y="501" width="400" height="30"/>
-                                <color key="backgroundColor" red="0.9042242169380188" green="0.91195636987686157" blue="0.49073439836502075" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="公式リンク">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="linkButtonTouched:" destination="Gle-ZG-vEY" eventType="touchUpInside" id="kN7-7J-N5x"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Arm-UH-gkv">
-                                <rect key="frame" x="30" y="50" width="520" height="421"/>
+                                <rect key="frame" x="30" y="50" width="520" height="355"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="オプション" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrM-qJ-4AT">
                                         <rect key="frame" x="0.0" y="0.0" width="520" height="40"/>
@@ -151,7 +141,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PcO-Qe-ZBI">
-                                        <rect key="frame" x="0.0" y="270" width="520" height="151"/>
+                                        <rect key="frame" x="0.0" y="270" width="520" height="85"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lui-4g-l2E">
                                                 <rect key="frame" x="0.0" y="0.0" width="520" height="40"/>
@@ -160,7 +150,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Rr-wD-Vgs">
-                                                <rect key="frame" x="-2" y="40" width="524" height="112"/>
+                                                <rect key="frame" x="-2" y="40" width="524" height="46"/>
                                                 <connections>
                                                     <action selector="volumeSliderValueChanged:" destination="Gle-ZG-vEY" eventType="valueChanged" id="S39-y9-wRB"/>
                                                 </connections>
@@ -169,6 +159,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaD-Sz-Nux">
+                                <rect key="frame" x="121" y="433" width="358" height="96"/>
+                                <state key="normal" image="review.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkButtonTouched:" destination="Gle-ZG-vEY" eventType="touchUpInside" id="kN7-7J-N5x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -258,5 +257,6 @@
     </scenes>
     <resources>
         <image name="chara01_front_stand.png" width="350" height="350"/>
+        <image name="review.png" width="358" height="96"/>
     </resources>
 </document>
