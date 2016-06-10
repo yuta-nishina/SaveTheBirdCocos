@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="48" tileheight="48" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="48" tileheight="48" nextobjectid="1">
  <tileset firstgid="1" source="object.tsx"/>
  <tileset firstgid="6" source="terrain.tsx"/>
- <layer name="Terrain" width="25" height="25">
+ <layer name="Terrain" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJy9lTsOACAIQ5m4/5FdWfi0UEnYbJ8CBjczF6c6fjGu3pTpO8b0DqwH0r8po+NvGZ3uolYb/6ip+BeMis3UmGGgvWIZ2eyqGaiHgrH9O6g/OrsMozu3ZUzOsYH0TBnKWkY9u78QfwWD2TsII9tt6ny81QTb
+   eJy1kkEOADAEBJ38/8m9S9XSsYmL1NjCzczBILXBi8yO7/g2+/c095rlxHeHp4hiVb5onlqv5AkesYvIu91R5UflRY8ET63NeF1Rt9bt8dNvi0fGAaOfAxM=
   </data>
  </layer>
- <layer name="Object" width="25" height="25">
+ <layer name="Object" width="20" height="20">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20ON6AAAHgzCcQAAQ==
+   eJxjYBgFo2D4AeaBdsAoGAVkgqGUdgESfAAH
   </data>
  </layer>
 </map>
