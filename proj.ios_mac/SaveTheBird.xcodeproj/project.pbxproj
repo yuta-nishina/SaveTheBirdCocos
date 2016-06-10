@@ -7,12 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
-		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2C6CED4C1D0A488A0060ADF5 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CED4B1D0A488A0060ADF5 /* TitleScene.cpp */; };
 		2CF5847D1CFECDA600AD2978 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584731CFECDA600AD2978 /* MainScene.cpp */; };
 		2CF5847E1CFECDA600AD2978 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584751CFECDA600AD2978 /* Player.cpp */; };
 		2CF5847F1CFECDA600AD2978 /* Stage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584761CFECDA600AD2978 /* Stage.cpp */; };
@@ -48,7 +45,7 @@
 		8A43E8931CFFFDF400A2654F /* music in Resources */ = {isa = PBXBuildFile; fileRef = 8A43E8921CFFFDF400A2654F /* music */; };
 		8A43E8951CFFFDFE00A2654F /* se in Resources */ = {isa = PBXBuildFile; fileRef = 8A43E8941CFFFDFE00A2654F /* se */; };
 		8A7246C31CF6C1B800D856E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7246C21CF6C1B800D856E3 /* Assets.xcassets */; };
-		8AB9DF1C1D07EA8700C3AE44 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AB9DF1B1D07EA8700C3AE44 /* TitleScene.cpp */; };
+		8AB9DF221D0A62C000C3AE44 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AB9DF211D0A62C000C3AE44 /* TitleScene.cpp */; };
 		8AC9C2F71CF535880067A617 /* IOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C2F21CF535880067A617 /* IOSAppDelegate.m */; };
 		8AC9C2F81CF535880067A617 /* CharactorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C2F41CF535880067A617 /* CharactorViewController.m */; };
 		8AC9C2F91CF535880067A617 /* CocosController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C2F61CF535880067A617 /* CocosController.mm */; };
@@ -85,49 +82,50 @@
 		8AC9D1551CF6C742002D1CC5 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D1381CF6C742002D1CC5 /* .gitkeep */; };
 		8AC9D1561CF6C742002D1CC5 /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D13A1CF6C742002D1CC5 /* sample.mp3 */; };
 		8AC9D1571CF6C742002D1CC5 /* se_sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8AC9D13B1CF6C742002D1CC5 /* se_sample.mp3 */; };
+		8AD1A1A81D0A8F5D00C793C8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1A71D0A8F5D00C793C8 /* AdSupport.framework */; };
+		8AD1A1AA1D0A8F6700C793C8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1A91D0A8F6700C793C8 /* AudioToolbox.framework */; };
+		8AD1A1AC1D0A8F8800C793C8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1AB1D0A8F8800C793C8 /* CoreMedia.framework */; };
+		8AD1A1AE1D0A8FA600C793C8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1AD1D0A8FA600C793C8 /* CoreTelephony.framework */; };
+		8AD1A1B01D0A8FB600C793C8 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1AF1D0A8FB600C793C8 /* EventKit.framework */; };
+		8AD1A1B21D0A8FBC00C793C8 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1B11D0A8FBC00C793C8 /* EventKitUI.framework */; };
+		8AD1A1B41D0A8FD200C793C8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1B31D0A8FD200C793C8 /* MessageUI.framework */; };
+		8AD1A1B61D0A8FE100C793C8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1B51D0A8FE100C793C8 /* StoreKit.framework */; };
+		8AD1A1B81D0A8FEC00C793C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1B71D0A8FEC00C793C8 /* SystemConfiguration.framework */; };
+		8AD1A1D11D0A97BF00C793C8 /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1CE1D0A957500C793C8 /* libcocos2d iOS.a */; };
+		8AD1A1D31D0A99B800C793C8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1D21D0A99B800C793C8 /* MediaPlayer.framework */; };
+		8AD1A1D51D0A9A2B00C793C8 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1D41D0A9A2B00C793C8 /* SafariServices.framework */; };
+		8AD1A1D71D0A9AA900C793C8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1D61D0A9AA900C793C8 /* CoreBluetooth.framework */; };
+		8AD1A1E51D0AAA0C00C793C8 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD1A1DB1D0AAA0C00C793C8 /* GoogleMobileAds.framework */; };
+		8AD1A1E61D0AAA0C00C793C8 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8AD1A1E31D0AAA0C00C793C8 /* README.txt */; };
+		8AD1A1E71D0AAA0C00C793C8 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8AD1A1E41D0AAA0C00C793C8 /* README.txt */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
-		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1AC6FAF8180E9839004C840B /* PBXContainerItemProxy */ = {
+		8AD1A1CB1D0A957500C793C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			containerPortal = 8AD1A1C51D0A957400C793C8 /* cocos2d_libs.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1551A33F158F2AB200E66CFE;
-			remoteInfo = "cocos2dx Mac";
+			remoteInfo = "libcocos2d Mac";
 		};
-		1AC6FB06180E9839004C840B /* PBXContainerItemProxy */ = {
+		8AD1A1CD1D0A957500C793C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			containerPortal = 8AD1A1C51D0A957400C793C8 /* cocos2d_libs.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A07A4D641783777C0073F6A7;
-			remoteInfo = "cocos2dx iOS";
+			remoteInfo = "libcocos2d iOS";
 		};
-		1AC6FB15180E9959004C840B /* PBXContainerItemProxy */ = {
+		8AD1A1CF1D0A957500C793C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1551A33E158F2AB200E66CFE;
-			remoteInfo = "cocos2dx Mac";
-		};
-		1AC6FB24180E99E1004C840B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A07A4C241783777C0073F6A7;
-			remoteInfo = "cocos2dx iOS";
-		};
-		8A0F53831CF2D8900048A61F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			containerPortal = 8AD1A1C51D0A957400C793C8 /* cocos2d_libs.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 507B40FD1C31BDD30067B53E;
 			remoteInfo = "libcocos2d tvOS";
@@ -135,13 +133,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* SaveTheBird-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SaveTheBird-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2C6CED4B1D0A488A0060ADF5 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleScene.cpp; sourceTree = "<group>"; };
 		2CF584731CFECDA600AD2978 /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainScene.cpp; sourceTree = "<group>"; };
 		2CF584741CFECDA600AD2978 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
 		2CF584751CFECDA600AD2978 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
@@ -182,7 +178,7 @@
 		8A43E8921CFFFDF400A2654F /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = music; sourceTree = "<group>"; };
 		8A43E8941CFFFDFE00A2654F /* se */ = {isa = PBXFileReference; lastKnownFileType = folder; path = se; sourceTree = "<group>"; };
 		8A7246C21CF6C1B800D856E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ios/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		8AB9DF1B1D07EA8700C3AE44 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleScene.cpp; sourceTree = "<group>"; };
+		8AB9DF211D0A62C000C3AE44 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleScene.cpp; sourceTree = "<group>"; };
 		8AC9C2F11CF535880067A617 /* IOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSAppDelegate.h; path = ios/IOSAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		8AC9C2F21CF535880067A617 /* IOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IOSAppDelegate.m; path = ios/IOSAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		8AC9C2F31CF535880067A617 /* CharactorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharactorViewController.h; path = ios/CharactorViewController.h; sourceTree = SOURCE_ROOT; };
@@ -228,6 +224,28 @@
 		8AC9D1381CF6C742002D1CC5 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8AC9D13A1CF6C742002D1CC5 /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
 		8AC9D13B1CF6C742002D1CC5 /* se_sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_sample.mp3; sourceTree = "<group>"; };
+		8AD1A1A71D0A8F5D00C793C8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1A91D0A8F6700C793C8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1AB1D0A8F8800C793C8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1AD1D0A8FA600C793C8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1AF1D0A8FB600C793C8 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/EventKit.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1B11D0A8FBC00C793C8 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/EventKitUI.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1B31D0A8FD200C793C8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1B51D0A8FE100C793C8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1B71D0A8FEC00C793C8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1C51D0A957400C793C8 /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
+		8AD1A1D21D0A99B800C793C8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1D41D0A9A2B00C793C8 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1D61D0A9AA900C793C8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		8AD1A1DB1D0AAA0C00C793C8 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		8AD1A1DD1D0AAA0C00C793C8 /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		8AD1A1DE1D0AAA0C00C793C8 /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		8AD1A1DF1D0AAA0C00C793C8 /* GADMediationAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMediationAdRequest.h; sourceTree = "<group>"; };
+		8AD1A1E01D0AAA0C00C793C8 /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
+		8AD1A1E11D0AAA0C00C793C8 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		8AD1A1E21D0AAA0C00C793C8 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		8AD1A1E31D0AAA0C00C793C8 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		8AD1A1E41D0AAA0C00C793C8 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -244,10 +262,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD1A1D71D0A9AA900C793C8 /* CoreBluetooth.framework in Frameworks */,
+				8AD1A1D51D0A9A2B00C793C8 /* SafariServices.framework in Frameworks */,
+				8AD1A1E51D0AAA0C00C793C8 /* GoogleMobileAds.framework in Frameworks */,
+				8AD1A1D31D0A99B800C793C8 /* MediaPlayer.framework in Frameworks */,
+				8AD1A1D11D0A97BF00C793C8 /* libcocos2d iOS.a in Frameworks */,
+				8AD1A1B81D0A8FEC00C793C8 /* SystemConfiguration.framework in Frameworks */,
+				8AD1A1B61D0A8FE100C793C8 /* StoreKit.framework in Frameworks */,
+				8AD1A1B41D0A8FD200C793C8 /* MessageUI.framework in Frameworks */,
+				8AD1A1B21D0A8FBC00C793C8 /* EventKitUI.framework in Frameworks */,
+				8AD1A1B01D0A8FB600C793C8 /* EventKit.framework in Frameworks */,
+				8AD1A1AE1D0A8FA600C793C8 /* CoreTelephony.framework in Frameworks */,
+				8AD1A1AC1D0A8F8800C793C8 /* CoreMedia.framework in Frameworks */,
+				8AD1A1AA1D0A8F6700C793C8 /* AudioToolbox.framework in Frameworks */,
+				8AD1A1A81D0A8F5D00C793C8 /* AdSupport.framework in Frameworks */,
 				8A0F53AF1CF2DB300048A61F /* CoreData.framework in Frameworks */,
 				ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */,
 				52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */,
-				1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */,
 				D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -257,7 +288,6 @@
 				BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */,
 				D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */,
 				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
-				D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +296,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */,
-				1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */,
 				5087E76717EB910900C73F5D /* libz.dylib in Frameworks */,
 				8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */,
 				503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */,
@@ -328,22 +357,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1AC6FAE6180E9839004C840B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */,
-				1AC6FB07180E9839004C840B /* libcocos2d iOS.a */,
-				8A0F53841CF2D8900048A61F /* libcocos2d tvOS.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				8AD1A1DA1D0AAA0C00C793C8 /* GoogleMobileAdsSdkiOS-7.8.1 */,
+				8AD1A1C51D0A957400C793C8 /* cocos2d_libs.xcodeproj */,
 				46880B8319C43A87006E1F66 /* Classes */,
 				46880B7519C43A67006E1F66 /* Resources */,
-				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* ios */,
 				503AE10617EB990700D1A890 /* mac */,
@@ -355,6 +375,18 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AD1A1D61D0A9AA900C793C8 /* CoreBluetooth.framework */,
+				8AD1A1D41D0A9A2B00C793C8 /* SafariServices.framework */,
+				8AD1A1D21D0A99B800C793C8 /* MediaPlayer.framework */,
+				8AD1A1B71D0A8FEC00C793C8 /* SystemConfiguration.framework */,
+				8AD1A1B51D0A8FE100C793C8 /* StoreKit.framework */,
+				8AD1A1B31D0A8FD200C793C8 /* MessageUI.framework */,
+				8AD1A1B11D0A8FBC00C793C8 /* EventKitUI.framework */,
+				8AD1A1AF1D0A8FB600C793C8 /* EventKit.framework */,
+				8AD1A1AD1D0A8FA600C793C8 /* CoreTelephony.framework */,
+				8AD1A1AB1D0A8F8800C793C8 /* CoreMedia.framework */,
+				8AD1A1A91D0A8F6700C793C8 /* AudioToolbox.framework */,
+				8AD1A1A71D0A8F5D00C793C8 /* AdSupport.framework */,
 				8A0F53AE1CF2DB300048A61F /* CoreData.framework */,
 				ED545A7D1B68A1FA00C3958E /* libiconv.dylib */,
 				ED545A7B1B68A1F400C3958E /* libiconv.dylib */,
@@ -407,7 +439,7 @@
 				2CF584761CFECDA600AD2978 /* Stage.cpp */,
 				2CF5847B1CFECDA600AD2978 /* Stage.h */,
 				2CF5847C1CFECDA600AD2978 /* TitleScene.h */,
-				8AB9DF1B1D07EA8700C3AE44 /* TitleScene.cpp */,
+				8AB9DF211D0A62C000C3AE44 /* TitleScene.cpp */,
 				8AC9C3281CF53EF10067A617 /* AppDelegate.cpp */,
 				8AC9C3291CF53EF10067A617 /* AppDelegate.h */,
 			);
@@ -543,6 +575,40 @@
 			path = sound;
 			sourceTree = "<group>";
 		};
+		8AD1A1C61D0A957400C793C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AD1A1CC1D0A957500C793C8 /* libcocos2d Mac.a */,
+				8AD1A1CE1D0A957500C793C8 /* libcocos2d iOS.a */,
+				8AD1A1D01D0A957500C793C8 /* libcocos2d tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AD1A1DA1D0AAA0C00C793C8 /* GoogleMobileAdsSdkiOS-7.8.1 */ = {
+			isa = PBXGroup;
+			children = (
+				8AD1A1DB1D0AAA0C00C793C8 /* GoogleMobileAds.framework */,
+				8AD1A1DC1D0AAA0C00C793C8 /* Mediation Adapters */,
+				8AD1A1E41D0AAA0C00C793C8 /* README.txt */,
+			);
+			path = "GoogleMobileAdsSdkiOS-7.8.1";
+			sourceTree = "<group>";
+		};
+		8AD1A1DC1D0AAA0C00C793C8 /* Mediation Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				8AD1A1DD1D0AAA0C00C793C8 /* GADMAdNetworkAdapterProtocol.h */,
+				8AD1A1DE1D0AAA0C00C793C8 /* GADMAdNetworkConnectorProtocol.h */,
+				8AD1A1DF1D0AAA0C00C793C8 /* GADMediationAdRequest.h */,
+				8AD1A1E01D0AAA0C00C793C8 /* GADMEnums.h */,
+				8AD1A1E11D0AAA0C00C793C8 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */,
+				8AD1A1E21D0AAA0C00C793C8 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */,
+				8AD1A1E31D0AAA0C00C793C8 /* README.txt */,
+			);
+			path = "Mediation Adapters";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -557,7 +623,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1AC6FB25180E99E1004C840B /* PBXTargetDependency */,
 			);
 			name = "SaveTheBird-mobile";
 			productName = iphone;
@@ -575,7 +640,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1AC6FB16180E9959004C840B /* PBXTargetDependency */,
 			);
 			name = "SaveTheBird-desktop";
 			productName = iphone;
@@ -609,8 +673,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 1AC6FAE6180E9839004C840B /* Products */;
-					ProjectRef = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+					ProductGroup = 8AD1A1C61D0A957400C793C8 /* Products */;
+					ProjectRef = 8AD1A1C51D0A957400C793C8 /* cocos2d_libs.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -622,25 +686,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */ = {
+		8AD1A1CC1D0A957500C793C8 /* libcocos2d Mac.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libcocos2d Mac.a";
-			remoteRef = 1AC6FAF8180E9839004C840B /* PBXContainerItemProxy */;
+			remoteRef = 8AD1A1CB1D0A957500C793C8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1AC6FB07180E9839004C840B /* libcocos2d iOS.a */ = {
+		8AD1A1CE1D0A957500C793C8 /* libcocos2d iOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libcocos2d iOS.a";
-			remoteRef = 1AC6FB06180E9839004C840B /* PBXContainerItemProxy */;
+			remoteRef = 8AD1A1CD1D0A957500C793C8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8A0F53841CF2D8900048A61F /* libcocos2d tvOS.a */ = {
+		8AD1A1D01D0A957500C793C8 /* libcocos2d tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libcocos2d tvOS.a";
-			remoteRef = 8A0F53831CF2D8900048A61F /* PBXContainerItemProxy */;
+			remoteRef = 8AD1A1CF1D0A957500C793C8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -669,6 +733,7 @@
 				8AC9D1421CF6C742002D1CC5 /* chara01_back_stand.png in Resources */,
 				8A1B0FA41CF6D2BA00546014 /* ic_menu_home_66@2x.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
+				8AD1A1E71D0AAA0C00C793C8 /* README.txt in Resources */,
 				8AC9D1551CF6C742002D1CC5 /* .gitkeep in Resources */,
 				8AC9D1411CF6C742002D1CC5 /* chara01_back_right.png in Resources */,
 				8AC9D14F1CF6C742002D1CC5 /* chara03_front_stand.png in Resources */,
@@ -690,6 +755,7 @@
 				8AC9D14C1CF6C742002D1CC5 /* chara03_back_left.png in Resources */,
 				8AC9D14D1CF6C742002D1CC5 /* chara03_back_right.png in Resources */,
 				8A7246C31CF6C1B800D856E3 /* Assets.xcassets in Resources */,
+				8AD1A1E61D0AAA0C00C793C8 /* README.txt in Resources */,
 				8A43E8951CFFFDFE00A2654F /* se in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -719,7 +785,7 @@
 				8AC9C3221CF537C80067A617 /* Charactor.m in Sources */,
 				8AC9C3181CF535AE0067A617 /* SettingViewController.m in Sources */,
 				8AC9C3231CF537C80067A617 /* Charactor+CoreDataProperties.m in Sources */,
-				2C6CED4C1D0A488A0060ADF5 /* TitleScene.cpp in Sources */,
+				8AB9DF221D0A62C000C3AE44 /* TitleScene.cpp in Sources */,
 				2CF5847E1CFECDA600AD2978 /* Player.cpp in Sources */,
 				8AC9C32C1CF53EF10067A617 /* AppDelegate.cpp in Sources */,
 				8AC9C2F81CF535880067A617 /* CharactorViewController.m in Sources */,
@@ -739,19 +805,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1AC6FB16180E9959004C840B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "cocos2dx Mac";
-			targetProxy = 1AC6FB15180E9959004C840B /* PBXContainerItemProxy */;
-		};
-		1AC6FB25180E99E1004C840B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "cocos2dx iOS";
-			targetProxy = 1AC6FB24180E99E1004C840B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -762,6 +815,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.8.1",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -788,6 +845,7 @@
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
@@ -811,6 +869,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.8.1",
+				);
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ios/Prefix.pch;
@@ -835,6 +897,7 @@
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
