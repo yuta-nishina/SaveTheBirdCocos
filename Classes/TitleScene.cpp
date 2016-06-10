@@ -81,7 +81,6 @@ bool TitleScene::init()
             this->toStage(i);
         });
         auto label = Label::createWithSystemFont(StringUtils::format("%d",i), "logotypejp_mp_m_1_1", 18);
-        //label->enableShadow();
         label->setPosition(Vec2(30, 36));
         label->setColor(Color3B::BLACK);
         stageMenu->addChild(label);

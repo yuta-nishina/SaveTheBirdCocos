@@ -1,10 +1,9 @@
 obj/local/armeabi/objs-debug/cocosbuilder_static/CCBReader.o: \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/editor-support/cocosbuilder/CCBReader.cpp \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/ctype.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/xlocale.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/ctype.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/sys/cdefs.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/sys/cdefs_elf.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/android/api-level.h \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCDirector.h \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/stack \
@@ -14,12 +13,12 @@ obj/local/armeabi/objs-debug/cocosbuilder_static/CCBReader.o: \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/android/log.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCRef.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCVector.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccMacros.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/sys/select.h \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCStdC.h \
@@ -45,10 +44,10 @@ obj/local/armeabi/objs-debug/cocosbuilder_static/CCBReader.o: \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Quaternion.inl \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCGL.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCGL-android.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2platform.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/KHR/khrplatform.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2ext.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCTexture2D.h \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/unordered_map \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCScriptSupport.h \
@@ -109,15 +108,13 @@ obj/local/armeabi/objs-debug/cocosbuilder_static/CCBReader.o: \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/extensions/../extensions//GUI/CCControlExtension/CCInvocation.h \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/sstream
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/ctype.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/ctype.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/sys/cdefs.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/cdefs_elf.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/api-level.h:
-
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/xlocale.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/android/api-level.h:
 
 /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm:
 
@@ -137,7 +134,7 @@ obj/local/armeabi/objs-debug/cocosbuilder_static/CCBReader.o: \
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/android/log.h:
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCRef.h:
 
@@ -147,7 +144,7 @@ obj/local/armeabi/objs-debug/cocosbuilder_static/CCBReader.o: \
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/sys/select.h:
 
 /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map:
 
@@ -199,13 +196,13 @@ obj/local/armeabi/objs-debug/cocosbuilder_static/CCBReader.o: \
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCGL-android.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2platform.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/KHR/khrplatform.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2ext.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h:
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./renderer/CCTexture2D.h:
 

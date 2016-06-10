@@ -17,12 +17,12 @@ obj/local/armeabi/objs-debug/cocos3d_static/CCObjLoader.o: \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../platform/CCPlatformConfig.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../platform/CCPlatformDefine.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../platform/android/CCPlatformDefine-android.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/android/log.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../base/ccTypes.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../math/CCGeometry.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../base/ccMacros.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../base/CCConsole.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/sys/select.h \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../base/CCRef.h \
@@ -45,10 +45,10 @@ obj/local/armeabi/objs-debug/cocos3d_static/CCObjLoader.o: \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../math/Quaternion.inl \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../platform/CCGL.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../platform/android/CCGL-android.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2platform.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/KHR/khrplatform.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2ext.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../base/CCValue.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../base/CCData.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../base/ccUtils.h \
@@ -105,7 +105,7 @@ obj/local/armeabi/objs-debug/cocos3d_static/CCObjLoader.o: \
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../platform/android/CCPlatformDefine-android.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/android/log.h:
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../base/ccTypes.h:
 
@@ -115,7 +115,7 @@ obj/local/armeabi/objs-debug/cocos3d_static/CCObjLoader.o: \
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../base/CCConsole.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/sys/select.h:
 
 /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
@@ -161,13 +161,13 @@ obj/local/armeabi/objs-debug/cocos3d_static/CCObjLoader.o: \
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../platform/android/CCGL-android.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2platform.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2platform.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/KHR/khrplatform.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/KHR/khrplatform.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/GLES2/gl2ext.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/GLES2/gl2ext.h:
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/3d/../base/CCValue.h:
 

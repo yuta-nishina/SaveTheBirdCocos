@@ -7,7 +7,7 @@ obj/local/armeabi/objs-debug/cocos_extension_static/Particle3D/PU/CCPUSimpleSpli
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformConfig.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/CCPlatformDefine.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/android/log.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCMath.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Vec2.h \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/algorithm \
@@ -20,7 +20,7 @@ obj/local/armeabi/objs-debug/cocos_extension_static/Particle3D/PU/CCPUSimpleSpli
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/Mat4.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/ccMacros.h \
  /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h \
- /Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h \
+ /Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/sys/select.h \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/map \
  /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/mutex \
@@ -48,7 +48,7 @@ obj/local/armeabi/objs-debug/cocos_extension_static/Particle3D/PU/CCPUSimpleSpli
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./platform/android/CCPlatformDefine-android.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/android/log.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/android/log.h:
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./math/CCMath.h:
 
@@ -74,7 +74,7 @@ obj/local/armeabi/objs-debug/cocos_extension_static/Particle3D/PU/CCPUSimpleSpli
 
 /Users/arimatakeshi/GitHub/SaveTheBirdCocos/proj.android-studio/../cocos2d/cocos/./base/CCConsole.h:
 
-/Develop/android/android-ndk-r10e/platforms/android-21/arch-arm/usr/include/sys/select.h:
+/Develop/android/android-ndk-r10e/platforms/android-17/arch-arm/usr/include/sys/select.h:
 
 /Develop/android/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/include/thread:
 
