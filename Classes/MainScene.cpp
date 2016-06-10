@@ -131,7 +131,8 @@ bool MainScene::initWithLevel(int level)
         // プレイヤーを取得
         auto player = _stage->getPlayer();
         // プレイヤーの位置を絶対座標で取得
-        Vec2 playerLocation = player->convertToWorldSpace(Point(player->getScaleX()/2, player->getScaleY()/2));
+        Vec2 playerLocation = player->convertToWorldSpace(Point(player->getContentSize().width / 2,
+                                                                player->getContentSize().height / 2));
         // 前回のタッチ位置
         Vec2 previousLocation = touch->getPreviousLocation();
         // 現在のタッチ位置
