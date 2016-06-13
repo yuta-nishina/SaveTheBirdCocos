@@ -126,13 +126,16 @@
 
     </LinearLayout>
 
-    <Button
-        android:layout_width="294dp"
+    <ImageButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="公式サイト"
         android:id="@+id/sitelink"
+        android:src="@mipmap/review"
+        android:background="@null"
         android:layout_marginBottom="32dp"
         android:layout_gravity="center_horizontal|bottom"
-        android:linksClickable="false" />
+        android:linksClickable="false"
+        />
+
 
 </LinearLayout>

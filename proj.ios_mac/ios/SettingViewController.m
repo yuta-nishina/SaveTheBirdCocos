@@ -124,7 +124,7 @@
 
 // 公式リンクボタンが押された時
 - (IBAction)linkButtonTouched:(UIButton *)sender {
-    NSURL *url = [NSURL URLWithString:@"https://www.google.co.jp/"];
+    NSURL *url = [NSURL URLWithString:@"http://stb-bbs.latte-project.info/"];
     [[UIApplication sharedApplication] openURL:url];
 }
 

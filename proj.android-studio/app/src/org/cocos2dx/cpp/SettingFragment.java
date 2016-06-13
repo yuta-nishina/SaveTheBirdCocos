@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
@@ -136,11 +137,11 @@ public class SettingFragment extends Fragment {
         });
 
         // 公式リンクボタンが押された時の処理
-        Button siteLinkButton = (Button)activity.findViewById(R.id.sitelink);
+        ImageButton siteLinkButton = (ImageButton)activity.findViewById(R.id.sitelink);
         siteLinkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.google.co.jp");
+                Uri uri = Uri.parse("http://stb-bbs.latte-project.info/");
                 Intent i = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(i);
             }
