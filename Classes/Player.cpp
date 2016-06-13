@@ -16,6 +16,12 @@ const int FRAME_COUNT = 2;
 
 bool Player::init()
 {
+    
+    
+    // キャラデータ取得
+    //int setchar = UserDefault::sharedUserDefault()->getDataForKey("current_charactor_no",0);
+    //CCLOG("%i", setchar);
+    
     if (!Sprite::initWithFile("chara01_player.png")) {
         return false;
     }

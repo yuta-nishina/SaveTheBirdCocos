@@ -19,7 +19,6 @@ USING_NS_CC;
 const int STAGE_COUNT = 13;
 const Vec2 GRAVITY_ACCELERATION = Vec2(0, 0);
 const Vec2 IMPULSE_ACCELERATION = Vec2(0, 0);
-const int MAX_ITEM_COUNT = 2;
 
 Scene* MainScene::createSceneWithStage(int level)
 {
@@ -248,17 +247,6 @@ void MainScene::onEnterTransitionDidFinish()
                                    ScaleTo::create(0.1, 0),
                                    NULL));
 
-    
-    //auto go = Sprite::create("go.png");
-    //go->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
-    //this->addChild(go);
-    //go->setScale(0);
-    //go->runAction(Sequence::create(ScaleTo::create(0.1, 1.0),
-    //                               DelayTime::create(0.5),
-    //                               ScaleTo::create(0.1, 0),
-    //                               NULL));
-    
-    
     this->scheduleUpdate();
 }
 
@@ -339,7 +327,7 @@ void MainScene::onGameOver()
     addChild(sprite);
     
     //1秒かけてフェードアーウト
-    auto action = FadeTo::create(3, 40);
+    auto action = FadeTo::create(0.9, 256);
     sprite->runAction(action);
     
     
@@ -364,9 +352,10 @@ void MainScene::onGameOver()
     }
     auto animation = Animation::createWithSpriteFrames(frames);
     // アニメの動く時間
-    animation->setDelayPerUnit(0.04);
+    animation->setDelayPerUnit(0.2);
     gameover->runAction(Repeat::create(Animate::create(animation),1));
-    gameover->setPosition(Vec2(winSize.width / 2.0, winSize.height / 1.3));
+    gameover->setPosition(Vec2(winSize.width / 2.0, winSize.height / 1.35));
+    gameover->setScale(1.5);
     this->addChild(gameover);
     
     auto menuItem = MenuItemImage::create("replay.png", "replay_pressed.png", [currentStage](Ref *sender) {
@@ -384,11 +373,12 @@ void MainScene::onGameOver()
     auto menu = Menu::create(menuItem, returnTitle, nullptr);
     menu->alignItemsVerticallyWithPadding(20);
     this->addChild(menu);
-    menu->setPosition(winSize.width / 2.0, winSize.height / 1.8);
+    menu->setPosition(winSize.width / 2.0, winSize.height / 2.4);
     
     // パーティクル表示
-    auto explosition = ParticleExplosion::create();
+    auto explosition = ParticleSystemQuad::create("particle_texture.plist");
     explosition->setPosition(_stage->getPlayer()->getPosition());
+    explosition->setScale(0.3f);
     _stage->addChild(explosition);
     
     
@@ -459,7 +449,7 @@ void MainScene::onMenu()
     menuBack->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
     this->addChild(menuBack,2,101);
     
-    //int nextStage = (_stage->getLevel() + 1) % STAGE_COUNT;
+    int currentStage = _stage->getLevel();
     
     //閉じる
     auto closeMenu = MenuItemImage::create("close.png", "close.png", [this](Ref *sender) {
@@ -470,16 +460,23 @@ void MainScene::onMenu()
         return;
     });
     
+    auto menuItem = MenuItemImage::create("replay.png", "replay_pressed.png", [currentStage](Ref *sender) {
+        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        auto scene = MainScene::createSceneWithStage(currentStage);
+        auto transition = TransitionFade::create(1.0, scene);
+        Director::getInstance()->replaceScene(transition);
+    });
+
     auto returnTitle = MenuItemImage::create("return.png", "return_pressed.png", [](Ref *sender) {
      CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
      auto scene = TitleScene::createScene();
      auto transition = TransitionFade::create(1.0, scene);
      Director::getInstance()->replaceScene(transition);
      });
-    auto menu = Menu::create(returnTitle, closeMenu, nullptr);
-    menu->alignItemsVerticallyWithPadding(85);
+    auto menu = Menu::create(returnTitle, menuItem,closeMenu, nullptr);
+    menu->alignItemsVerticallyWithPadding(20);
     menu->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
-    menu->setPosition(winSize.width / 2.0, winSize.height / 2.0 - 35);
+    menu->setPosition(winSize.width / 2.0, winSize.height / 2.0 - 45);
     menuBack->addChild(menu);
     
 }
