@@ -151,6 +151,7 @@
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Rr-wD-Vgs">
                                                 <rect key="frame" x="-2" y="38" width="524" height="31"/>
+
                                                 <connections>
                                                     <action selector="volumeSliderValueChanged:" destination="Gle-ZG-vEY" eventType="valueChanged" id="S39-y9-wRB"/>
                                                 </connections>
