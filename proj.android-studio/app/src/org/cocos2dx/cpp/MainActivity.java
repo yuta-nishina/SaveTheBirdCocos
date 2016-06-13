@@ -58,7 +58,9 @@ public class MainActivity extends Activity{
 
         // 広告の表示テスト
         AdView mAdView = (AdView)findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .build();
         mAdView.loadAd(adRequest);
     }
 
