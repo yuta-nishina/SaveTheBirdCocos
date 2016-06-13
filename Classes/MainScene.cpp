@@ -19,7 +19,6 @@ USING_NS_CC;
 const int STAGE_COUNT = 13;
 const Vec2 GRAVITY_ACCELERATION = Vec2(0, 0);
 const Vec2 IMPULSE_ACCELERATION = Vec2(0, 0);
-const int MAX_ITEM_COUNT = 2;
 
 Scene* MainScene::createSceneWithStage(int level)
 {
@@ -83,8 +82,8 @@ bool MainScene::initWithLevel(int level)
         _stage->setScale(0.9f);
     }
     
-    auto mapWidth = stage->getTiledMap()->getContentSize().width;
-    auto backgroundWidth = background->getContentSize().width;
+    //auto mapWidth = stage->getTiledMap()->getContentSize().width;
+    //auto backgroundWidth = background->getContentSize().width;
     
     //480.000000,320.000000,600.000000
     //parallaxNode->addChild(background, 0, Vec2((backgroundWidth - winSize.width) / mapWidth, 0), Vec2::ZERO);
@@ -164,18 +163,18 @@ bool MainScene::initWithLevel(int level)
 
     // ステージ番号の表示
     auto stageBackground = Sprite::create("stage_ui.png");
-    stageBackground->setPosition(Vec2(55,
+    stageBackground->setPosition(Vec2(92,
                                       winSize.height - 26));
     this->addChild(stageBackground);
     
     auto stageLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
     stageLabel->setString(StringUtils::format("%d", _stage->getLevel()));
-    stageLabel->setPosition(Vec2(55, winSize.height - 16));
+    stageLabel->setPosition(Vec2(26, winSize.height - 25));
     this->addChild(stageLabel);
     
     // 制限時間を表示
     auto secondLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
-    secondLabel->setPosition(Vec2(160, winSize.height - 16));
+    secondLabel->setPosition(Vec2(117, winSize.height - 25));
     this->addChild(secondLabel);
     this->setSecondLabel(secondLabel);
     
@@ -184,10 +183,9 @@ bool MainScene::initWithLevel(int level)
         // menu
         onMenu();
     });
-    mItem->setContentSize(Size(141, 64));
+    mItem->setContentSize(Size(141, 24));
     auto _menu = Menu::create(mItem,NULL);
-    //_menu->setPosition(Point::ZERO);
-    _menu->setPosition(Point(winSize.width/2 + 140, winSize.height - 40));
+    _menu->setPosition(Point(winSize.width/2 + 150, winSize.height - 30));
     this->addChild(_menu);
     
     
@@ -203,14 +201,7 @@ bool MainScene::initWithLevel(int level)
     //this->setCoinLabel(label);
     
     
-    // 取得したアイテムの数を表示
-    for (int i = 0; i < MAX_ITEM_COUNT; ++i) {
-        auto sprite = Sprite::create("item.png");
-        sprite->setPosition(Vec2(winSize.width - 70 + i * 20, winSize.height - 20));
-        this->addChild(sprite);
-        _items.pushBack(sprite);
-        sprite->setColor(Color3B::BLACK);
-    }
+
     
     return true;
 }
@@ -247,26 +238,15 @@ void MainScene::onEnterTransitionDidFinish()
     
     auto winSize = Director::getInstance()->getWinSize();
     
-    auto text = Label::createWithSystemFont("Go!", "logotypejp_mp_m_1_1", 48);
+    auto text = Label::createWithSystemFont("START!!", "logotypejp_mp_m_1_1", 48);
     text->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
     this->addChild(text);
     text->setScale(0);
     text->runAction(Sequence::create(ScaleTo::create(0.1, 1.0),
-                                   DelayTime::create(0.8),
+                                   DelayTime::create(1.0),
                                    ScaleTo::create(0.1, 0),
                                    NULL));
 
-    
-    //auto go = Sprite::create("go.png");
-    //go->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
-    //this->addChild(go);
-    //go->setScale(0);
-    //go->runAction(Sequence::create(ScaleTo::create(0.1, 1.0),
-    //                               DelayTime::create(0.5),
-    //                               ScaleTo::create(0.1, 0),
-    //                               NULL));
-    
-    
     this->scheduleUpdate();
 }
 
@@ -334,17 +314,49 @@ void MainScene::onGameOver()
 {
     this->setState(State::GAMEOVER);
     _stage->getPlayer()->removeFromParent();
+     this->getEventDispatcher()->removeAllEventListeners();
     
     auto winSize = Director::getInstance()->getWinSize();
     int currentStage = _stage->getLevel();
     
-    //auto gameover = Sprite::create("gameover.png");
-    //gameover->setPosition(Vec2(winSize.width / 2.0, winSize.height / 1.5));
-    //this->addChild(gameover);
-
-    auto text = Label::createWithSystemFont("Game Over", "logotypejp_mp_m_1_1", 48);
-    text->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
-    this->addChild(text);
+    
+    //スプライトを作成
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    auto sprite = Sprite::create("black.png");
+    sprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+    addChild(sprite);
+    
+    //1秒かけてフェードアーウト
+    auto action = FadeTo::create(0.9, 256);
+    sprite->runAction(action);
+    
+    
+    
+    
+    
+    auto gameover = Sprite::create("gameover_ani.png");
+    // 1フレームの画像サイズを取得する
+    auto frameSize = Size(gameover->getContentSize().width,
+                          gameover->getContentSize().height / 5);
+    // テクスチャの大きさを1フレーム分にする
+    gameover->setTextureRect(Rect(0, 0, frameSize.width, frameSize.height));
+    
+    Vector<SpriteFrame *> frames;
+    for (int i = 0; i < 5; ++i) {
+        // 1コマずつアニメーションを作成する
+        auto frame = SpriteFrame::create("gameover_ani.png", Rect(0,
+                                                                  frameSize.height * i,
+                                                                    frameSize.width,
+                                                                    frameSize.height));
+        frames.pushBack(frame);
+    }
+    auto animation = Animation::createWithSpriteFrames(frames);
+    // アニメの動く時間
+    animation->setDelayPerUnit(0.2);
+    gameover->runAction(Repeat::create(Animate::create(animation),1));
+    gameover->setPosition(Vec2(winSize.width / 2.0, winSize.height / 1.35));
+    gameover->setScale(1.5);
+    this->addChild(gameover);
     
     auto menuItem = MenuItemImage::create("replay.png", "replay_pressed.png", [currentStage](Ref *sender) {
         CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
@@ -361,11 +373,12 @@ void MainScene::onGameOver()
     auto menu = Menu::create(menuItem, returnTitle, nullptr);
     menu->alignItemsVerticallyWithPadding(20);
     this->addChild(menu);
-    menu->setPosition(winSize.width / 2.0, winSize.height / 3);
+    menu->setPosition(winSize.width / 2.0, winSize.height / 2.4);
     
     // パーティクル表示
-    auto explosition = ParticleExplosion::create();
+    auto explosition = ParticleSystemQuad::create("particle_texture.plist");
     explosition->setPosition(_stage->getPlayer()->getPosition());
+    explosition->setScale(0.3f);
     _stage->addChild(explosition);
     
     
@@ -381,11 +394,18 @@ void MainScene::onClear()
     this->setState(State::CLEAR);
     this->getEventDispatcher()->removeAllEventListeners();
     
-    
     _stage->getPlayer()->getPhysicsBody()->setEnabled(false);
     
+    //スプライトを作成
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    auto sprite = Sprite::create("white.png");
+    sprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+    sprite->setOpacity(40);
+    addChild(sprite);
+
+    
     auto txtClear = Sprite::create("clear.png");
-       txtClear->setPosition(Vec2(winSize.width / 2.0, winSize.height -125));
+    txtClear->setPosition(Vec2(winSize.width / 2.0, winSize.height -125));
     txtClear->setScale(0.9);
     this->addChild(txtClear);
 
@@ -394,6 +414,9 @@ void MainScene::onClear()
     clear->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
     this->addChild(clear);
     _stage->getPlayer()->removeFromParent();
+    //ジャンプ
+    auto action = JumpBy::create(3.4f,Vec2(0.7,0.4),4,10);
+    clear->runAction(action);
     
     
     int nextStage = (_stage->getLevel() + 1) % STAGE_COUNT;
@@ -426,12 +449,7 @@ void MainScene::onMenu()
     menuBack->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
     this->addChild(menuBack,2,101);
     
-    auto text = Label::createWithSystemFont("メニュー", "logotypejp_mp_m_1_1", 26);
-    text->setColor(Color3B(60, 60, 60));
-    text->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0 + 105));
-    menuBack->addChild(text, 2);
-    
-    //int nextStage = (_stage->getLevel() + 1) % STAGE_COUNT;
+    int currentStage = _stage->getLevel();
     
     //閉じる
     auto closeMenu = MenuItemImage::create("close.png", "close.png", [this](Ref *sender) {
@@ -442,16 +460,23 @@ void MainScene::onMenu()
         return;
     });
     
+    auto menuItem = MenuItemImage::create("replay.png", "replay_pressed.png", [currentStage](Ref *sender) {
+        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        auto scene = MainScene::createSceneWithStage(currentStage);
+        auto transition = TransitionFade::create(1.0, scene);
+        Director::getInstance()->replaceScene(transition);
+    });
+
     auto returnTitle = MenuItemImage::create("return.png", "return_pressed.png", [](Ref *sender) {
      CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
      auto scene = TitleScene::createScene();
      auto transition = TransitionFade::create(1.0, scene);
      Director::getInstance()->replaceScene(transition);
      });
-    auto menu = Menu::create(returnTitle, closeMenu, nullptr);
+    auto menu = Menu::create(returnTitle, menuItem,closeMenu, nullptr);
     menu->alignItemsVerticallyWithPadding(20);
     menu->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
-    menu->setPosition(winSize.width / 2.0, winSize.height / 3.0 - 50);
+    menu->setPosition(winSize.width / 2.0, winSize.height / 2.0 - 45);
     menuBack->addChild(menu);
     
 }
@@ -459,9 +484,16 @@ void MainScene::onMenu()
 
 void MainScene::onGetItem(cocos2d::Node * item)
 {
+    auto winSize = Director::getInstance()->getWinSize();
+
     _itemCount += 1;
+    // 取得したアイテムの数を表示
     for (int i = 0; i < _itemCount; ++i) {
-        _items.at(i)->setColor(Color3B::WHITE);
+        auto sprite = Sprite::create("item.png");
+        sprite->setPosition(Vec2(winSize.width/2 + 40 + i * 20, winSize.height - 27));
+        this->addChild(sprite);
+        _items.pushBack(sprite);
+        
     }
 }
 
