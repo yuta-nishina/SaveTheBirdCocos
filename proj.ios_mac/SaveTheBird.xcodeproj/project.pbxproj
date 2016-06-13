@@ -10,7 +10,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2C3002001D0AB15E00AFB822 /* review.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C3001FF1D0AB15E00AFB822 /* review.png */; };
+		2C3002021D0E327000AFB822 /* review.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C3002011D0E327000AFB822 /* review.png */; };
 		2CF5847D1CFECDA600AD2978 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584731CFECDA600AD2978 /* MainScene.cpp */; };
 		2CF5847E1CFECDA600AD2978 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584751CFECDA600AD2978 /* Player.cpp */; };
 		2CF5847F1CFECDA600AD2978 /* Stage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CF584761CFECDA600AD2978 /* Stage.cpp */; };
@@ -139,7 +139,7 @@
 		1D6058910D05DD3D006BFB54 /* SaveTheBird-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SaveTheBird-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2C3001FF1D0AB15E00AFB822 /* review.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = review.png; path = ../../../../Desktop/review.png; sourceTree = "<group>"; };
+		2C3002011D0E327000AFB822 /* review.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = review.png; sourceTree = "<group>"; };
 		2CF584731CFECDA600AD2978 /* MainScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainScene.cpp; sourceTree = "<group>"; };
 		2CF584741CFECDA600AD2978 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
 		2CF584751CFECDA600AD2978 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
@@ -506,7 +506,7 @@
 		8AC9D11C1CF6C742002D1CC5 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				2C3001FF1D0AB15E00AFB822 /* review.png */,
+				2C3002011D0E327000AFB822 /* review.png */,
 				8A1B0F8F1CF6CA0C00546014 /* menu */,
 				8AC9D11D1CF6C742002D1CC5 /* chara */,
 			);
@@ -740,7 +740,6 @@
 				8AC9D1551CF6C742002D1CC5 /* .gitkeep in Resources */,
 				8AC9D1411CF6C742002D1CC5 /* chara01_back_right.png in Resources */,
 				8AC9D14F1CF6C742002D1CC5 /* chara03_front_stand.png in Resources */,
-				2C3002001D0AB15E00AFB822 /* review.png in Resources */,
 				8AC9D1501CF6C742002D1CC5 /* chara03_name.png in Resources */,
 				8AC9D1431CF6C742002D1CC5 /* chara01_front_left.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
@@ -751,6 +750,7 @@
 				8A1B0FA71CF6D2BA00546014 /* ic_menu_setting_on_66@2x.png in Resources */,
 				8A43E8931CFFFDF400A2654F /* music in Resources */,
 				8AC9C2FF1CF535990067A617 /* GameStoryboard.storyboard in Resources */,
+				2C3002021D0E327000AFB822 /* review.png in Resources */,
 				8AC9C3141CF535AE0067A617 /* MasterData.plist in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				8AC9D1441CF6C742002D1CC5 /* chara01_front_right.png in Resources */,
