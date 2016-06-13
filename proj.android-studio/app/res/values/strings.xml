@@ -5,4 +5,9 @@
     <string name="systemFont">logotypejp_mp_m_1.1.ttf</string>
     <string name="optionPageTitle">オプション</string>
     <string name="no_image">NoImage</string>
+    <!--本番用-->
+    <!--<string name="banner_ad_unit_id">ca-app-pub-9429655873788061/2176786034</string>-->
+    <!--テスト用-->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
 </resources>

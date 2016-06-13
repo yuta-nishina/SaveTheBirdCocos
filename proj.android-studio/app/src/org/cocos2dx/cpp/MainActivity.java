@@ -22,6 +22,9 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.util.List;
@@ -52,6 +55,11 @@ public class MainActivity extends Activity{
 
         // 初期タブ（ホーム）の画像を変更
         homeButton.setImageResource(R.mipmap.ic_menu_home_on_66);
+
+        // 広告の表示テスト
+        AdView mAdView = (AdView)findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
     @Override
