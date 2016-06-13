@@ -23,7 +23,34 @@ THE SOFTWARE.
 ****************************************************************************/
 package org.cocos2dx.cpp;
 
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+
 import org.cocos2dx.lib.Cocos2dxActivity;
 
 public class AppActivity extends Cocos2dxActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        AdView mAdView = new AdView(this);
+        mAdView.setAdSize(AdSize.SMART_BANNER);
+        mAdView.setAdUnitId(getResources().getString(R.string.banner_ad_unit_id));
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .build();
+
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.gravity = Gravity.BOTTOM;
+        addContentView(mAdView,params);
+
+        mAdView.loadAd(adRequest);
+    }
 }
