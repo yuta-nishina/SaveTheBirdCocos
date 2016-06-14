@@ -17,8 +17,8 @@ extern "C" {
     void NativeLauncher::returnHome()
     {
         // JNIを使ってJAVAのメソッドを呼び出す
-        JniMethodInfo methodInfo;
-        if (!JniHelper::getStaticMethodInfo(methodInfo, CLASS_NAME, "returnHome", "()V")) {
+        cocos2d::JniMethodInfo methodInfo;
+        if (!cocos2d::JniHelper::getStaticMethodInfo(methodInfo, CLASS_NAME, "returnHome", "()V")) {
             return;
         }
         methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID);
