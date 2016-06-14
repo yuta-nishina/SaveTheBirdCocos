@@ -35,8 +35,14 @@ Scene* MainScene::createSceneWithStage(int level)
     //world->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
     //#endif
     // スピードを設定する
-    world->setSpeed(2.0f);
-    
+    if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) {
+        // for ios
+        world->setSpeed(2.0f);
+    }else{
+        // for android
+        world->setSpeed(3.3f);
+    }
+
     auto layer = new MainScene();
     if (layer && layer->initWithLevel(level)) {
         layer->autorelease();
@@ -61,9 +67,6 @@ bool MainScene::initWithLevel(int level)
     }
     
     auto winSize = Director::getInstance()->getWinSize();
-    
-//    this->scheduleUpdate();
-    
     auto background = Sprite::create("background.png");
     background->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
     
@@ -79,16 +82,8 @@ bool MainScene::initWithLevel(int level)
         _stage->setScale(1.2f);
     }else{
         // for android
-        _stage->setScale(0.9f);
+        _stage->setScale(1.0f);
     }
-    
-    //auto mapWidth = stage->getTiledMap()->getContentSize().width;
-    //auto backgroundWidth = background->getContentSize().width;
-    
-    //480.000000,320.000000,600.000000
-    //parallaxNode->addChild(background, 0, Vec2((backgroundWidth - winSize.width) / mapWidth, 0), Vec2::ZERO);
-    //parallaxNode->addChild(background, 0, Vec2::ZERO, Vec2::ZERO);
-    //this->setParallaxNode(parallaxNode);
     this->addChild(background);
     
     
@@ -167,13 +162,29 @@ bool MainScene::initWithLevel(int level)
                                       winSize.height - 26));
     this->addChild(stageBackground);
     
-    auto stageLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
+    auto stageLabel = Label::create();
+    if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) {
+        // for ios
+        stageLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
+    }else{
+        // for android
+        stageLabel = Label::createWithCharMap("numbers.png", 16, 18, '0');
+    }
+
     stageLabel->setString(StringUtils::format("%d", _stage->getLevel()));
     stageLabel->setPosition(Vec2(26, winSize.height - 25));
     this->addChild(stageLabel);
     
     // 制限時間を表示
-    auto secondLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
+    auto secondLabel = Label::create();
+    if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) {
+        // for ios
+        secondLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
+    }else{
+        // for android
+        secondLabel = Label::createWithCharMap("numbers.png", 16, 18, '0');
+    }
+
     secondLabel->setPosition(Vec2(117, winSize.height - 25));
     this->addChild(secondLabel);
     this->setSecondLabel(secondLabel);
@@ -200,8 +211,6 @@ bool MainScene::initWithLevel(int level)
     //label->enableShadow();
     //this->setCoinLabel(label);
     
-    
-
     
     return true;
 }
@@ -234,8 +243,6 @@ void MainScene::onEnterTransitionDidFinish()
     Layer::onEnterTransitionDidFinish();
     // BGM 再生
     // CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic(AudioUtils::getFileName("main").c_str(), true);
-    // GO演出
-    
     auto winSize = Director::getInstance()->getWinSize();
     
     auto text = Label::createWithSystemFont("START!!", "logotypejp_mp_m_1_1", 48);
@@ -281,28 +288,8 @@ void MainScene::update(float dt)
         }
     }
     
-    /*
-    // 画面外からはみ出したとき、ゲームオーバー判定
-    auto winSize = Director::getInstance()->getWinSize();
-    auto position = _stage->getPlayer()->getPosition();
-    const auto margin = _stage->getPlayer()->getContentSize().height / 2.0;
-    if (position.y < -margin || position.y >= (winSize.height - 160) + margin) {
-        if (this->getState() == State::MAIN) {
-            //this->onGameOver();
-            this->onClear();
-        }
-    }
-     */
-    
-    
     // コインの枚数の更新
     //this->getCoinLabel()->setString(StringUtils::toString(_coin));
-    
-    // 画面がタップされている間
-    //if (this->getIsPress()) {
-        // プレイヤーに上方向の推進力を与える
-        //_stage->getPlayer()->getPhysicsBody()->applyImpulse(IMPULSE_ACCELERATION);
-    //}
     
     if (_state == State::MAIN) {
         _second += dt;
@@ -331,9 +318,6 @@ void MainScene::onGameOver()
     sprite->runAction(action);
     
     
-    
-    
-    
     auto gameover = Sprite::create("gameover_ani.png");
     // 1フレームの画像サイズを取得する
     auto frameSize = Size(gameover->getContentSize().width,
@@ -355,7 +339,14 @@ void MainScene::onGameOver()
     animation->setDelayPerUnit(0.2);
     gameover->runAction(Repeat::create(Animate::create(animation),1));
     gameover->setPosition(Vec2(winSize.width / 2.0, winSize.height / 1.35));
-    gameover->setScale(1.5);
+    
+    if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) {
+        // for ios
+        gameover->setScale(1.5);
+    }else{
+        // for android
+        gameover->setScale(1.3);
+    }
     this->addChild(gameover);
     
     auto menuItem = MenuItemImage::create("replay.png", "replay_pressed.png", [currentStage](Ref *sender) {
@@ -378,7 +369,13 @@ void MainScene::onGameOver()
     // パーティクル表示
     auto explosition = ParticleSystemQuad::create("particle_texture.plist");
     explosition->setPosition(_stage->getPlayer()->getPosition());
-    explosition->setScale(0.3f);
+    if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) {
+        // for ios
+        explosition->setScale(0.3f);
+    }else{
+        // for android
+        // explosition->setScale(0.9f);
+    }
     _stage->addChild(explosition);
     
     

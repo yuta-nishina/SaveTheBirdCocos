@@ -80,6 +80,9 @@ bool Stage::initWithLevel(int level)
     // Playerの生成 (開始位置)
     auto player = Player::create();
     player->setPosition(Vec2(_tiledMap->getContentSize().width/2 , _tiledMap->getContentSize().height / 2));
+    if (Director::getInstance()->getContentScaleFactor() == 1.0) {
+        player->setScale(0.85f);
+    }
     this->addChild(player);
     this->setPlayer(player);
     

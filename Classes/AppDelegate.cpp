@@ -45,8 +45,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setDisplayStats(false);
 
 
-    // set FPS. the default value is 1.0/60 if you don't call this
-    director->setAnimationInterval(1.0 / 60);
+    // set FPS. the default value is 1.0/30 if you don't call this
+    director->setAnimationInterval(1.0 / 45);
     
     auto fu = FileUtils::getInstance();
     
@@ -66,33 +66,19 @@ bool AppDelegate::applicationDidFinishLaunching() {
             if (frameSize.width == 1136) {
                 // iPhone 4inchのとき
                 // 4インチ対応の画面サイズに変更する
-                //glview->setDesignResolutionSize(568, 320, ResolutionPolicy::NO_BORDER);
                 glview->setDesignResolutionSize(320, 568, ResolutionPolicy::SHOW_ALL);
                 // Resources/4inchフォルダに画像ファイルがあれば、最優先で利用する
                 searchResolutionOrder.push_back("images/4inch");
             } else {
                 // Retina 3.5インチのとき
-                //glview->setDesignResolutionSize(480, 320, ResolutionPolicy::NO_BORDER);
                 glview->setDesignResolutionSize(320, 480, ResolutionPolicy::SHOW_ALL);
             }
             searchResolutionOrder.push_back("images/retina");
         } else { // non-Retina 3.5インチ
-            //glview->setDesignResolutionSize(480, 320, ResolutionPolicy::NO_BORDER);
             glview->setDesignResolutionSize(320, 480, ResolutionPolicy::SHOW_ALL);
             searchResolutionOrder.push_back("images/nonretina");
         }
-    //} else if (platform == Platform::OS_IPAD) {
-    //    fu->addSearchPath("music/caf");
-    //    fu->addSearchPath("se/caf");
-    //    if (frameSize.width > 768.f) {
-    //        director->setContentScaleFactor(2.0f);
-    //        searchResolutionOrder.push_back("images/retina");
-    //    } else {
-    //        searchResolutionOrder.push_back("images/nonretina");
-    //    }
-    //    glview->setDesignResolutionSize(568, 320, ResolutionPolicy::SHOW_ALL);
     } else if (platform == Platform::OS_ANDROID) { // Android端末のとき
-        //glview->setDesignResolutionSize(480, 320, ResolutionPolicy::SHOW_ALL);
         glview->setDesignResolutionSize(320, 480, ResolutionPolicy::SHOW_ALL);
         fu->addSearchPath("music/ogg");
         fu->addSearchPath("se/ogg");
@@ -103,7 +89,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     // create a scene. it's an autorelease object
     auto scene = TitleScene::createScene();
-    //auto scene = MainScene::createSceneWithStage(0);
 
     // run
     director->runWithScene(scene);

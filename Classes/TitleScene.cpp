@@ -40,40 +40,6 @@ bool TitleScene::init()
     background->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
     this->addChild(background);
     
-//    auto start = Sprite::create("start.png");
-//    this->addChild(start);
-//    start->setPosition(Vec2(winSize.width / 2, winSize.height / 4));
-//    
-//    // 画面をタッチしたときにメイン画面へ遷移
-//    auto listener = EventListenerTouchOneByOne::create();
-//    listener->onTouchBegan = [this, start](Touch* touch, Event* event) {
-//        start->setTexture(Director::getInstance()->getTextureCache()->addImage("start_pressed.png"));
-//        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("start").c_str());
-//        this->getEventDispatcher()->removeAllEventListeners();
-//        
-//        this->runAction(Sequence::create(DelayTime::create(1.0),
-//                                         CallFunc::create([] {
-//            auto main = MainScene::createSceneWithStage(0);
-//            auto transition = TransitionCrossFade::create(0.5, main);
-//            
-//            Director::getInstance()->replaceScene(transition);
-//        }), NULL));
-//        
-//        return true;
-//    };
-////    listener->onTouchEnded = [this](Touch* touch, Event* event) {
-////        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-////        UIViewController *initialViewController = [storyboard instantiateInitialViewController];
-////        
-////        UIViewController *controller = [UIApplication sharedApplication].keyWindow.rootViewController;
-////        [controller presentViewController:initialViewController animated:YES completion:nil];
-////        Director::getInstance()->end();
-////    
-////    };
-//    
-//    this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
-//
-    
     Vector<MenuItem*> menuItems;
     
     for (int i = 1; i < 13; i++) {
