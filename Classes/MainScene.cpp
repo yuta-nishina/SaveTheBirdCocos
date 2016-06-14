@@ -82,7 +82,7 @@ bool MainScene::initWithLevel(int level)
         _stage->setScale(1.2f);
     }else{
         // for android
-        _stage->setScale(1.0f);
+        _stage->setScale(0.9f);
     }
     this->addChild(background);
     
@@ -339,14 +339,8 @@ void MainScene::onGameOver()
     animation->setDelayPerUnit(0.2);
     gameover->runAction(Repeat::create(Animate::create(animation),1));
     gameover->setPosition(Vec2(winSize.width / 2.0, winSize.height / 1.35));
+    gameover->setScale(1.4);
     
-    if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) {
-        // for ios
-        gameover->setScale(1.5);
-    }else{
-        // for android
-        gameover->setScale(1.3);
-    }
     this->addChild(gameover);
     
     auto menuItem = MenuItemImage::create("replay.png", "replay_pressed.png", [currentStage](Ref *sender) {
@@ -374,7 +368,7 @@ void MainScene::onGameOver()
         explosition->setScale(0.3f);
     }else{
         // for android
-        // explosition->setScale(0.9f);
+        explosition->setScale(0.8f);
     }
     _stage->addChild(explosition);
     

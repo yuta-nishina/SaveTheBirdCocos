@@ -97,11 +97,6 @@ bool Stage::initWithLevel(int level)
                                                 _tiledMap->getContentSize().height * 2 - center.y * 2 + 160
                                                 )));
 
-    CCLOG("%f,%f,%f,%f", -(_tiledMap->getContentSize().height / 2),
-          -(_tiledMap->getContentSize().width / 2),
-          _tiledMap->getContentSize().height * 2,
-          _tiledMap->getContentSize().width * 2
-          );
     this->scheduleUpdate();
     
     return true;
