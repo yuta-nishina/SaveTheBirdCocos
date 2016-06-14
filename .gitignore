@@ -130,6 +130,7 @@ proj.android-studio/app/libs/armeabi/
 #proj.android-studio/app/gradle.properties
 proj.android-studio/app/local.properties
 proj.android-studio/*/build/
+proj.android-studio/*/armeabi/
 cocos2d/cocos/platform/android/libcocos2dx/build/
 
 # proj.ios_mac
