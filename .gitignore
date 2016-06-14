@@ -126,7 +126,7 @@ cocos2d/cocos/platform/android/java/res/
 *.iml
 proj.android-studio/app/assets/
 proj.android-studio/*/obj/
-proj.android-studio/app/obj/local/armeabi/
+/armeabi/
 proj.android-studio/app/libs/armeabi/
 #proj.android-studio/app/gradle.properties
 proj.android-studio/app/local.properties
