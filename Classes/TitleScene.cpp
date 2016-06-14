@@ -10,6 +10,7 @@
 #include "MainScene.h"
 #include "SimpleAudioEngine.h"
 #include "AudioUtils.h"
+#include "NativeLauncher.h"
 
 USING_NS_CC;
 
@@ -66,12 +67,13 @@ bool TitleScene::init()
     
     
     auto returnHome = MenuItemImage::create("home.png", "home_pressed.png", [this](Ref *sender){
-//        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-//        UIViewController *initialViewController = [storyboard instantiateInitialViewController];
-//
-//        UIViewController *controller = [UIApplication sharedApplication].keyWindow.rootViewController;
-//        [controller presentViewController:initialViewController animated:YES completion:nil];
-//        Director::getInstance()->end();
+        
+        //  ホーム画面に戻る（ネイティブのメソッドを呼び出す）
+        NativeLauncher::returnHome();
+        
+        // cocosの画面を閉じる
+        Director::getInstance()->end();
+        
     });
     
     auto returnMenu = Menu::createWithItem(returnHome);

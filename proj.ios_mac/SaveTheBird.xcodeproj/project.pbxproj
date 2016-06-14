@@ -48,6 +48,7 @@
 		8A43E8931CFFFDF400A2654F /* music in Resources */ = {isa = PBXBuildFile; fileRef = 8A43E8921CFFFDF400A2654F /* music */; };
 		8A43E8951CFFFDFE00A2654F /* se in Resources */ = {isa = PBXBuildFile; fileRef = 8A43E8941CFFFDFE00A2654F /* se */; };
 		8A7246C31CF6C1B800D856E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7246C21CF6C1B800D856E3 /* Assets.xcassets */; };
+		8A9E93271D0FF294002A85FB /* NativeLauncher.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E93261D0FF294002A85FB /* NativeLauncher.mm */; };
 		8AB9DF221D0A62C000C3AE44 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AB9DF211D0A62C000C3AE44 /* TitleScene.cpp */; };
 		8AC9C2F71CF535880067A617 /* IOSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C2F21CF535880067A617 /* IOSAppDelegate.m */; };
 		8AC9C2F81CF535880067A617 /* CharactorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9C2F41CF535880067A617 /* CharactorViewController.m */; };
@@ -184,6 +185,9 @@
 		8A43E8921CFFFDF400A2654F /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = music; sourceTree = "<group>"; };
 		8A43E8941CFFFDFE00A2654F /* se */ = {isa = PBXFileReference; lastKnownFileType = folder; path = se; sourceTree = "<group>"; };
 		8A7246C21CF6C1B800D856E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ios/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		8A9E93221D0FF200002A85FB /* NativeLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeLauncher.h; sourceTree = "<group>"; };
+		8A9E93261D0FF294002A85FB /* NativeLauncher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NativeLauncher.mm; sourceTree = "<group>"; };
+		8A9E93291D0FF4BE002A85FB /* NativeLauncher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NativeLauncher.cpp; sourceTree = "<group>"; };
 		8AB9DF211D0A62C000C3AE44 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleScene.cpp; sourceTree = "<group>"; };
 		8AC9C2F11CF535880067A617 /* IOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOSAppDelegate.h; path = ios/IOSAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		8AC9C2F21CF535880067A617 /* IOSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IOSAppDelegate.m; path = ios/IOSAppDelegate.m; sourceTree = SOURCE_ROOT; };
@@ -450,6 +454,9 @@
 				8AB9DF211D0A62C000C3AE44 /* TitleScene.cpp */,
 				8AC9C3281CF53EF10067A617 /* AppDelegate.cpp */,
 				8AC9C3291CF53EF10067A617 /* AppDelegate.h */,
+				8A9E93221D0FF200002A85FB /* NativeLauncher.h */,
+				8A9E93261D0FF294002A85FB /* NativeLauncher.mm */,
+				8A9E93291D0FF4BE002A85FB /* NativeLauncher.cpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -787,6 +794,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9E93271D0FF294002A85FB /* NativeLauncher.mm in Sources */,
 				8AC9C2F71CF535880067A617 /* IOSAppDelegate.m in Sources */,
 				2CF5848D1CFEDA7300AD2978 /* AudioUtils.cpp in Sources */,
 				8AC9C2F91CF535880067A617 /* CocosController.mm in Sources */,

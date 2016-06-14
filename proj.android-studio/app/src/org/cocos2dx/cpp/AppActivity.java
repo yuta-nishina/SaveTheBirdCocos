@@ -23,6 +23,7 @@ THE SOFTWARE.
 ****************************************************************************/
 package org.cocos2dx.cpp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.ViewGroup;
@@ -36,9 +37,12 @@ import org.cocos2dx.lib.Cocos2dxActivity;
 
 public class AppActivity extends Cocos2dxActivity {
 
+    private static AppActivity me = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        me = this;
 
         AdView mAdView = new AdView(this);
         mAdView.setAdSize(AdSize.SMART_BANNER);
@@ -52,5 +56,20 @@ public class AppActivity extends Cocos2dxActivity {
         addContentView(mAdView,params);
 
         mAdView.loadAd(adRequest);
+    }
+
+
+    // JNI から呼び出されるメソッド
+    public static void returnHome(){
+
+        me.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(me, MainActivity.class);
+
+                me.startActivity(intent);
+            }
+        });
+
     }
 }
