@@ -86,8 +86,8 @@ bool Stage::initWithLevel(int level)
     this->addChild(player);
     this->setPlayer(player);
     
-    Point origin = Director::sharedDirector()->getVisibleOrigin();
-    Size size = Director::sharedDirector()->getVisibleSize();  //default screen size (or design resolution size, if you are using design resolution)
+    Point origin = Director::getInstance()->getVisibleOrigin();
+    Size size = Director::getInstance()->getVisibleSize();  //default screen size (or design resolution size, if you are using design resolution)
     Point center = *new Point(size.width/2 + origin.x, size.height/2 + origin.y);
     
     // Playerの移動に画面を追従させる
