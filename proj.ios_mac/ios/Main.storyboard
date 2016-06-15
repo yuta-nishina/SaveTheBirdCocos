@@ -108,26 +108,26 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Arm-UH-gkv">
-                                <rect key="frame" x="22" y="47" width="562" height="286"/>
+                                <rect key="frame" x="22" y="47" width="590" height="286"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" オプション" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrM-qJ-4AT">
-                                        <rect key="frame" x="0.0" y="0.0" width="562" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="590" height="38"/>
                                         <color key="backgroundColor" red="0.58258461952209473" green="0.71936541795730591" blue="0.91908246278762817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="38"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4MO-iO-ZYY">
-                                        <rect key="frame" x="0.0" y="78" width="562" height="31"/>
+                                        <rect key="frame" x="0.0" y="78" width="590" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="BGM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbg-Jd-3tA">
-                                                <rect key="frame" x="0.0" y="0.0" width="513" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="541" height="31"/>
                                                 <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="36"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9D-7f-yOb">
-                                                <rect key="frame" x="513" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="541" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="bgmSwitchDidChanged:" destination="Gle-ZG-vEY" eventType="valueChanged" id="ZGJ-QE-7eF"/>
                                                 </connections>
@@ -135,16 +135,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dn8-Fh-oAN">
-                                        <rect key="frame" x="0.0" y="149" width="562" height="31"/>
+                                        <rect key="frame" x="0.0" y="149" width="590" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b1-RX-Md6">
-                                                <rect key="frame" x="0.0" y="0.0" width="513" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="541" height="31"/>
                                                 <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="36"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ev9-1b-BuZ">
-                                                <rect key="frame" x="513" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="541" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="seSwitchDidChanged:" destination="Gle-ZG-vEY" eventType="valueChanged" id="4BB-lY-BYE"/>
                                                 </connections>
@@ -152,16 +152,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PcO-Qe-ZBI">
-                                        <rect key="frame" x="0.0" y="220" width="562" height="66"/>
+                                        <rect key="frame" x="0.0" y="220" width="590" height="66"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lui-4g-l2E">
-                                                <rect key="frame" x="0.0" y="0.0" width="562" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="590" height="36"/>
                                                 <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="36"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Rr-wD-Vgs">
-                                                <rect key="frame" x="-2" y="36" width="566" height="31"/>
+                                                <rect key="frame" x="-2" y="36" width="594" height="31"/>
                                                 <connections>
                                                     <action selector="volumeSliderValueChanged:" destination="Gle-ZG-vEY" eventType="valueChanged" id="S39-y9-wRB"/>
                                                 </connections>
@@ -214,11 +214,18 @@
                                     <action selector="startButtonTouched:" destination="4OJ-OD-kK3" eventType="touchUpInside" id="hMe-of-aTI"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" contentMode="center" ambiguous="YES" misplaced="YES" image="fukidashi.png" translatesAutoresizingMaskIntoConstraints="NO" id="qkv-h6-MwJ">
+                                <rect key="frame" x="145" y="62" width="310" height="118"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A3f-wh-6qN" firstAttribute="centerY" secondItem="YVX-2g-Sov" secondAttribute="centerY" id="LOn-zS-3GZ"/>
                             <constraint firstItem="A3f-wh-6qN" firstAttribute="centerX" secondItem="YVX-2g-Sov" secondAttribute="centerX" id="un2-m0-hze"/>
+                            <constraint firstItem="qkv-h6-MwJ" firstAttribute="centerX" secondItem="YVX-2g-Sov" secondAttribute="centerX" id="y2I-1D-A7p"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="oZd-X3-a7S">
@@ -254,6 +261,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fukidashi.png" width="217" height="83"/>
         <image name="review.png" width="286" height="77"/>
     </resources>
 </document>

@@ -14,5 +14,6 @@
 @interface HomeViewController : UIViewController
 
 @property (retain, nonatomic) IBOutlet UIButton *startButton;
+@property (retain, nonatomic) IBOutlet UIImageView *fukidashi;
 
 @end
