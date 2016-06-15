@@ -21,11 +21,11 @@
     
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
     _scrollView.delegate = self;
-
+    
     // キャラクターの配列を取得
     IOSAppDelegate *delegate = (IOSAppDelegate *)[[UIApplication sharedApplication] delegate];
     NSMutableArray * charactors = [delegate getCharactors];
@@ -56,7 +56,7 @@
         
         count++;
     }
-
+    
     // ユーザが選択しているキャラクターの位置にスクロールする
     if(currentNo > 0){
         // キャラクターを変更
