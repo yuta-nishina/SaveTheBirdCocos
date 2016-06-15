@@ -168,3 +168,4 @@ proj.win32/Release.*/
 *.iml
 
 # others
+*.apk

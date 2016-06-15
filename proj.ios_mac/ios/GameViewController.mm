@@ -63,22 +63,15 @@ static AppDelegate s_sharedApplication;
     
     // Use RootViewController manage CCEAGLView
     _viewController = [[RootViewController alloc] initWithNibName:nil bundle:nil];
-    _viewController.wantsFullScreenLayout = YES;
+    //_viewController.wantsFullScreenLayout = YES;
     _viewController.view = eaglView;
     
     // Set RootViewController to window
-    if ([[UIDevice currentDevice].systemVersion floatValue] < 6.0) {
-        // warning: addSubView doesn't work on iOS6
-        [window addSubView: _viewController.view];
-    }
-    else{
-        // use this method on ios6
-        [window setRootViewController:_viewController];
-    }
+    [window setRootViewController:_viewController];
     
     [window makeKeyAndVisible];
     
-    [[UIApplication sharedApplication] setStatusBarHidden:true];
+    [UIApplication sharedApplication].statusBarHidden = YES;
     
     // IMPORTANT: Setting the GLView should be done after creating the RootViewController
     cocos2d::GLView *glview = cocos2d::GLViewImpl::createWithEAGLView(eaglView);

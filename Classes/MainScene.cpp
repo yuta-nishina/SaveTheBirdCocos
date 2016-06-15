@@ -10,6 +10,8 @@
 #include "MainScene.h"
 #include "AudioUtils.h"
 #include "SimpleAudioEngine.h"
+#include "NativeLauncher.h"
+
 
 using namespace CocosDenshion;
 
@@ -82,7 +84,7 @@ bool MainScene::initWithLevel(int level)
         _stage->setScale(1.2f);
     }else{
         // for android
-        _stage->setScale(1.0f);
+        _stage->setScale(0.9f);
     }
     this->addChild(background);
     
@@ -165,27 +167,27 @@ bool MainScene::initWithLevel(int level)
     auto stageLabel = Label::create();
     if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) {
         // for ios
-        stageLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
+        stageLabel = Label::createWithCharMap("numbers2.png", 32, 36, '0');
     }else{
         // for android
-        stageLabel = Label::createWithCharMap("numbers.png", 16, 18, '0');
+        stageLabel = Label::createWithCharMap("numbers2.png", 16, 18, '0');
     }
 
     stageLabel->setString(StringUtils::format("%d", _stage->getLevel()));
-    stageLabel->setPosition(Vec2(26, winSize.height - 25));
+    stageLabel->setPosition(Vec2(27, winSize.height - 26));
     this->addChild(stageLabel);
     
     // 制限時間を表示
     auto secondLabel = Label::create();
     if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) {
         // for ios
-        secondLabel = Label::createWithCharMap("numbers.png", 32, 36, '0');
+        secondLabel = Label::createWithCharMap("numbers2.png", 32, 36, '0');
     }else{
         // for android
-        secondLabel = Label::createWithCharMap("numbers.png", 16, 18, '0');
+        secondLabel = Label::createWithCharMap("numbers2.png", 16, 18, '0');
     }
 
-    secondLabel->setPosition(Vec2(117, winSize.height - 25));
+    secondLabel->setPosition(Vec2(115, winSize.height - 26));
     this->addChild(secondLabel);
     this->setSecondLabel(secondLabel);
     
@@ -339,14 +341,8 @@ void MainScene::onGameOver()
     animation->setDelayPerUnit(0.2);
     gameover->runAction(Repeat::create(Animate::create(animation),1));
     gameover->setPosition(Vec2(winSize.width / 2.0, winSize.height / 1.35));
+    gameover->setScale(1.4);
     
-    if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS) {
-        // for ios
-        gameover->setScale(1.5);
-    }else{
-        // for android
-        gameover->setScale(1.3);
-    }
     this->addChild(gameover);
     
     auto menuItem = MenuItemImage::create("replay.png", "replay_pressed.png", [currentStage](Ref *sender) {
@@ -374,7 +370,7 @@ void MainScene::onGameOver()
         explosition->setScale(0.3f);
     }else{
         // for android
-        // explosition->setScale(0.9f);
+        explosition->setScale(0.8f);
     }
     _stage->addChild(explosition);
     
@@ -470,10 +466,20 @@ void MainScene::onMenu()
      auto transition = TransitionFade::create(1.0, scene);
      Director::getInstance()->replaceScene(transition);
      });
-    auto menu = Menu::create(returnTitle, menuItem,closeMenu, nullptr);
-    menu->alignItemsVerticallyWithPadding(20);
+
+    auto returnHome = MenuItemImage::create("home.png", "home_pressed.png", [this](Ref *sender){
+        //  ホーム画面に戻る（ネイティブのメソッドを呼び出す）
+        NativeLauncher::returnHome();
+        
+        // cocosの画面を閉じる
+        Director::getInstance()->end();
+        
+    });
+    
+    auto menu = Menu::create(returnTitle, menuItem, returnHome, closeMenu, nullptr);
+    menu->alignItemsVerticallyWithPadding(18);
     menu->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
-    menu->setPosition(winSize.width / 2.0, winSize.height / 2.0 - 45);
+    menu->setPosition(winSize.width / 2.0 - 10, winSize.height / 2.0 - 65);
     menuBack->addChild(menu);
     
 }
@@ -497,8 +503,11 @@ void MainScene::onGetItem(cocos2d::Node * item)
 void MainScene::updateSecond()
 {
     int sec = floor(_second);
-    int milisec = floor((_second - sec) * 100);
-    auto string = StringUtils::format("%03d:%02d", sec, milisec);
+    int min = sec / 60;
+    int msec = sec % 60;
+    
+    //int milisec = floor((_second - sec) * 100);
+    auto string = StringUtils::format("%02d:%02d", min, msec);
     _secondLabel->setString(string);
 }
 

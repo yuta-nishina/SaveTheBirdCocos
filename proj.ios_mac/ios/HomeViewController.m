@@ -94,6 +94,7 @@
 
 - (void)dealloc {
     [_startButton release];
+    [_fukidashi release];
     [super dealloc];
 }
 @end
