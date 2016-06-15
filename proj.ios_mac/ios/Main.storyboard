@@ -116,13 +116,16 @@
                                 <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="40" y="108" width="270" height="36"/>
+                                </variation>
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="40" y="108" width="270" height="31"/>
                                 </variation>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9D-7f-yOb">
                                 <rect key="frame" x="511" y="108" width="51" height="36"/>
-                                <variation key="widthClass=compact" misplaced="YES">
+                                <variation key="widthClass=compact" ambiguous="YES">
                                     <rect key="frame" x="311" y="108" width="51" height="36"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
@@ -137,13 +140,16 @@
                                 <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="40" y="174" width="270" height="36"/>
+                                </variation>
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="40" y="169" width="270" height="31"/>
                                 </variation>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ev9-1b-BuZ">
                                 <rect key="frame" x="511" y="174" width="51" height="36"/>
-                                <variation key="widthClass=compact" misplaced="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="311" y="174" width="51" height="36"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
@@ -155,6 +161,9 @@
                             </switch>
                             <slider opaque="NO" contentMode="center" verticalHuggingPriority="249" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Rr-wD-Vgs">
                                 <rect key="frame" x="38" y="306" width="524" height="31"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="38" y="306" width="324" height="148"/>
+                                </variation>
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="38" y="291" width="324" height="1"/>
                                 </variation>
@@ -167,6 +176,9 @@
                                 <fontDescription key="fontDescription" name="Corporate-Logo-Medium" family="Corporate Logo Medium" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="40" y="240" width="320" height="36"/>
+                                </variation>
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="40" y="230" width="320" height="31"/>
                                 </variation>
@@ -229,9 +241,7 @@
                             <constraint firstItem="xrM-qJ-4AT" firstAttribute="leading" secondItem="Sbg-Jd-3tA" secondAttribute="leading" id="ZPU-sy-S9g"/>
                             <constraint firstItem="Sbg-Jd-3tA" firstAttribute="top" secondItem="xrM-qJ-4AT" secondAttribute="bottom" constant="30" id="Zbp-I2-mug"/>
                             <constraint firstItem="J9D-7f-yOb" firstAttribute="leading" secondItem="Ev9-1b-BuZ" secondAttribute="leading" id="bJG-a6-kP9"/>
-                            <constraint firstItem="uaD-Sz-Nux" firstAttribute="centerX" secondItem="6Rr-wD-Vgs" secondAttribute="centerX" id="dcV-vA-q6f"/>
                             <constraint firstItem="4wc-CR-vuT" firstAttribute="top" secondItem="uaD-Sz-Nux" secondAttribute="bottom" constant="30" id="l6C-At-KcP"/>
-                            <constraint firstItem="uaD-Sz-Nux" firstAttribute="top" secondItem="6Rr-wD-Vgs" secondAttribute="bottom" constant="30" id="rlk-Bz-UB2"/>
                             <constraint firstItem="xrM-qJ-4AT" firstAttribute="trailing" secondItem="J9D-7f-yOb" secondAttribute="trailing" id="sBF-QG-Olx"/>
                             <constraint firstItem="Sbg-Jd-3tA" firstAttribute="top" secondItem="J9D-7f-yOb" secondAttribute="top" id="til-8E-o6Z"/>
                             <constraint firstItem="xrM-qJ-4AT" firstAttribute="top" secondItem="y5Z-cf-l7v" secondAttribute="bottom" constant="20" id="uKM-Cr-gMV"/>
@@ -239,13 +249,11 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="Pnv-Hr-rvk"/>
-                                <exclude reference="dcV-vA-q6f"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
                                 <include reference="Pnv-Hr-rvk"/>
-                                <exclude reference="dcV-vA-q6f"/>
                             </mask>
                         </variation>
                     </view>
