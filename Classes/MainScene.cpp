@@ -160,7 +160,7 @@ bool MainScene::initWithLevel(int level)
 
     // ステージ番号の表示
     auto stageBackground = Sprite::create("stage_ui.png");
-    stageBackground->setPosition(Vec2(92,
+    stageBackground->setPosition(Vec2(88,
                                       winSize.height - 26));
     this->addChild(stageBackground);
     

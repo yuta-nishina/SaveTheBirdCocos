@@ -10,7 +10,7 @@
 			<key>name</key>
 			<string>chara01_name.png</string>
 			<key>detail</key>
-			<string>キャラクター１の説明です</string>
+			<string>ピヨ♪</string>
 			<key>image_stand</key>
 			<string>chara01_front_stand.png</string>
 		</dict>
@@ -20,7 +20,7 @@
 			<key>name</key>
 			<string>chara02_name.png</string>
 			<key>detail</key>
-			<string>キャラクター２の説明です</string>
+			<string>・・・</string>
 			<key>image_stand</key>
 			<string>chara02_front_stand.png</string>
 		</dict>
@@ -30,7 +30,7 @@
 			<key>name</key>
 			<string>chara03_name.png</string>
 			<key>detail</key>
-			<string>キャラクター３の説明です</string>
+			<string>コケッ！</string>
 			<key>image_stand</key>
 			<string>chara03_front_stand.png</string>
 		</dict>
