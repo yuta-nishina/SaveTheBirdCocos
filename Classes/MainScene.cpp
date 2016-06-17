@@ -213,7 +213,6 @@ bool MainScene::initWithLevel(int level)
     //label->enableShadow();
     //this->setCoinLabel(label);
     
-    
     return true;
 }
 
@@ -310,14 +309,14 @@ void MainScene::onGameOver()
     
     
     //スプライトを作成
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-    auto sprite = Sprite::create("black.png");
-    sprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
-    addChild(sprite);
+    //Size visibleSize = Director::getInstance()->getVisibleSize();
+    //auto sprite = Sprite::create("black.png");
+    //sprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+    //addChild(sprite);
     
     //1秒かけてフェードアーウト
-    auto action = FadeTo::create(0.9, 256);
-    sprite->runAction(action);
+    //auto action = FadeTo::create(0.9, 256);
+    //sprite->runAction(action);
     
     
     auto gameover = Sprite::create("gameover_ani.png");
@@ -390,11 +389,11 @@ void MainScene::onClear()
     _stage->getPlayer()->getPhysicsBody()->setEnabled(false);
     
     //スプライトを作成
-    Size visibleSize = Director::getInstance()->getVisibleSize();
-    auto sprite = Sprite::create("white.png");
-    sprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
-    sprite->setOpacity(40);
-    addChild(sprite);
+    //Size visibleSize = Director::getInstance()->getVisibleSize();
+    //auto sprite = Sprite::create("white.png");
+    //sprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
+    //sprite->setOpacity(40);
+    //addChild(sprite);
 
     
     auto txtClear = Sprite::create("clear.png");
@@ -402,8 +401,10 @@ void MainScene::onClear()
     txtClear->setScale(0.9);
     this->addChild(txtClear);
 
+    int setchara = cocos2d::UserDefault::sharedUserDefault()->getIntegerForKey("current_charactor_no",0);
+    auto clearImg = StringUtils::format("chara0%i_front_stand.png", setchara);
     
-    auto clear = Sprite::create("chara01_front_stand.png");
+    auto clear = Sprite::create(clearImg);
     clear->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
     this->addChild(clear);
     _stage->getPlayer()->removeFromParent();

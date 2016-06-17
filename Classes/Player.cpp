@@ -19,10 +19,10 @@ bool Player::init()
     
     
     // キャラデータ取得
-    //int setchar = UserDefault::sharedUserDefault()->getDataForKey("current_charactor_no",0);
-    //CCLOG("%i", setchar);
+    int setchara = cocos2d::UserDefault::sharedUserDefault()->getIntegerForKey("current_charactor_no",0);
+    auto playerImg = StringUtils::format("chara0%i_player.png", setchara);
     
-    if (!Sprite::initWithFile("chara01_player.png")) {
+    if (!Sprite::initWithFile(playerImg)) {
         return false;
     }
     
@@ -35,7 +35,7 @@ bool Player::init()
     Vector<SpriteFrame *> frames;
     for (int i = 0; i < FRAME_COUNT; ++i) {
         // 1コマずつアニメーションを作成する
-        auto frame = SpriteFrame::create("chara01_player.png", Rect(frameSize.width * i,
+        auto frame = SpriteFrame::create(playerImg, Rect(frameSize.width * i,
                                                             0,
                                                             frameSize.width,
                                                             frameSize.height));
