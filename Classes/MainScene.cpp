@@ -125,18 +125,37 @@ bool MainScene::initWithLevel(int level)
     this->addChild(stage);
 
     auto touchListener = EventListenerTouchOneByOne::create();
-    touchListener->onTouchBegan = [](Touch* touch, Event* event) {
+    touchListener->onTouchBegan = [this](Touch* touch, Event* event) {
+        
+        // 現在のタッチ位置
+        //auto winSize = Director::getInstance()->getWinSize();
+        Vec2 currentLocation = touch->getLocation();
+        auto touchStart = Sprite::create("touch_outer.png");
+        touchStart->setPosition(currentLocation);
+        //touchStart->setPosition(Vec2(winSize.width/2, winSize.height/5));
+        touchStart->setOpacity(164);
+        this->addChild(touchStart,2,51);
+        auto action = FadeTo::create(0.5, 256);
+        touchStart->runAction(action);
+        
         // タッチされたとき
         return true;
     };
     touchListener->onTouchMoved = [this](Touch* touch, Event* event){
         // タッチ位置が動いた時
         
+        // タッチが外れたとき
+        this->removeChildByTag(52);
+        
         // プレイヤーを取得
         auto player = _stage->getPlayer();
         // プレイヤーの位置を絶対座標で取得
         Vec2 playerLocation = player->convertToWorldSpace(Point(player->getContentSize().width / 2,
                                                                 player->getContentSize().height / 2));
+        
+        //auto touchStart = this->getChildByTag(51);
+        //Vec2 touchLocation = touchStart->convertToWorldSpace(Point(player->getContentSize().width / 2,
+        //                                                        player->getContentSize().height / 2));
         // 前回のタッチ位置
         Vec2 previousLocation = touch->getPreviousLocation();
         // 現在のタッチ位置
@@ -145,6 +164,8 @@ bool MainScene::initWithLevel(int level)
         // プレイヤーとの角度の差分を計算する
         float previousAngle = getAngle(playerLocation, previousLocation);
         float currentAngle = getAngle(playerLocation, currentLocation);
+        //float previousAngle = getAngle(touchLocation, previousLocation);
+        //float currentAngle = getAngle(touchLocation, currentLocation);
         float diffAngle = previousAngle - currentAngle;
 
         // プレイヤーの現在の角度を取得する
@@ -154,13 +175,37 @@ bool MainScene::initWithLevel(int level)
         float newRotation = playerRotation + diffAngle;
         player->setRotation(newRotation);
         
+        //dotをセット
+        if(diffAngle > 7 || diffAngle < -7){
+            auto dot = Sprite::create("dot.png");
+            dot->setPosition(currentLocation);
+            this->addChild(dot,2,53);
+            auto action = FadeTo::create(0.5, 256);
+            dot->runAction(action);
+        }
+        //poiterをセット
+        auto touchPointer = Sprite::create("touch_pointer.png");
+        touchPointer->setPosition(currentLocation);
+        touchPointer->setOpacity(64);
+        this->addChild(touchPointer,2,52);
+
+        
     };
+    touchListener->onTouchEnded = [this](Touch* touch, Event* event) {
+
+        // タッチが外れたとき
+        this->removeChildByTag(51);
+        this->removeChildByTag(52);
+        return;
+
+    };
+
     this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
 
 
     // ステージ番号の表示
     auto stageBackground = Sprite::create("stage_ui.png");
-    stageBackground->setPosition(Vec2(88,
+    stageBackground->setPosition(Vec2(90,
                                       winSize.height - 26));
     this->addChild(stageBackground);
     
@@ -174,7 +219,7 @@ bool MainScene::initWithLevel(int level)
     }
 
     stageLabel->setString(StringUtils::format("%d", _stage->getLevel()));
-    stageLabel->setPosition(Vec2(27, winSize.height - 26));
+    stageLabel->setPosition(Vec2(22, winSize.height - 26));
     this->addChild(stageLabel);
     
     // 制限時間を表示
@@ -302,7 +347,9 @@ void MainScene::onGameOver()
 {
     this->setState(State::GAMEOVER);
     _stage->getPlayer()->removeFromParent();
-     this->getEventDispatcher()->removeAllEventListeners();
+    //イベント停止
+    //this->getEventDispatcher()->removeAllEventListeners();
+    this->getEventDispatcher()->removeEventListenersForTarget(_secondLabel);
     
     auto winSize = Director::getInstance()->getWinSize();
     int currentStage = _stage->getLevel();
@@ -384,7 +431,10 @@ void MainScene::onClear()
     auto winSize = Director::getInstance()->getWinSize();
     
     this->setState(State::CLEAR);
-    this->getEventDispatcher()->removeAllEventListeners();
+    
+    //イベント停止
+    //this->getEventDispatcher()->removeAllEventListeners();
+    this->getEventDispatcher()->removeEventListenersForTarget(_secondLabel);
     
     _stage->getPlayer()->getPhysicsBody()->setEnabled(false);
     
@@ -440,7 +490,7 @@ void MainScene::onMenu()
     _stage->getPlayer()->getPhysicsBody()->setEnabled(false);
     
     auto menuBack = Sprite::create("menu_back.png");
-    menuBack->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
+    menuBack->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0 + 30));
     this->addChild(menuBack,2,101);
     
     int currentStage = _stage->getLevel();
@@ -480,7 +530,7 @@ void MainScene::onMenu()
     auto menu = Menu::create(returnTitle, menuItem, returnHome, closeMenu, nullptr);
     menu->alignItemsVerticallyWithPadding(18);
     menu->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
-    menu->setPosition(winSize.width / 2.0 - 10, winSize.height / 2.0 - 65);
+    menu->setPosition(winSize.width / 2.0 - 10, winSize.height / 2.0 - 110);
     menuBack->addChild(menu);
     
 }

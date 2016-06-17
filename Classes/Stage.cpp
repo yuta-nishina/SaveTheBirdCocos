@@ -92,9 +92,9 @@ bool Stage::initWithLevel(int level)
     
     // Playerの移動に画面を追従させる
     this->runAction(Follow::create(player, Rect((center.x - _tiledMap->getContentSize().width / 2),
-                                                (center.y - _tiledMap->getContentSize().height / 2 -80),
+                                                (center.y - _tiledMap->getContentSize().height / 2 -210),
                                                 _tiledMap->getContentSize().width * 2 - center.x * 2,
-                                                _tiledMap->getContentSize().height * 2 - center.y * 2 + 160
+                                                _tiledMap->getContentSize().height * 2 - center.y * 2 + 330
                                                 )));
 
     this->scheduleUpdate();

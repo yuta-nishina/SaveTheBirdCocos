@@ -16,6 +16,7 @@
 		2C38E62E1D1278FB004B0E01 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C38E62D1D1278FB004B0E01 /* left_arrow.png */; };
 		2C38E6331D127903004B0E01 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C38E6321D127903004B0E01 /* right_arrow.png */; };
 		2C38E6351D1296E6004B0E01 /* home_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C38E6341D1296E6004B0E01 /* home_back.png */; };
+		2C38E6391D13904A004B0E01 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C38E6381D13904A004B0E01 /* contact.png */; };
 		2CBAF1761D10954300B08C09 /* fukidashi.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CBAF1751D10954300B08C09 /* fukidashi.png */; };
 		2CE9B0051D0F10DA003891C7 /* particle_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE9B0031D0F10DA003891C7 /* particle_texture.png */; };
 		2CE9B0061D0F10DA003891C7 /* particle_texture.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE9B0041D0F10DA003891C7 /* particle_texture.plist */; };
@@ -136,6 +137,7 @@
 		2C38E62D1D1278FB004B0E01 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
 		2C38E6321D127903004B0E01 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
 		2C38E6341D1296E6004B0E01 /* home_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_back.png; sourceTree = "<group>"; };
+		2C38E6381D13904A004B0E01 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
 		2CBAF1751D10954300B08C09 /* fukidashi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fukidashi.png; sourceTree = "<group>"; };
 		2CE9B0031D0F10DA003891C7 /* particle_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle_texture.png; sourceTree = "<group>"; };
 		2CE9B0041D0F10DA003891C7 /* particle_texture.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = particle_texture.plist; sourceTree = "<group>"; };
@@ -483,6 +485,7 @@
 		8AC9D11C1CF6C742002D1CC5 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				2C38E6381D13904A004B0E01 /* contact.png */,
 				2C38E6341D1296E6004B0E01 /* home_back.png */,
 				2C38E6321D127903004B0E01 /* right_arrow.png */,
 				2C38E62D1D1278FB004B0E01 /* left_arrow.png */,
@@ -724,6 +727,7 @@
 				8AC9D1441CF6C742002D1CC5 /* chara01_front_right.png in Resources */,
 				8A1B0FA21CF6D2BA00546014 /* ic_menu_chara_66@2x.png in Resources */,
 				8AC9D14C1CF6C742002D1CC5 /* chara03_back_left.png in Resources */,
+				2C38E6391D13904A004B0E01 /* contact.png in Resources */,
 				8AC9D14D1CF6C742002D1CC5 /* chara03_back_right.png in Resources */,
 				8A7246C31CF6C1B800D856E3 /* Assets.xcassets in Resources */,
 				2C38E6261D1232A9004B0E01 /* option_bar.png in Resources */,

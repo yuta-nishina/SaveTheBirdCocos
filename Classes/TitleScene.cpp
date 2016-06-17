@@ -62,8 +62,8 @@ bool TitleScene::init()
     menu->alignItemsVerticallyWithPadding(50);
     
     menu->alignItemsInColumns(3, 3, 3, 3, nullptr);
-    menu->setPosition(winSize.width / 2.0, winSize.height * 0.6);
-    background->addChild(menu);
+    menu->setPosition(winSize.width / 2.0, winSize.height * 0.55 );
+    this->addChild(menu);
     
     
     auto returnHome = MenuItemImage::create("home.png", "home_pressed.png", [this](Ref *sender){
@@ -77,9 +77,9 @@ bool TitleScene::init()
     });
     
     auto returnMenu = Menu::createWithItem(returnHome);
-    returnMenu->setPosition(winSize.width / 2.0, winSize.height / 5.0);
+    returnMenu->setPosition(winSize.width / 2.0, winSize.height * 0.18);
     
-    background->addChild(returnMenu);
+    this->addChild(returnMenu);
     
     return true;
 }

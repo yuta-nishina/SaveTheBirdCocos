@@ -46,7 +46,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
 
     // set FPS. the default value is 1.0/30 if you don't call this
-    director->setAnimationInterval(1.0 / 45);
+    director->setAnimationInterval(1.0 / 60);
     
     auto fu = FileUtils::getInstance();
     
@@ -59,25 +59,22 @@ bool AppDelegate::applicationDidFinishLaunching() {
     if (platform == Platform::OS_IPHONE) { // もし、iPhoneなら
         fu->addSearchPath("music/caf");
         fu->addSearchPath("se/caf");
-        if (frameSize.height > 320.f) {
-            // Retinaディスプレイのとき
-            // 高解像度画像を有効にする
-            director->setContentScaleFactor(2.0f);
-            if (frameSize.width == 1136) {
-                // iPhone 4inchのとき
-                // 4インチ対応の画面サイズに変更する
-                glview->setDesignResolutionSize(320, 568, ResolutionPolicy::SHOW_ALL);
-                // Resources/4inchフォルダに画像ファイルがあれば、最優先で利用する
-                searchResolutionOrder.push_back("images/4inch");
-            } else {
-                // Retina 3.5インチのとき
-                glview->setDesignResolutionSize(320, 480, ResolutionPolicy::SHOW_ALL);
-            }
-            searchResolutionOrder.push_back("images/retina");
-        } else { // non-Retina 3.5インチ
-            glview->setDesignResolutionSize(320, 480, ResolutionPolicy::SHOW_ALL);
-            searchResolutionOrder.push_back("images/nonretina");
-        }
+        // Retinaディスプレイのとき
+        // 高解像度画像を有効にする
+        director->setContentScaleFactor(2.0f);
+        //if (frameSize.width == 640) {
+            // iPhone 4inchのとき
+            // 4インチ対応の画面サイズに変更する
+            glview->setDesignResolutionSize(320, 568, ResolutionPolicy::SHOW_ALL);
+        /*} else if (frameSize.width == 750) {
+            // iPhone 4.7inchのとき
+            // 4.7インチ対応の画面サイズに変更する
+            glview->setDesignResolutionSize(375, 667, ResolutionPolicy::SHOW_ALL);
+            // Resources/4.7inchフォルダに画像ファイルがあれば、最優先で利用する
+            searchResolutionOrder.push_back("images/375");
+        }*/
+        searchResolutionOrder.push_back("images/retina");
+        
     } else if (platform == Platform::OS_ANDROID) { // Android端末のとき
         glview->setDesignResolutionSize(320, 480, ResolutionPolicy::SHOW_ALL);
         fu->addSearchPath("music/ogg");
