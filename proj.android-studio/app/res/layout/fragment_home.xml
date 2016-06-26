@@ -6,21 +6,26 @@
     android:gravity="center"
     android:layout_weight="1"
     android:orientation="vertical"
-    android:background="@color/colorWhite"
-    tools:context="org.cocos2dx.cpp.HomeFragment">
+    android:background="@mipmap/home_back"
+    tools:context="org.cocos2dx.cpp.HomeFragment"
+    android:weightSum="1">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="283dp"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:layout_gravity="center_horizontal" />
+        android:background="@mipmap/fukidashi"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_weight="0.15" />
 
     <ImageButton
-        android:layout_width="wrap_content"
+        android:layout_width="211dp"
         android:layout_height="wrap_content"
         android:id="@+id/playBtn"
         android:layout_gravity="center"
         android:background="@mipmap/chara01_front_stand"
-        android:contentDescription="@string/no_image"/>
+        android:contentDescription="@string/no_image"
+        android:layout_weight="0.21" />
 
 </LinearLayout>

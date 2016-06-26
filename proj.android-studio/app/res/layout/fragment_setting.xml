@@ -21,12 +21,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:paddingStart="@dimen/option_label_left"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/optionPageTitle"
             android:id="@+id/optionText"
-            android:background="@color/colorPrimary"
+            android:background="@mipmap/option_bar"
             android:textSize="24sp" />
 
         <!-- BGM -->
@@ -130,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sitelink"
-        android:src="@mipmap/review"
+        android:src="@mipmap/contact"
         android:background="@null"
         android:layout_marginBottom="32dp"
         android:layout_gravity="center_horizontal|bottom"
