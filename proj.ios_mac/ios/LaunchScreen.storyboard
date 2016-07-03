@@ -16,7 +16,16 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="3vH-WK-PGM">
+                                <rect key="frame" x="140" y="16" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3vH-WK-PGM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GyC-ZG-RSc"/>
+                            <constraint firstItem="3vH-WK-PGM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="thz-tM-8Cc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +33,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch.png" width="320" height="568"/>
+    </resources>
 </document>

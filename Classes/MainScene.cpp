@@ -129,14 +129,14 @@ bool MainScene::initWithLevel(int level)
         
         // 現在のタッチ位置
         //auto winSize = Director::getInstance()->getWinSize();
-        Vec2 currentLocation = touch->getLocation();
+        /*Vec2 currentLocation = touch->getLocation();
         auto touchStart = Sprite::create("touch_outer.png");
         touchStart->setPosition(currentLocation);
         //touchStart->setPosition(Vec2(winSize.width/2, winSize.height/5));
         touchStart->setOpacity(164);
         this->addChild(touchStart,2,51);
         auto action = FadeTo::create(0.5, 256);
-        touchStart->runAction(action);
+        touchStart->runAction(action);*/
         
         // タッチされたとき
         return true;
@@ -176,19 +176,20 @@ bool MainScene::initWithLevel(int level)
         player->setRotation(newRotation);
         
         //dotをセット
-        if(diffAngle > 7 || diffAngle < -7){
+        /*if(diffAngle > 7 || diffAngle < -7){
             auto dot = Sprite::create("dot.png");
             dot->setPosition(currentLocation);
             this->addChild(dot,2,53);
             auto action = FadeTo::create(0.5, 256);
             dot->runAction(action);
         }
+        
         //poiterをセット
         auto touchPointer = Sprite::create("touch_pointer.png");
         touchPointer->setPosition(currentLocation);
         touchPointer->setOpacity(64);
         this->addChild(touchPointer,2,52);
-
+        */
         
     };
     touchListener->onTouchEnded = [this](Touch* touch, Event* event) {
@@ -444,7 +445,25 @@ void MainScene::onClear()
     //sprite->setPosition(Vec2(visibleSize.width/2, visibleSize.height/2));
     //sprite->setOpacity(40);
     //addChild(sprite);
-
+    
+    // クリアステージ更新
+    auto path = FileUtils::getInstance()->getWritablePath();
+    ValueMap data = FileUtils::getInstance()->getValueMapFromFile(path + "savedata.plist");
+    auto unlockStage = data["unlockStage"].asInt();
+    
+    if(unlockStage == _stage->getLevel()){
+        auto file = path + "savedata.plist";
+        ValueMap data;
+        data["unlockStage"] = _stage->getLevel() + 1;
+        if (FileUtils::getInstance()->writeToFile(data, file))
+        {
+            CCLOG("データを%sに書き出しました。", file.c_str());
+        }
+        else
+        {
+            CCLOG("Ops!");
+        }
+    }
     
     auto txtClear = Sprite::create("clear.png");
     txtClear->setPosition(Vec2(winSize.width / 2.0, winSize.height -125));
