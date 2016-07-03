@@ -17,6 +17,7 @@
 		2C38E6331D127903004B0E01 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C38E6321D127903004B0E01 /* right_arrow.png */; };
 		2C38E6351D1296E6004B0E01 /* home_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C38E6341D1296E6004B0E01 /* home_back.png */; };
 		2C38E6391D13904A004B0E01 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C38E6381D13904A004B0E01 /* contact.png */; };
+		2C7CE8881D2171A4006F917A /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C7CE8871D2171A4006F917A /* launch.png */; };
 		2CBAF1761D10954300B08C09 /* fukidashi.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CBAF1751D10954300B08C09 /* fukidashi.png */; };
 		2CE9B0051D0F10DA003891C7 /* particle_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CE9B0031D0F10DA003891C7 /* particle_texture.png */; };
 		2CE9B0061D0F10DA003891C7 /* particle_texture.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE9B0041D0F10DA003891C7 /* particle_texture.plist */; };
@@ -138,6 +139,7 @@
 		2C38E6321D127903004B0E01 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
 		2C38E6341D1296E6004B0E01 /* home_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_back.png; sourceTree = "<group>"; };
 		2C38E6381D13904A004B0E01 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
+		2C7CE8871D2171A4006F917A /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		2CBAF1751D10954300B08C09 /* fukidashi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fukidashi.png; sourceTree = "<group>"; };
 		2CE9B0031D0F10DA003891C7 /* particle_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle_texture.png; sourceTree = "<group>"; };
 		2CE9B0041D0F10DA003891C7 /* particle_texture.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = particle_texture.plist; sourceTree = "<group>"; };
@@ -485,6 +487,7 @@
 		8AC9D11C1CF6C742002D1CC5 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				2C7CE8871D2171A4006F917A /* launch.png */,
 				2C38E6381D13904A004B0E01 /* contact.png */,
 				2C38E6341D1296E6004B0E01 /* home_back.png */,
 				2C38E6321D127903004B0E01 /* right_arrow.png */,
@@ -713,6 +716,7 @@
 				2C38E6331D127903004B0E01 /* right_arrow.png in Resources */,
 				8A43E8911CFFFDEC00A2654F /* map in Resources */,
 				2CE9B0051D0F10DA003891C7 /* particle_texture.png in Resources */,
+				2C7CE8881D2171A4006F917A /* launch.png in Resources */,
 				8AC9D14A1CF6C742002D1CC5 /* chara02_front_stand.png in Resources */,
 				8AC9D1481CF6C742002D1CC5 /* chara02_back_right.png in Resources */,
 				8AC9D1451CF6C742002D1CC5 /* chara01_front_stand.png in Resources */,
