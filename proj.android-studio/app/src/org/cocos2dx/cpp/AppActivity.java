@@ -24,7 +24,9 @@ THE SOFTWARE.
 package org.cocos2dx.cpp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -71,5 +73,13 @@ public class AppActivity extends Cocos2dxActivity {
             }
         });
 
+    }
+
+    public static boolean getSeFlg(){
+
+        // SEを再生するかどうかのフラグを読み取る
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean bgmFlg = preferences.getBoolean("se_flg", true);
+        return bgmFlg;
     }
 }

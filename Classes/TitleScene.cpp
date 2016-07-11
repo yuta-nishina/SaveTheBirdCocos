@@ -145,8 +145,9 @@ void TitleScene::onEnterTransitionDidFinish()
 }
 
 void TitleScene::toStage(int stageNum){
-    
-    CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("start").c_str());
+    if (NativeLauncher::getSeFlg()) {
+        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("start").c_str());
+    }
     this->getEventDispatcher()->removeAllEventListeners();
     
     this->runAction(Sequence::create(DelayTime::create(1.0),

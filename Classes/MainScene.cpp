@@ -114,7 +114,9 @@ bool MainScene::initWithLevel(int level)
             //if (_itemCount == MAX_ITEM_COUNT) {
             //    CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("complete").c_str());
             //} else {
+            if (NativeLauncher::getSeFlg()) {
                 CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("food").c_str());
+            }
             //}
         }
         
@@ -393,13 +395,17 @@ void MainScene::onGameOver()
     this->addChild(gameover);
     
     auto menuItem = MenuItemImage::create("replay.png", "replay_pressed.png", [currentStage](Ref *sender) {
-        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        if (NativeLauncher::getSeFlg()) {
+            CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        }
         auto scene = MainScene::createSceneWithStage(currentStage);
         auto transition = TransitionFade::create(1.0, scene);
         Director::getInstance()->replaceScene(transition);
     });
     auto returnTitle = MenuItemImage::create("return.png", "return_pressed.png", [](Ref *sender) {
-        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        if (NativeLauncher::getSeFlg()) {
+            CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        }
         auto scene = TitleScene::createScene();
         auto transition = TransitionFade::create(1.0, scene);
         Director::getInstance()->replaceScene(transition);
@@ -485,7 +491,9 @@ void MainScene::onClear()
     int nextStage = (_stage->getLevel() + 1) % STAGE_COUNT;
     
     auto menuItem = MenuItemImage::create("next.png", "next_pressed.png", [nextStage](Ref *sender) {
-        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        if (NativeLauncher::getSeFlg()) {
+            CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        }
         auto scene = MainScene::createSceneWithStage(nextStage);
         auto transition = TransitionFade::create(1.0, scene);
         Director::getInstance()->replaceScene(transition);
@@ -524,18 +532,22 @@ void MainScene::onMenu()
     });
     
     auto menuItem = MenuItemImage::create("replay.png", "replay_pressed.png", [currentStage](Ref *sender) {
-        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        if (NativeLauncher::getSeFlg()) {
+            CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        }
         auto scene = MainScene::createSceneWithStage(currentStage);
         auto transition = TransitionFade::create(1.0, scene);
         Director::getInstance()->replaceScene(transition);
     });
 
     auto returnTitle = MenuItemImage::create("return.png", "return_pressed.png", [](Ref *sender) {
-     CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
-     auto scene = TitleScene::createScene();
-     auto transition = TransitionFade::create(1.0, scene);
-     Director::getInstance()->replaceScene(transition);
-     });
+        if (NativeLauncher::getSeFlg()) {
+            CocosDenshion::SimpleAudioEngine::getInstance()->playEffect(AudioUtils::getFileName("decide").c_str());
+        }
+        auto scene = TitleScene::createScene();
+        auto transition = TransitionFade::create(1.0, scene);
+        Director::getInstance()->replaceScene(transition);
+    });
 
     auto returnHome = MenuItemImage::create("home.png", "home_pressed.png", [this](Ref *sender){
         //  ホーム画面に戻る（ネイティブのメソッドを呼び出す）

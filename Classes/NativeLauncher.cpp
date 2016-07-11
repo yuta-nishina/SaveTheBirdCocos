@@ -25,4 +25,17 @@ extern "C" {
         methodInfo.env->DeleteLocalRef(methodInfo.classID);
     }
     
+    bool NativeLauncher::getSeFlg()
+    {
+        // JNIを使ってJAVAのメソッドを呼び出す
+        cocos2d::JniMethodInfo methodInfo;
+        if (!cocos2d::JniHelper::getStaticMethodInfo(methodInfo, CLASS_NAME, "getSeFlg", "()Z")) {
+            return false;
+        }
+        bool result = methodInfo.env->CallStaticBooleanMethod(methodInfo.classID, methodInfo.methodID);
+        methodInfo.env->DeleteLocalRef(methodInfo.classID);
+        
+        return result;
+    }
+    
 }

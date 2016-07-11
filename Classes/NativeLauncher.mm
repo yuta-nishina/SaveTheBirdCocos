@@ -18,3 +18,12 @@ void NativeLauncher::returnHome()
     [controller presentViewController:initialViewController animated:YES completion:nil];
 //    cocos2d::Director::getInstance()->end();
 }
+
+bool NativeLauncher::getSeFlg()
+{
+    // SEの設定を読み込む処理
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL seFlg = [defaults boolForKey:@"se_flg"];
+    
+    return seFlg;
+}

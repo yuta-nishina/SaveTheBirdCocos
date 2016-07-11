@@ -12,4 +12,6 @@ class NativeLauncher {
 public:
     // ホーム画面に戻る
     static void returnHome();
+    // SEの設定を読み込む
+    static bool getSeFlg();
 };
