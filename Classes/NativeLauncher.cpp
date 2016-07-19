@@ -38,4 +38,16 @@ extern "C" {
         return result;
     }
     
+    int NativeLauncher::getCurrentCharacterNo()
+    {
+        // JNIを使ってJAVAのメソッドを呼び出す
+        cocos2d::JniMethodInfo methodInfo;
+        if (!cocos2d::JniHelper::getStaticMethodInfo(methodInfo, CLASS_NAME, "getCurrentCharacterNo", "()I")) {
+            return 0;
+        }
+        int result = methodInfo.env->CallStaticIntMethod(methodInfo.classID, methodInfo.methodID);
+        methodInfo.env->DeleteLocalRef(methodInfo.classID);
+        
+        return result;
+    }
 }

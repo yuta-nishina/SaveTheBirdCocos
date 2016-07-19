@@ -82,4 +82,11 @@ public class AppActivity extends Cocos2dxActivity {
         boolean bgmFlg = preferences.getBoolean("se_flg", true);
         return bgmFlg;
     }
+
+    public static int getCurrentCharacterNo(){
+        // 選択したキャラクターの番号を読み込む
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        int currentCharacterNo = preferences.getInt("current_character_no", 1);
+        return currentCharacterNo;
+    }
 }

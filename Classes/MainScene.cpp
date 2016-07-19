@@ -476,7 +476,7 @@ void MainScene::onClear()
     txtClear->setScale(0.9);
     this->addChild(txtClear);
 
-    int setchara = cocos2d::UserDefault::sharedUserDefault()->getIntegerForKey("current_charactor_no",0);
+    int setchara = NativeLauncher::getCurrentCharacterNo();
     auto clearImg = StringUtils::format("chara0%i_front_stand.png", setchara);
     
     auto clear = Sprite::create(clearImg);

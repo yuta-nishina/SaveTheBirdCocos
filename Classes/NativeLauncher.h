@@ -14,4 +14,6 @@ public:
     static void returnHome();
     // SEの設定を読み込む
     static bool getSeFlg();
+    // 選択したキャラクターの番号を読み込む
+    static int getCurrentCharacterNo();
 };

@@ -27,3 +27,9 @@ bool NativeLauncher::getSeFlg()
     
     return seFlg;
 }
+
+int NativeLauncher::getCurrentCharacterNo()
+{
+    // 選択したキャラクターの番号を読み込む処理
+    return cocos2d::UserDefault::sharedUserDefault()->getIntegerForKey("current_charactor_no",0);
+}

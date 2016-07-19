@@ -69,7 +69,8 @@ bool TitleScene::init()
     auto background = Sprite::create("title.png");
     background->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0));
     this->addChild(background);
-
+    // デバッグ用にアンロックを解除 TODO 後で消す
+    unlockStage = 12;
     if(unlockStage == 0){
         auto background = Sprite::create("first.png");
         background->setPosition(Vec2(winSize.width / 2.0, winSize.height / 2.0  - 20));

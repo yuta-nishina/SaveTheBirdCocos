@@ -8,6 +8,7 @@
 
 #include "Player.h"
 #include "Stage.h"
+#include "NativeLauncher.h"
 
 USING_NS_CC;
 
@@ -19,7 +20,7 @@ bool Player::init()
     
     
     // キャラデータ取得
-    int setchara = cocos2d::UserDefault::sharedUserDefault()->getIntegerForKey("current_charactor_no",0);
+    int setchara = NativeLauncher::getCurrentCharacterNo();
     auto playerImg = StringUtils::format("chara0%i_player.png", setchara);
     
     if (!Sprite::initWithFile(playerImg)) {
