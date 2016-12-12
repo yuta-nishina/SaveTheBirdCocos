@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zKQ-ny-JxM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zKQ-ny-JxM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -191,21 +191,6 @@
                                     <rect key="frame" x="40" y="230" width="320" height="31"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaD-Sz-Nux">
-                                <rect key="frame" x="158" y="433" width="285" height="57"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                </accessibility>
-                                <state key="normal" image="contact.png">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="57" y="366" width="286" height="155"/>
-                                </variation>
-                                <connections>
-                                    <action selector="linkButtonTouched:" destination="Gle-ZG-vEY" eventType="touchUpInside" id="kN7-7J-N5x"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -219,7 +204,6 @@
                             <constraint firstItem="9rt-jq-4tw" firstAttribute="centerX" secondItem="lE5-74-mQv" secondAttribute="centerX" id="CJR-xa-g1L"/>
                             <constraint firstItem="6b1-RX-Md6" firstAttribute="leading" secondItem="Lui-4g-l2E" secondAttribute="leading" id="CeW-lu-a3x"/>
                             <constraint firstItem="4IP-CD-myS" firstAttribute="centerX" secondItem="lE5-74-mQv" secondAttribute="centerX" id="Jmg-jp-Irc"/>
-                            <constraint firstItem="uaD-Sz-Nux" firstAttribute="centerX" secondItem="lE5-74-mQv" secondAttribute="centerX" id="KAc-SA-1wX"/>
                             <constraint firstItem="J9D-7f-yOb" firstAttribute="height" secondItem="Sbg-Jd-3tA" secondAttribute="height" id="LQ2-ba-fI8"/>
                             <constraint firstItem="6b1-RX-Md6" firstAttribute="centerY" secondItem="Ev9-1b-BuZ" secondAttribute="centerY" id="Sol-3F-i7t"/>
                             <constraint firstItem="Lui-4g-l2E" firstAttribute="top" secondItem="6b1-RX-Md6" secondAttribute="bottom" constant="35" id="UJN-mW-2BW"/>
@@ -228,7 +212,6 @@
                             <constraint firstItem="Sbg-Jd-3tA" firstAttribute="top" secondItem="9rt-jq-4tw" secondAttribute="bottom" constant="23" id="Y6K-74-3pJ"/>
                             <constraint firstItem="Ev9-1b-BuZ" firstAttribute="trailing" secondItem="Lui-4g-l2E" secondAttribute="trailing" id="ZEP-PF-gkx"/>
                             <constraint firstItem="J9D-7f-yOb" firstAttribute="leading" secondItem="Ev9-1b-BuZ" secondAttribute="leading" id="bJG-a6-kP9"/>
-                            <constraint firstItem="uaD-Sz-Nux" firstAttribute="top" secondItem="4IP-CD-myS" secondAttribute="bottom" constant="25" id="cJf-gp-2iu"/>
                             <constraint firstItem="9rt-jq-4tw" firstAttribute="top" secondItem="y5Z-cf-l7v" secondAttribute="bottom" constant="18" id="eYO-fd-SjT"/>
                             <constraint firstItem="Lui-4g-l2E" firstAttribute="centerX" secondItem="lE5-74-mQv" secondAttribute="centerX" id="qfD-66-agA"/>
                             <constraint firstItem="4IP-CD-myS" firstAttribute="top" secondItem="9rt-jq-4tw" secondAttribute="bottom" constant="6" id="rji-xH-FCf"/>
@@ -331,7 +314,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="contact.png" width="279" height="48"/>
         <image name="fukidashi.png" width="245" height="83"/>
         <image name="home_back.png" width="626" height="988"/>
         <image name="left_arrow.png" width="20" height="58"/>

@@ -123,10 +123,10 @@
 }
 
 // 公式リンクボタンが押された時
-- (IBAction)linkButtonTouched:(UIButton *)sender {
-    NSURL *url = [NSURL URLWithString:@"http://stb-bbs.latte-project.info/"];
-    [[UIApplication sharedApplication] openURL:url];
-}
+//- (IBAction)linkButtonTouched:(UIButton *)sender {
+//    NSURL *url = [NSURL URLWithString:@"http://xxxxx.xxx.xxx/"];
+//    [[UIApplication sharedApplication] openURL:url];
+//}
 
 - (void)dealloc {
     [_volumeSlider release];
